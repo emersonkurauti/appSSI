@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="StyleCopLaunch" ToolsVersion="3.5">
+    <PropertyGroup>
+        <ProjectRoot>C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\appSSI\.</ProjectRoot>
+        <StyleCopRoot>C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\appSSI\.\.sonar\StyleCop-4.7.34.0</StyleCopRoot>
+    </PropertyGroup>
+    <UsingTask TaskName="StyleCopTask" AssemblyFile="$(StyleCopRoot)\StyleCop.dll"></UsingTask>
+    <ItemGroup>
+        <Project Include="C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\appSSI\.\..\KuraFrameWork\KuraFrameWork\KuraFrameWork.csproj"></Project>
+    </ItemGroup>
+    <Target Name="StyleCopLaunch">
+        <CreateItem Include="%(Project.RootDir)%(Project.Directory)**\*.cs">
+            <Output ItemName="SourceAnalysisFiles" TaskParameter="Include"></Output>
+        </CreateItem>
+        <StyleCopTask MaxViolationCount="-1" OverrideSettingsFile="C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\.sonar\sonar.StyleCop"
+            OutputFile="C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\.sonar\stylecop-report.xml"
+            TreatErrorsAsWarnings="true" ForceFullAnalysis="true"
+            SourceFiles="@(SourceAnalysisFiles);@(CSFile)"
+            ProjectFullPath="C:\Users\Emerson\Documents\Est&#225;gio Supervisionadao I\SSI\appSSI\.\appSSI.sln"></StyleCopTask>
+    </Target>
+</Project>

@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="frmPrincipal.Master.cs" Inherits="wappSSI.Pages.SSI" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sistema de Suporte Inteligente</title>
+    <asp:ContentPlaceHolder ID="Cabecalho" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .centralizaimg {
+            display:block;
+            margin-left: auto;
+            margin-right:auto;  
+        }
+        .cantos {
+            width:15%;
+        }
+        .meio {
+            width:70%; 
+        }
+        td {
+            text-align: center;  
+        }
+        .centralizaTexto {
+            text-align:center;  
+        }
+        </style>
+</head>
+<body>
+    <form id="frmPrincipal" runat="server">
+    <div>
+        <table class="auto-style1" style="background-color: lightgray" >
+            <tr>
+                <td class="cantos">
+                    <asp:ImageButton ID="Image1" runat="server" class="centralizaimg"  Height="80px" ImageUrl="~/Imagens/logoCanto1.png" Width="111px" />
+                </td>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image2" runat="server" Height="70px" ImageUrl="~/Imagens/Logo.png" class="centralizaimg" Width="500px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cantos" >
+                                <asp:Label ID="lbl" runat="server" Text="Sistema de Suporte Inteligente" Font-Names="Verdana,Arial,Times New Roman" Font-Size="small" style="color: black" Font-Bold="True"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <asp:ImageButton ID="Image3" runat="server" Height="70px" CssClass="centralizaimg"  ImageUrl="~/Imagens/logoCanto2.png" Width="100px" />
+                </td>
+            </tr>
+        </table>
+
+        <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <asp:Panel ID="pnInfo" runat="server" CssClass="centralizaTexto"  backColor="LightGray" Width="100%">
+            <asp:Label ID="lblInfo" runat="server" Text="Sistema de Suporte Inteligente desenvolvido por Emerson Massamitsu Kurauti - emerson.m.k@hotmail.com" Font-Names="Verdana, Arial, Times New Roman" Font-Size="X-Small" style="color: black"></asp:Label>
+        </asp:Panel>
+        <asp:AlwaysVisibleControlExtender ID="pnInfo_AlwaysVisibleControlExtender" runat="server" Enabled="True" TargetControlID="pnInfo" VerticalSide="Bottom">
+        </asp:AlwaysVisibleControlExtender>
+    </div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    </form>
+</body>
+</html>

@@ -1,0 +1,131 @@
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\appSSI.exe
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\appSSI.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadAcoes.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoes.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoesTelas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAcoesCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitoAcaoTela.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadDefeitosAcoesTelas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitos.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsDefeitos.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucDefeitosCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadEmpresas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsEmpresas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucEmpresasCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadImagens.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadModulos.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsModulos.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucModulosCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSistemas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSistemas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSistemasCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadSolucoesDefeitos.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSolucoes.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSolucoes.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSolucoesCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadTelas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsTelas.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucTelasCons.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadUsuarios.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmLogin.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmMenu.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.Properties.Resources.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
+C:\Users\Emerson\Documents\Estagio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
+C:\Users\Emerson\Documents\Estagio Supervisionadao I\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\appSSI.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\appSSI.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadAcoes.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoes.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoesTelas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAcoesCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitoAcaoTela.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadDefeitosAcoesTelas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitos.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsDefeitos.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucDefeitosCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadEmpresas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsEmpresas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucEmpresasCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadImagens.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadModulos.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsModulos.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucModulosCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSistemas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSistemas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSistemasCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadSolucoesDefeitos.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSolucoes.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSolucoes.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSolucoesCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadTelas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsTelas.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucTelasCons.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadUsuarios.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmLogin.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmMenu.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.Properties.Resources.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\appSSI.exe.config
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appSSI\appSSI\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\appSSI.exe.config
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\appSSI.exe
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\appSSI.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadAcoes.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoes.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoesTelas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAcoesCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitoAcaoTela.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadDefeitosAcoesTelas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadDefeitos.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsDefeitos.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucDefeitosCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadEmpresas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsEmpresas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucEmpresasCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadImagens.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadModulos.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsModulos.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucModulosCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSistemas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSistemas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSistemasCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucCadSolucoesDefeitos.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadSolucoes.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsSolucoes.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucSolucoesCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadTelas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsTelas.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucTelasCons.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadUsuarios.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmLogin.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmMenu.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.Properties.Resources.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache

@@ -1,0 +1,12 @@
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\wappSSI.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\wappSSI.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\appSSI.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\Oracle.DataAccess.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\appSSI.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.pdb

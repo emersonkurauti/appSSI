@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRelatorioCadastros" targetNamespace="http://tempuri.org/DSRelatorioCadastros.xsd" xmlns:mstns="http://tempuri.org/DSRelatorioCadastros.xsd" xmlns="http://tempuri.org/DSRelatorioCadastros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRelatorioCadastros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSRelatorioCadastros" msprop:Generator_UserDSName="DSRelatorioCadastros">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTEmpresas" msprop:Generator_TableClassName="DTEmpresasDataTable" msprop:Generator_TableVarName="tableDTEmpresas" msprop:Generator_TablePropName="DTEmpresas" msprop:Generator_RowDeletingName="DTEmpresasRowDeleting" msprop:Generator_RowChangingName="DTEmpresasRowChanging" msprop:Generator_RowEvHandlerName="DTEmpresasRowChangeEventHandler" msprop:Generator_RowDeletedName="DTEmpresasRowDeleted" msprop:Generator_UserTableName="DTEmpresas" msprop:Generator_RowChangedName="DTEmpresasRowChanged" msprop:Generator_RowEvArgName="DTEmpresasRowChangeEvent" msprop:Generator_RowClassName="DTEmpresasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cdEmpresa" msprop:Generator_ColumnVarNameInTable="columncdEmpresa" msprop:Generator_ColumnPropNameInRow="cdEmpresa" msprop:Generator_ColumnPropNameInTable="cdEmpresaColumn" msprop:Generator_UserColumnName="cdEmpresa" type="xs:string" minOccurs="0" />
+              <xs:element name="nmEmpresa" msprop:Generator_ColumnVarNameInTable="columnnmEmpresa" msprop:Generator_ColumnPropNameInRow="nmEmpresa" msprop:Generator_ColumnPropNameInTable="nmEmpresaColumn" msprop:Generator_UserColumnName="nmEmpresa" type="xs:string" minOccurs="0" />
+              <xs:element name="nmFantasiaEmpresa" msprop:Generator_ColumnVarNameInTable="columnnmFantasiaEmpresa" msprop:Generator_ColumnPropNameInRow="nmFantasiaEmpresa" msprop:Generator_ColumnPropNameInTable="nmFantasiaEmpresaColumn" msprop:Generator_UserColumnName="nmFantasiaEmpresa" type="xs:string" minOccurs="0" />
+              <xs:element name="nuCNPJ" msprop:Generator_ColumnVarNameInTable="columnnuCNPJ" msprop:Generator_ColumnPropNameInRow="nuCNPJ" msprop:Generator_ColumnPropNameInTable="nuCNPJColumn" msprop:Generator_UserColumnName="nuCNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="deLogradouro" msprop:Generator_ColumnVarNameInTable="columndeLogradouro" msprop:Generator_ColumnPropNameInRow="deLogradouro" msprop:Generator_ColumnPropNameInTable="deLogradouroColumn" msprop:Generator_UserColumnName="deLogradouro" type="xs:string" minOccurs="0" />
+              <xs:element name="deBairro" msprop:Generator_ColumnVarNameInTable="columndeBairro" msprop:Generator_ColumnPropNameInRow="deBairro" msprop:Generator_ColumnPropNameInTable="deBairroColumn" msprop:Generator_UserColumnName="deBairro" type="xs:string" minOccurs="0" />
+              <xs:element name="deComplemento" msprop:Generator_ColumnVarNameInTable="columndeComplemento" msprop:Generator_ColumnPropNameInRow="deComplemento" msprop:Generator_ColumnPropNameInTable="deComplementoColumn" msprop:Generator_UserColumnName="deComplemento" type="xs:string" minOccurs="0" />
+              <xs:element name="nuCEP" msprop:Generator_ColumnVarNameInTable="columnnuCEP" msprop:Generator_ColumnPropNameInRow="nuCEP" msprop:Generator_ColumnPropNameInTable="nuCEPColumn" msprop:Generator_UserColumnName="nuCEP" type="xs:string" minOccurs="0" />
+              <xs:element name="nuTelefone" msprop:Generator_ColumnVarNameInTable="columnnuTelefone" msprop:Generator_ColumnPropNameInRow="nuTelefone" msprop:Generator_ColumnPropNameInTable="nuTelefoneColumn" msprop:Generator_UserColumnName="nuTelefone" type="xs:string" minOccurs="0" />
+              <xs:element name="nuNumero" msprop:Generator_ColumnVarNameInTable="columnnuNumero" msprop:Generator_ColumnPropNameInRow="nuNumero" msprop:Generator_ColumnPropNameInTable="nuNumeroColumn" msprop:Generator_UserColumnName="nuNumero" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DTEmpresasKey1">
+      <xs:selector xpath=".//mstns:DTEmpresas" />
+      <xs:field xpath="mstns:cdEmpresa" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

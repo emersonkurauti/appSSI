@@ -1,0 +1,16 @@
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\Similaridade\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\Similaridade\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\Similaridade\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\Similaridade\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\LibrarySimetric\LibrarySimetric\bin\Debug\LibrarySimetric.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\LibrarySimetric\LibrarySimetric\obj\Debug\LibrarySimetric.pdb

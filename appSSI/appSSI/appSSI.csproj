@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53EB22E9-D9A3-496F-A8B3-BCD6D1450EB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>appSSI</RootNamespace>
+    <AssemblyName>appSSI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.VSDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constantes\csConstantes.cs" />
+    <Compile Include="Controller\conConsultaDefeitoTelaAcao.cs" />
+    <Compile Include="Controller\conDefeitoAcaoTela.cs" />
+    <Compile Include="Controller\conIndicadores.cs" />
+    <Compile Include="Integracao Task\Classes\Model\caIntegracaoTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\coIntegracaoTask.cs" />
+    <Compile Include="Integracao Task\Classes\Controller\conIntegracaoTask.cs" />
+    <Compile Include="Controller\conParametros.cs" />
+    <Compile Include="Controller\conSolucoes.cs" />
+    <Compile Include="Controller\conAcoes.cs" />
+    <Compile Include="Controller\conDefeitos.cs" />
+    <Compile Include="Controller\conImagens.cs" />
+    <Compile Include="Controller\conModulos.cs" />
+    <Compile Include="Controller\conSistemasEmpresas.cs" />
+    <Compile Include="Controller\conEmpresas.cs" />
+    <Compile Include="Controller\conSistemas.cs" />
+    <Compile Include="Controller\conSolucoesDefeitos.cs" />
+    <Compile Include="Controller\conTelas.cs" />
+    <Compile Include="Controller\conTelasAcoes.cs" />
+    <Compile Include="Controller\conUsuarios.cs" />
+    <Compile Include="Controller\ClasseBase\csControllerBase.cs" />
+    <Compile Include="Integracao Task\Classes\Banco\csBancoTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\csModeloBaseTask.cs" />
+    <Compile Include="Model\Acoes\caAcoes.cs" />
+    <Compile Include="Model\Acoes\coAcoes.cs" />
+    <Compile Include="Model\ClassesBase\csModelBase.cs" />
+    <Compile Include="Model\ConsultaDefeitoTelaAcao\caConsultaDefeitoTelaAcao.cs" />
+    <Compile Include="Model\ConsultaDefeitoTelaAcao\coConsultaDefeitoTelaAcao.cs" />
+    <Compile Include="Model\DefeitoAcaoTela\caDefeitoAcaoTela.cs" />
+    <Compile Include="Model\DefeitoAcaoTela\coDefeitoAcaoTela.cs" />
+    <Compile Include="Model\Defeitos\caDefeitos.cs" />
+    <Compile Include="Model\Defeitos\caImagensDefeitos.cs" />
+    <Compile Include="Model\Defeitos\coDefeitos.cs" />
+    <Compile Include="Model\Defeitos\coImagensDefeitos.cs" />
+    <Compile Include="Model\Empresas\caEmpresas.cs" />
+    <Compile Include="Model\Empresas\coEmpresas.cs" />
+    <Compile Include="Model\Imagens\caImagens.cs" />
+    <Compile Include="Model\Imagens\coImagens.cs" />
+    <Compile Include="Model\Indicadores\caIndicador.cs" />
+    <Compile Include="Model\Indicadores\caParametros.cs" />
+    <Compile Include="Model\Indicadores\coIndicador.cs" />
+    <Compile Include="Model\Indicadores\coParametros.cs" />
+    <Compile Include="Model\Modulos\caModulos.cs" />
+    <Compile Include="Model\Modulos\coModulos.cs" />
+    <Compile Include="Model\Sistemas\caSistemas.cs" />
+    <Compile Include="Model\Sistemas\caSistemasEmpresas.cs" />
+    <Compile Include="Model\Sistemas\coSistemas.cs" />
+    <Compile Include="Model\Sistemas\coSistemasEmpresas.cs" />
+    <Compile Include="Model\SolucoesDefeitos\caSolucoesDefeitos.cs" />
+    <Compile Include="Model\SolucoesDefeitos\coSolucoesDefeitos.cs" />
+    <Compile Include="Model\Solucoes\caImagensSolucoes.cs" />
+    <Compile Include="Model\Solucoes\caSolucoes.cs" />
+    <Compile Include="Model\Solucoes\coImagensSolucoes.cs" />
+    <Compile Include="Model\Solucoes\coSolucoes.cs" />
+    <Compile Include="Model\Telas\caTelas.cs" />
+    <Compile Include="Model\Telas\caTelasAcoes.cs" />
+    <Compile Include="Model\Telas\coTelas.cs" />
+    <Compile Include="Model\Telas\coTelasAcoes.cs" />
+    <Compile Include="Model\Usuarios\caUsuarios.cs" />
+    <Compile Include="Model\Usuarios\coUsuarios.cs" />
+    <Compile Include="Relatorios\Acoes\crAcoes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crAcoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Sistemas\crSistemas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSistemas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Telas\crTelas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crTelas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Telas\crTelasC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crTelasC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmCadAcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmCadAcoes.Designer.cs">
+      <DependentUpon>frmCadAcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmConsAcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmConsAcoes.Designer.cs">
+      <DependentUpon>frmConsAcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmConsAcoesTelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\frmConsAcoesTelas.Designer.cs">
+      <DependentUpon>frmConsAcoesTelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\ucAcoesCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Acoes\ucAcoesCons.Designer.cs">
+      <DependentUpon>ucAcoesCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\DefeitoAcaoTela\frmCadDefeitoAcaoTela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\DefeitoAcaoTela\frmCadDefeitoAcaoTela.Designer.cs">
+      <DependentUpon>frmCadDefeitoAcaoTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\DefeitoAcaoTela\ucCadDefeitosAcoesTelas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\DefeitoAcaoTela\ucCadDefeitosAcoesTelas.Designer.cs">
+      <DependentUpon>ucCadDefeitosAcoesTelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\frmCadDefeitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\frmCadDefeitos.Designer.cs">
+      <DependentUpon>frmCadDefeitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\frmConsDefeitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\frmConsDefeitos.Designer.cs">
+      <DependentUpon>frmConsDefeitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\ucDefeitosCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Defeitos\ucDefeitosCons.Designer.cs">
+      <DependentUpon>ucDefeitosCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Empresas\crEmpresa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crEmpresa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Empresas\DSEmpresas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEmpresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Empresas\frmCadEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Empresas\frmCadEmpresas.Designer.cs">
+      <DependentUpon>frmCadEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcoes\csFuncoes.cs" />
+    <Compile Include="Mensagens\csMensagens.cs" />
+    <Compile Include="View\Cadastros\Empresas\frmConsEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Empresas\frmConsEmpresas.Designer.cs">
+      <DependentUpon>frmConsEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Empresas\ucEmpresasCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Empresas\ucEmpresasCons.Designer.cs">
+      <DependentUpon>ucEmpresasCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Imagens\ucCadImagens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Imagens\ucCadImagens.Designer.cs">
+      <DependentUpon>ucCadImagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\frmCadModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\frmCadModulos.Designer.cs">
+      <DependentUpon>frmCadModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\frmConsModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\frmConsModulos.Designer.cs">
+      <DependentUpon>frmConsModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\ucModulosCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Modulos\ucModulosCons.Designer.cs">
+      <DependentUpon>ucModulosCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\frmCadSistemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\frmCadSistemas.Designer.cs">
+      <DependentUpon>frmCadSistemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\frmConsSistemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\frmConsSistemas.Designer.cs">
+      <DependentUpon>frmConsSistemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\ucSistemasCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Sistemas\ucSistemasCons.Designer.cs">
+      <DependentUpon>ucSistemasCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\SolucoesDefeitos\ucCadSolucoesDefeitos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\SolucoesDefeitos\ucCadSolucoesDefeitos.Designer.cs">
+      <DependentUpon>ucCadSolucoesDefeitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\frmCadSolucoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\frmCadSolucoes.Designer.cs">
+      <DependentUpon>frmCadSolucoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\frmConsSolucoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\frmConsSolucoes.Designer.cs">
+      <DependentUpon>frmConsSolucoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\ucSolucoesCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Solucoes\ucSolucoesCons.Designer.cs">
+      <DependentUpon>ucSolucoesCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\frmCadTelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\frmCadTelas.Designer.cs">
+      <DependentUpon>frmCadTelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\frmConsTelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\frmConsTelas.Designer.cs">
+      <DependentUpon>frmConsTelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\ucTelasCons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Telas\ucTelasCons.Designer.cs">
+      <DependentUpon>ucTelasCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastros\Usuarios\frmCadUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cadastros\Usuarios\frmCadUsuarios.Designer.cs">
+      <DependentUpon>frmCadUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Operacaoes\OpDefeitoTelaAcao\OpConsultarDefeitosSimilares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Operacaoes\OpDefeitoTelaAcao\OpConsultarDefeitosSimilares.Designer.cs">
+      <DependentUpon>OpConsultarDefeitosSimilares.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Relatorios\Acoes\crAcoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crAcoes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Sistemas\crSistemas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSistemas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Telas\crTelas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crTelas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Telas\crTelasC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crTelasC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Acoes\frmCadAcoes.resx">
+      <DependentUpon>frmCadAcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Acoes\frmConsAcoes.resx">
+      <DependentUpon>frmConsAcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Acoes\frmConsAcoesTelas.resx">
+      <DependentUpon>frmConsAcoesTelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Acoes\ucAcoesCons.resx">
+      <DependentUpon>ucAcoesCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\DefeitoAcaoTela\frmCadDefeitoAcaoTela.resx">
+      <DependentUpon>frmCadDefeitoAcaoTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\DefeitoAcaoTela\ucCadDefeitosAcoesTelas.resx">
+      <DependentUpon>ucCadDefeitosAcoesTelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Defeitos\frmCadDefeitos.resx">
+      <DependentUpon>frmCadDefeitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Defeitos\frmConsDefeitos.resx">
+      <DependentUpon>frmConsDefeitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Defeitos\ucDefeitosCons.resx">
+      <DependentUpon>ucDefeitosCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Empresas\crEmpresa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crEmpresa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Empresas\frmCadEmpresas.resx">
+      <DependentUpon>frmCadEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Empresas\frmConsEmpresas.resx">
+      <DependentUpon>frmConsEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Empresas\ucEmpresasCons.resx">
+      <DependentUpon>ucEmpresasCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Imagens\ucCadImagens.resx">
+      <DependentUpon>ucCadImagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Modulos\frmCadModulos.resx">
+      <DependentUpon>frmCadModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Modulos\frmConsModulos.resx">
+      <DependentUpon>frmConsModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Modulos\ucModulosCons.resx">
+      <DependentUpon>ucModulosCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Sistemas\frmCadSistemas.resx">
+      <DependentUpon>frmCadSistemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Sistemas\frmConsSistemas.resx">
+      <DependentUpon>frmConsSistemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Sistemas\ucSistemasCons.resx">
+      <DependentUpon>ucSistemasCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\SolucoesDefeitos\ucCadSolucoesDefeitos.resx">
+      <DependentUpon>ucCadSolucoesDefeitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Solucoes\frmCadSolucoes.resx">
+      <DependentUpon>frmCadSolucoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Solucoes\frmConsSolucoes.resx">
+      <DependentUpon>frmConsSolucoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Solucoes\ucSolucoesCons.resx">
+      <DependentUpon>ucSolucoesCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Telas\frmCadTelas.resx">
+      <DependentUpon>frmCadTelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Telas\frmConsTelas.resx">
+      <DependentUpon>frmConsTelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Telas\ucTelasCons.resx">
+      <DependentUpon>ucTelasCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cadastros\Usuarios\frmCadUsuarios.resx">
+      <DependentUpon>frmCadUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Operacaoes\OpDefeitoTelaAcao\OpConsultarDefeitosSimilares.resx">
+      <DependentUpon>OpConsultarDefeitosSimilares.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Relatorios\Empresas\DSEmpresas.xsc">
+      <DependentUpon>DSEmpresas.xsd</DependentUpon>
+    </None>
+    <None Include="Relatorios\Empresas\DSEmpresas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEmpresas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Relatorios\Empresas\DSEmpresas.xss">
+      <DependentUpon>DSEmpresas.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Limpar1.png" />
+    <None Include="Resources\Buscar.png" />
+    <None Include="Resources\del.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\Previous.png" />
+    <None Include="Resources\Novo.png" />
+    <None Include="Resources\Next.png" />
+    <None Include="Resources\Limpar.png" />
+    <None Include="Resources\Last.png" />
+    <None Include="Resources\Imprimir2.png" />
+    <None Include="Resources\Imprimir.png" />
+    <None Include="Resources\First.png" />
+    <None Include="Resources\Expandir.png" />
+    <None Include="Resources\Excluir.png" />
+    <None Include="Resources\Encolher.png" />
+    <None Include="Resources\Editar.png" />
+    <None Include="Resources\Salvar.png" />
+    <None Include="Resources\Fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arquivos\Imagens\Defeitos\" />
+    <Folder Include="Arquivos\Imagens\Solucoes\" />
+    <Folder Include="Integracao Task\View\" />
+    <Folder Include="Relatorios\Defeitos\" />
+    <Folder Include="Relatorios\Modulos\" />
+    <Folder Include="Relatorios\Solucoes\" />
+    <Folder Include="Relatorios\Usuarios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">
+      <Project>{593D6A8A-0FAD-42FD-B430-60B7620C112C}</Project>
+      <Name>appRelatorios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\KuraFrameWork\KuraFrameWork\KuraFrameWork.csproj">
+      <Project>{944A4514-EAFB-429B-A896-80B714179115}</Project>
+      <Name>KuraFrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibrarySimetric\LibrarySimetric\LibrarySimetric.csproj">
+      <Project>{13B70C34-317C-4204-8878-07B932826F60}</Project>
+      <Name>LibrarySimetric</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

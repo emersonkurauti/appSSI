@@ -1,0 +1,4 @@
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\bin\Release\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\bin\Release\LibrarySimetric.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.pdb

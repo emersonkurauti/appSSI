@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="KuraFrameWork" version="1.0.0.0">
+  <Assembly name="KuraFrameWork" version="1.0.0.0">
+    <References>
+      <Reference name="System.Windows.Forms" fullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data" fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Drawing" fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="Oracle.DataAccess" fullName="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342" version="4.112.2.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="KuraFrameWork.Formularios.ucCadastroBasicoGrid" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucCadastroBasicoGrid.Designer.cs">
+        <To fullname="KuraFrameWork.Formularios.ucCadastroBasico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="KuraFrameWork.Componentes_Visuais.ucCampoTextoCEP" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCEP.Designer.cs">
+        <To fullname="KuraFrameWork.Componentes_Visuais.ucCampoNumerico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="KuraFrameWork.Formularios.ucCadastroBasicoNormal" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucCadastroBasicoNormal.cs">
+        <To fullname="KuraFrameWork.Formularios.ucCadastroBasico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="KuraFrameWork.Componentes_Visuais.ucCampoTextoCPF" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCPF.Designer.cs">
+        <To fullname="KuraFrameWork.Componentes_Visuais.ucCampoNumerico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="KuraFrameWork.Componentes_Visuais.ucCampoTextoCNPJ" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCNPJ.Designer.cs">
+        <To fullname="KuraFrameWork.Componentes_Visuais.ucCampoNumerico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="KuraFrameWork.Componentes_Visuais.ucCampoTextoTelefone" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoTelefone.Designer.cs">
+        <To fullname="KuraFrameWork.Componentes_Visuais.ucCampoNumerico" assemblyname="KuraFrameWork" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="Banco.csBanco" path="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Banco\csBanco.cs">
+        <To fullname="Oracle.DataAccess.Client.OracleConnection" assemblyname="Oracle.DataAccess" assemblyversion="4.112.2.0" />
+        <To fullname="Oracle.DataAccess.Client.OracleCommand" assemblyname="Oracle.DataAccess" assemblyversion="4.112.2.0" />
+        <To fullname="Oracle.DataAccess.Client.OracleDataReader" assemblyname="Oracle.DataAccess" assemblyversion="4.112.2.0" />
+        <To fullname="Oracle.DataAccess.Client.OracleDataAdapter" assemblyname="Oracle.DataAccess" assemblyversion="4.112.2.0" />
+      </From>
+    </TypeReferences>
+    <Design>
+      <type fullName="KuraFrameWork.Formularios.ucLogin" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucLogin.Designer.cs" rfc="64" dit="7">
+        <block>
+          <element type="Field" name="btnConfirmar" />
+          <element type="Field" name="btnFinalizar" />
+          <element type="Field" name="lbSenha" />
+          <element type="Field" name="lbUsuario" />
+          <element type="Field" name="pcbFundoLogin" />
+          <element type="Field" name="ssmLogin" />
+          <element type="Field" name="tssmObsLogin" />
+          <element type="Field" name="txtSenha" />
+          <element type="Field" name="txtUsuario" />
+          <element type="Method" name="System.Void btnConfirmar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnFinalizar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+          <element type="Method" name="System.Void txtSenha_KeyDown(System.Object, System.Windows.Forms.KeyEventArgs)" />
+          <element type="Method" name="System.Void txtUsuario_KeyDown(System.Object, System.Windows.Forms.KeyEventArgs)" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Formularios.ucCadastroBasico" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucCadastroBasico.cs" rfc="74" dit="7">
+        <block>
+          <element type="Field" name="_dtDados" />
+          <element type="Method" name="System.Data.DataTable get_dtDados()" />
+          <element type="Method" name="System.Void set_dtDados(System.Data.DataTable)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void ControleCampos(System.Windows.Forms.Control/ControlCollection, System.Boolean)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void LimparCampos(System.Windows.Forms.Control/ControlCollection)" />
+        </block>
+        <block>
+          <element type="Field" name="_Status" />
+          <element type="Field" name="ssStatus" />
+          <element type="Field" name="tsbEditar" />
+          <element type="Field" name="tsbExcluir" />
+          <element type="Field" name="tsbFechar" />
+          <element type="Field" name="tsbImprimir" />
+          <element type="Field" name="tsbLimpar" />
+          <element type="Field" name="tsbNovo" />
+          <element type="Field" name="tsBotoes" />
+          <element type="Field" name="tsbSalvar" />
+          <element type="Field" name="tslStatus" />
+          <element type="Field" name="tsmiResultadoCompleto" />
+          <element type="Field" name="tsmiResultadoSimples" />
+          <element type="Method" name="System.Void ControleBotoes(System.String)" />
+          <element type="Method" name="System.Boolean ControleRegistroNaoSalvoContinua()" />
+          <element type="Method" name="System.Char get_Status()" />
+          <element type="Method" name="System.Void IniciarStatusBotoes()" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+          <element type="Method" name="System.Void set_Status(System.Char)" />
+          <element type="Method" name="System.Void tsbEditar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbExcluir_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbFechar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbLimpar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbNovo_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbSalvar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsmiResultadoCompleto_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsmiResultadoSimples_Click(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Formularios.ucCadastroBasicoGrid" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucCadastroBasicoGrid.Designer.cs" rfc="82" dit="8">
+        <block>
+          <element type="Field" name="btnConsultar" />
+          <element type="Field" name="btnEncolherExpandir" />
+          <element type="Field" name="btnLimparFiltro" />
+          <element type="Field" name="Campo" />
+          <element type="Field" name="Condicao" />
+          <element type="Field" name="dgvDados" />
+          <element type="Field" name="dgvFiltro" />
+          <element type="Field" name="nmCampo" />
+          <element type="Field" name="pnBotoes" />
+          <element type="Field" name="pnFiltro" />
+          <element type="Field" name="ValorFinal" />
+          <element type="Field" name="ValorInicial" />
+          <element type="Method" name="System.Void btnLimparFiltro_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void ControleFiltro(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void dgvFiltro_CellEndEdit(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+          <element type="Method" name="System.Void PreencheDadosGridViewFiltro()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucCampoNumerico" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoNumerico.Designer.cs" rfc="40" dit="7">
+        <block>
+          <element type="Field" name="bEspaco" />
+          <element type="Field" name="intIndex" />
+          <element type="Field" name="mtxtCampo" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+          <element type="Method" name="System.Void mtxtCampo_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void mtxtCampo_KeyDown(System.Object, System.Windows.Forms.KeyEventArgs)" />
+          <element type="Method" name="System.Void mtxtCampo_KeyPress(System.Object, System.Windows.Forms.KeyPressEventArgs)" />
+          <element type="Method" name="System.Void mtxtCampo_KeyUp(System.Object, System.Windows.Forms.KeyEventArgs)" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucCampoTextoCEP" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCEP.Designer.cs" rfc="18" dit="8">
+        <block>
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+        <block>
+          <element type="Method" name="System.String PegaTexto()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucBotoesCadastro" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucBotoesCadastro.Designer.cs" rfc="37" dit="7">
+        <block>
+          <element type="Field" name="btnExcluir" />
+          <element type="Field" name="btnFechar" />
+          <element type="Field" name="btnLimpar" />
+          <element type="Field" name="btnNovo" />
+          <element type="Field" name="btnSalvar" />
+          <element type="Method" name="System.Void btnExcluir_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnFechar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnLimpar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnNovo_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnSalvar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void ControleBotoes(System.String)" />
+          <element type="Method" name="System.Void IniciarStatusBotoes()" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Formularios.ucCadastroBasicoNormal" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucCadastroBasicoNormal.cs" rfc="146" dit="8">
+        <block>
+          <element type="Field" name="_drLinha" />
+          <element type="Field" name="_PosCursorDt" />
+          <element type="Field" name="_tpCorrente" />
+          <element type="Field" name="btnConsultar" />
+          <element type="Field" name="btnEncolherExpandir" />
+          <element type="Field" name="btnFirst" />
+          <element type="Field" name="btnLast" />
+          <element type="Field" name="btnLimparFiltro" />
+          <element type="Field" name="btnNext" />
+          <element type="Field" name="btnPrevious" />
+          <element type="Field" name="Campo" />
+          <element type="Field" name="Condicao" />
+          <element type="Field" name="dgvDados" />
+          <element type="Field" name="dgvFiltro" />
+          <element type="Field" name="nmCampo" />
+          <element type="Field" name="pnBotoes" />
+          <element type="Field" name="pnFiltro" />
+          <element type="Field" name="pnForm" />
+          <element type="Field" name="tcCadastro" />
+          <element type="Field" name="tpConsulta" />
+          <element type="Field" name="tpFormulario" />
+          <element type="Field" name="ValorFinal" />
+          <element type="Field" name="ValorInicial" />
+          <element type="Method" name="System.Void btnFirst_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnLast_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnLimparFiltro_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnNext_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void btnPrevious_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void CarregaDados(System.Data.DataRow)" />
+          <element type="Method" name="System.Void ControleCampos(System.Windows.Forms.Control/ControlCollection, System.Boolean)" />
+          <element type="Method" name="System.Void ControleCampos(System.Windows.Forms.Control/ControlCollection, System.Boolean)" />
+          <element type="Method" name="System.Void ControleFiltro(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Boolean ControleRegistroNaoSalvoContinua()" />
+          <element type="Method" name="System.Boolean ControleRegistroNaoSalvoContinua()" />
+          <element type="Method" name="System.Void dgvDados_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" />
+          <element type="Method" name="System.Void dgvDados_CellDoubleClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" />
+          <element type="Method" name="System.Void dgvFiltro_CellEndEdit(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" />
+          <element type="Method" name="System.Data.DataRow get_drLinha()" />
+          <element type="Method" name="System.Data.DataTable get_dtDados()" />
+          <element type="Method" name="System.Int32 get_PosCursorDt()" />
+          <element type="Method" name="System.Char get_Status()" />
+          <element type="Method" name="System.Windows.Forms.TabPage get_TpCorrente()" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+          <element type="Method" name="System.Void LimparCampos(System.Windows.Forms.Control/ControlCollection)" />
+          <element type="Method" name="System.Void PreencheDadosGridViewFiltro()" />
+          <element type="Method" name="System.Void set_drLinha(System.Data.DataRow)" />
+          <element type="Method" name="System.Void set_PosCursorDt(System.Int32)" />
+          <element type="Method" name="System.Void set_TpCorrente(System.Windows.Forms.TabPage)" />
+          <element type="Method" name="System.Void tcCadastro_SelectedIndexChanged(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbEditar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbEditar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbExcluir_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbExcluir_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbLimpar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbLimpar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbNovo_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbNovo_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbSalvar_Click(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void tsbSalvar_Click(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucCampoTextoCPF" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCPF.Designer.cs" rfc="16" dit="8">
+        <block>
+          <element type="Method" name="System.String PegaTexto()" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Formularios.ucMenuBasico" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Formularios\ucMenuBasico.cs" rfc="59" dit="7">
+        <block>
+          <element type="Field" name="_childFormNumber" />
+          <element type="Method" name="System.Int32 get_ChildFormNumber()" />
+          <element type="Method" name="System.Void set_ChildFormNumber(System.Int32)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Windows.Forms.ToolStripMenuItem RtornarItemMenuCriado(System.Windows.Forms.MenuStrip, System.String, System.Drawing.Bitmap, System.EventHandler, System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void AddItemMenu(System.Windows.Forms.MenuStrip, System.String, System.Drawing.Bitmap, System.EventHandler, System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void CriarSubItemMenu(System.Windows.Forms.ToolStripMenuItem, System.String, System.Drawing.Bitmap, System.EventHandler, System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void AddToolStripItem(System.Windows.Forms.ToolStrip, System.Drawing.Bitmap, System.EventHandler, System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void btnSair_onClick(System.Object, System.EventArgs)" />
+        </block>
+        <block>
+          <element type="Field" name="components" />
+          <element type="Field" name="menuStrip" />
+          <element type="Field" name="statusStrip" />
+          <element type="Field" name="toolTip" />
+          <element type="Field" name="tslStatus" />
+          <element type="Field" name="tsMenu" />
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucCampoTextoCNPJ" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoCNPJ.Designer.cs" rfc="15" dit="8">
+        <block>
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+        <block>
+          <element type="Method" name="System.String PegaTexto()" />
+        </block>
+      </type>
+      <type fullName="KuraFrameWork.Properties.Resources" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Properties\Resources.Designer.cs" rfc="0" dit="1" />
+      <type fullName="KuraFrameWork.Componentes_Visuais.ucCampoTextoTelefone" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Componentes Visuais\ucCampoTextoTelefone.Designer.cs" rfc="18" dit="8">
+        <block>
+          <element type="Method" name="System.String PegaTexto()" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void InitializeComponent()" />
+        </block>
+      </type>
+      <type fullName="Banco.csBanco" source="C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\KuraFrameWork\KuraFrameWork\Banco\csBanco.cs" rfc="33" dit="1">
+        <block>
+          <element type="Field" name="_comando" />
+          <element type="Field" name="_conexao" />
+          <element type="Method" name="System.Boolean ConectaBanco()" />
+          <element type="Method" name="System.Boolean DesconectaBanco()" />
+          <element type="Method" name="System.Int32 ExecutarSQL(System.String)" />
+          <element type="Method" name="System.Int32 GerarCodigo(System.String, System.String)" />
+          <element type="Method" name="Oracle.DataAccess.Client.OracleDataReader RetornaDR(System.String)" />
+          <element type="Method" name="System.Data.DataSet RetornaDS(System.String)" />
+          <element type="Method" name="System.Data.DataTable RetornaDT(System.String)" />
+          <element type="Method" name="System.Boolean UsarAspas(System.String, System.String)" />
+        </block>
+      </type>
+      <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
+      <type fullName="KuraFrameWork.csMensagem" source="" rfc="0" dit="1" />
+    </Design>
+  </Assembly>
+  <Assembly name="Oracle.DataAccess" version="4.112.2.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data" fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Transactions" fullName="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.EnterpriseServices" fullName="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Drawing" fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+    </References>
+  </Assembly>
+</Dependencies>

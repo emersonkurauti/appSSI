@@ -1,0 +1,12 @@
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Release\appRelatorios.exe.config
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Release\appRelatorios.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Release\appRelatorios.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Release\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Release\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.frmGerenciadorRPT.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.frmVisualizador.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.Properties.Resources.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Release\appRelatorios.pdb

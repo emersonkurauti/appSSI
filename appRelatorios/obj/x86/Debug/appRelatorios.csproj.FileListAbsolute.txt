@@ -1,0 +1,91 @@
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.pdb
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.dll
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.dll
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.pdb
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.exe
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe.config
+D:\Projetos\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe.config
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.pdb
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.dll
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.dll
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.pdb
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.exe
+D:\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe.config
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.pdb
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.dll
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.dll
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.pdb
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.pdb
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.exe
+D:\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe.config
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.dll
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.dll
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\NegAEM.pdb
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\bin\Debug\ConexaoBanco.pdb
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\Eng. Soft. II\SGAEM_VS\AutoEletricaMecanicaNissei\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\bin\Debug\appRelatorios.exe.config
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\Estágio Supervisionadao I\SSI\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Debug\appRelatorios.exe.config
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.exe
+C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\bin\Debug\appRelatorios.exe.config
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\bin\Debug\appRelatorios.exe
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\bin\Debug\appRelatorios.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\bin\Debug\KuraFrameWork.dll
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\bin\Debug\KuraFrameWork.pdb
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.exe
+C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.pdb
