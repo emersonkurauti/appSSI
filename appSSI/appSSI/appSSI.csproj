@@ -157,6 +157,16 @@
       <DependentUpon>crTelasC.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Relatorios\Usuarios\crUsuarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUsuarios.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Usuarios\crUsuariosC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUsuariosC.rpt</DependentUpon>
+    </Compile>
     <Compile Include="View\Cadastros\Acoes\frmCadAcoes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +378,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crTelasC.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Usuarios\crUsuarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUsuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Usuarios\crUsuariosC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUsuariosC.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Cadastros\Acoes\frmCadAcoes.resx">
       <DependentUpon>frmCadAcoes.cs</DependentUpon>
     </EmbeddedResource>
@@ -544,7 +562,6 @@
     <Folder Include="Relatorios\Defeitos\" />
     <Folder Include="Relatorios\Modulos\" />
     <Folder Include="Relatorios\Solucoes\" />
-    <Folder Include="Relatorios\Usuarios\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">
