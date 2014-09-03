@@ -1,0 +1,102 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="629" measuredH="417" mockupW="600" mockupH="400">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="29" y="17" w="600" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>22</bottomheight>
+        <close>true</close>
+        <dragger>true</dragger>
+        <maximizeRestore>true</maximizeRestore>
+        <minimize>true</minimize>
+        <text>Cadastro%20de%20V%EDnculos</text>
+        <topheight>26</topheight>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="43" y="363" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SaveIcon%7Cxsmall</icon>
+        <text>Salvar</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="129" y="363" w="-1" h="-1" measuredW="70" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledPlusIcon%7Cxsmall</icon>
+        <text>Novo</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="207" y="363" w="-1" h="-1" measuredW="81" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CircledMinusIcon%7Cxsmall</icon>
+        <text>Excluir</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="296" y="363" w="-1" h="-1" measuredW="83" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UndoIcon%7Cxsmall</icon>
+        <text>Limpar</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="388" y="363" w="-1" h="-1" measuredW="82" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>PowerIcon%7Cxsmall</icon>
+        <text>Fechar</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::DataGrid" x="44" y="53" w="570" h="306" measuredW="166" measuredH="85" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <hasHeader>true</hasHeader>
+        <hLines>false</hLines>
+        <rowHeight>16</rowHeight>
+        <text>Tela%20%5Ev%2C%20A%E7%E3o%20%5Ev%0ALan%E7amentos%2C%20Salvar%0ALan%E7amentos%2C%20Limpar%0ALan%E7amentos%2C%20Confirmar%0ANotas%20Fiscais%2C%20Novo%0A%7B50L%2C%2065L%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="257" y="70" w="30" h="20" measuredW="38" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="257" y="86" w="30" h="20" measuredW="38" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="578" y="69" w="30" h="20" measuredW="38" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="578" y="85" w="30" h="20" measuredW="38" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="257" y="102" w="30" h="20" measuredW="38" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="257" y="118" w="30" h="20" measuredW="38" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="578" y="101" w="30" h="20" measuredW="38" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Button" x="578" y="117" w="30" h="20" measuredW="38" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Cxsmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

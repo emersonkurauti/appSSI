@@ -1,0 +1,79 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="697" measuredH="418" mockupW="680" mockupH="400">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="17" y="18" w="680" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <text>%20%0Ahttp%3A//sistemadesuporteinteligente.com.br</text>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="32" y="106" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="168" y="106" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="308" y="106" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="17" y="210" w="680" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::TextArea" x="32" y="220" w="431" h="77" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Defeito%3A%0A%20%0AErro%20ao%20salvar%20a%20inser%E7%E3o%20de%20um%20registro%20na%20tabela%20XPTO.</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TextArea" x="32" y="303" w="431" h="77" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Solu%E7%E3o%3A%0A%20%0AAtualizar%20para%20%20a%20vers%E3o%203.15.03.A</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="522" y="220" w="160" h="46" measuredW="129" measuredH="32" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ThumbsUpIcon%7Cmedium</icon>
+        <text>Solucionado</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="602" y="266" w="80" h="46" measuredW="54" measuredH="32" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>RightFillTriangleIcon%7Cmedium</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="522" y="266" w="80" h="46" measuredW="54" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LeftFillTriangleIcon%7Cmedium</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="522" y="312" w="160" h="46" measuredW="92" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UndoIcon%7Cmedium</icon>
+        <text>Voltar</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Link" x="32" y="191" w="-1" h="-1" measuredW="125" measuredH="19" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1%BA%20Na%20tela%20tal%20ocorre...</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Link" x="168" y="191" w="-1" h="-1" measuredW="129" measuredH="19" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2%BA%20Na%20tela%20tal%20ocorre...</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Link" x="308" y="191" w="-1" h="-1" measuredW="128" measuredH="19" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>3%BA%20Na%20tela%20tal%20ocorre...</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

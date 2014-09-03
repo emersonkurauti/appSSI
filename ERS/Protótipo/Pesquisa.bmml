@@ -1,0 +1,53 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="697" measuredH="418" mockupW="680" mockupH="400">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="17" y="18" w="680" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0Ahttp%3A//sistemadesuporteinteligente.com.br</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="112" y="125" w="-1" h="-1" measuredW="474" measuredH="31" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>SSI%20-%20Sistema%20de%20Suporte%20Inteligente</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::ComboBox" x="112" y="171" w="178" h="-1" measuredW="79" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sistema</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::ComboBox" x="112" y="202" w="178" h="-1" measuredW="73" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>M%F3dulo</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::ComboBox" x="112" y="234" w="178" h="-1" measuredW="55" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tela</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::ComboBox" x="112" y="265" w="178" h="-1" measuredW="61" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%E7%E3o</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextArea" x="299" y="172" w="287" h="117" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>up</state>
+        <text>Descreva%20aqui%20o%20defeito...</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="112" y="297" w="474" h="43" measuredW="115" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <icon>SearchIcon%7Csmall</icon>
+        <menuIcon>false</menuIcon>
+        <rotation>270</rotation>
+        <size>14</size>
+        <state>up</state>
+        <text>Pesquisar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
