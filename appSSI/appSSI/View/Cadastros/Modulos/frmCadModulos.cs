@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using appRelatorios;
 
 namespace appSSI
 {
@@ -129,6 +130,35 @@ namespace appSSI
                 dgvDados.DataSource = dtDados = objConModulos.dtDados;
             else
                 MessageBox.Show(objConModulos.strMensagemErro);
+        }
+
+        public void ImprimirRelatorio(string strNmRelatorio)
+        {
+            conRelatorio objConRelatorio = new conRelatorio();
+            caRelatorios objCaRelatorios = new caRelatorios();
+
+            objConRelatorio.objCoRelatorios.nmRelatorio = strNmRelatorio;
+
+            if (!objConRelatorio.Select())
+            {
+                MessageBox.Show(objConRelatorio.strMensagemErro);
+                return;
+            }
+
+            appRelatorios.frmGerenciadorRPT frm = new appRelatorios.frmGerenciadorRPT();
+            frm.GerarRelatorio(Convert.ToInt32(objConRelatorio.dtDados.Rows[0][objCaRelatorios.cdRelatorio].ToString()), dtDados);
+        }
+
+        public override void tsmiResultadoSimples_Click(object sender, EventArgs e)
+        {
+            ImprimirRelatorio("crModulos.rpt");
+            base.tsmiResultadoSimples_Click(sender, e);
+        }
+
+        public override void tsmiResultadoCompleto_Click(object sender, EventArgs e)
+        {
+            ImprimirRelatorio("crModulosC.rpt");
+            base.tsmiResultadoCompleto_Click(sender, e);
         }
     }
 }
