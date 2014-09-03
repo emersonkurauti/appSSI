@@ -89,3 +89,15 @@ C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelato
 C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
 C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.exe
 C:\Users\Emerson\Desktop\Recuperação\SSI\appRelatorios\obj\x86\Debug\appRelatorios.pdb
+C:\appSSI\appSSI\appRelatorios\bin\Debug\appRelatorios.exe.config
+C:\appSSI\appSSI\appRelatorios\bin\Debug\appRelatorios.exe
+C:\appSSI\appSSI\appRelatorios\bin\Debug\appRelatorios.pdb
+C:\appSSI\appSSI\appRelatorios\bin\Debug\KuraFrameWork.dll
+C:\appSSI\appSSI\appRelatorios\bin\Debug\KuraFrameWork.pdb
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.frmGerenciadorRPT.resources
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.frmVisualizador.resources
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.Properties.Resources.resources
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.csproj.GenerateResource.Cache
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.exe
+C:\appSSI\appSSI\appRelatorios\obj\x86\Debug\appRelatorios.pdb

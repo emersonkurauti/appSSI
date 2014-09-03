@@ -37,3 +37,16 @@ C:\Users\Emerson\Desktop\Recuperação\SSI\wappSSI\obj\Debug\wappSSI.dll
 C:\Users\Emerson\Desktop\Recuperação\SSI\wappSSI\obj\Debug\wappSSI.pdb
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\appRelatorios.exe
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\appRelatorios.pdb
+C:\appSSI\appSSI\wappSSI\bin\wappSSI.dll
+C:\appSSI\appSSI\wappSSI\bin\wappSSI.pdb
+C:\appSSI\appSSI\wappSSI\bin\appSSI.exe
+C:\appSSI\appSSI\wappSSI\bin\KuraFrameWork.dll
+C:\appSSI\appSSI\wappSSI\bin\appRelatorios.exe
+C:\appSSI\appSSI\wappSSI\bin\LibrarySimetric.dll
+C:\appSSI\appSSI\wappSSI\bin\appSSI.pdb
+C:\appSSI\appSSI\wappSSI\bin\KuraFrameWork.pdb
+C:\appSSI\appSSI\wappSSI\bin\appRelatorios.pdb
+C:\appSSI\appSSI\wappSSI\bin\LibrarySimetric.pdb
+C:\appSSI\appSSI\wappSSI\obj\Debug\wappSSI.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\wappSSI\obj\Debug\wappSSI.dll
+C:\appSSI\appSSI\wappSSI\obj\Debug\wappSSI.pdb

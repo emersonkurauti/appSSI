@@ -20,7 +20,7 @@ namespace appSSI
         public const char cSolucao = 'S';
 
         //Caminho servidor
-        public const string sCaminhoServidor = "C:\\Users\\Emerson\\Documents\\EstagioSupervisionadoI\\SSI\\wappSSI";
+        public const string sCaminhoServidor = "C:\\appSSI\\appSSI\\wappSSI";
 
         //Caminho Imagems Defeito Servidor
         public const string sCaminhoImgDefeitoSvr = "../Imagens/Defeitos/";

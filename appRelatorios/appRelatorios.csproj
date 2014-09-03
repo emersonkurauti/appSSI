@@ -97,6 +97,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RPTPadraoC.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Relatorios\RPTPadrao.cs">
       <AutoGen>True</AutoGen>
