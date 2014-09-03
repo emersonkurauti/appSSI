@@ -283,19 +283,21 @@
             // ucCadDefeitosAcoesTelas
             // 
             this.ucCadDefeitosAcoesTelas.BackColor = System.Drawing.Color.White;
-            this.ucCadDefeitosAcoesTelas.pcdDefeito = 0;
-            this.ucCadDefeitosAcoesTelas.pcdTela = 0;
             this.ucCadDefeitosAcoesTelas.colunaOrdenada = "";
             this.ucCadDefeitosAcoesTelas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucCadDefeitosAcoesTelas.Location = new System.Drawing.Point(3, 3);
             this.ucCadDefeitosAcoesTelas.Name = "ucCadDefeitosAcoesTelas";
             this.ucCadDefeitosAcoesTelas.order = "";
+            this.ucCadDefeitosAcoesTelas.pcdDefeito = 0;
+            this.ucCadDefeitosAcoesTelas.pcdTela = 0;
             this.ucCadDefeitosAcoesTelas.Size = new System.Drawing.Size(727, 183);
             this.ucCadDefeitosAcoesTelas.TabIndex = 0;
             // 
             // frmCadDefeitos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.bImprimeRelCompleto = false;
+            this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(765, 516);
             this.Name = "frmCadDefeitos";
             this.Text = "Cadastro de Defeitos";

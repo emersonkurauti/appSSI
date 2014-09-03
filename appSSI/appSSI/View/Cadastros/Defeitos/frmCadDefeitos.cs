@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using appRelatorios;
 
 namespace appSSI
 {
@@ -183,6 +184,29 @@ namespace appSSI
                         ((ucCadDefeitosAcoesTelas)control).LimparAcoesTelasDefeito();
                     }
             }
+        }
+
+        public void ImprimirRelatorio(string strNmRelatorio)
+        {
+            conRelatorio objConRelatorio = new conRelatorio();
+            caRelatorios objCaRelatorios = new caRelatorios();
+
+            objConRelatorio.objCoRelatorios.nmRelatorio = strNmRelatorio;
+
+            if (!objConRelatorio.Select())
+            {
+                MessageBox.Show(objConRelatorio.strMensagemErro);
+                return;
+            }
+
+            appRelatorios.frmGerenciadorRPT frm = new appRelatorios.frmGerenciadorRPT();
+            frm.GerarRelatorio(Convert.ToInt32(objConRelatorio.dtDados.Rows[0][objCaRelatorios.cdRelatorio].ToString()), dtDados);
+        }
+
+        public override void tsbImprimir_ButtonClick(object sender, EventArgs e)
+        {
+            ImprimirRelatorio("crDefeitos.rpt");
+            base.tsbImprimir_ButtonClick(sender, e);
         }
     }
 }
