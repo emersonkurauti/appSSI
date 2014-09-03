@@ -268,6 +268,8 @@
             // frmCadSolucoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.bImprimeRelCompleto = false;
+            this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(754, 506);
             this.Name = "frmCadSolucoes";
             this.Text = "Cadastro de Soluções";

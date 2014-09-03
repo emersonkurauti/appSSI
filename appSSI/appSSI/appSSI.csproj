@@ -163,6 +163,12 @@
       <DependentUpon>crSistemas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Relatorios\Solucoes\crSolucoes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSolucoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Relatorios\Telas\crTelas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -402,6 +408,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crSistemas.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Solucoes\crSolucoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSolucoes.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Telas\crTelas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crTelas.cs</LastGenOutput>
@@ -591,7 +601,6 @@
     <Folder Include="Arquivos\Imagens\Defeitos\" />
     <Folder Include="Arquivos\Imagens\Solucoes\" />
     <Folder Include="Integracao Task\View\" />
-    <Folder Include="Relatorios\Solucoes\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">
