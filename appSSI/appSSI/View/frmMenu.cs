@@ -57,8 +57,7 @@ namespace appSSI
             System.Windows.Forms.Form form;
 
             tipo = Type.GetType(nmTipoForm);
-            if (tipo == null)
-                tipo = null;
+
             form = (System.Windows.Forms.Form)Activator.CreateInstance(tipo);
             alTelas.Add(form.Text);
         }
@@ -170,7 +169,7 @@ namespace appSSI
             int IndAnterior = 0, pos0 = 0;
 
             for (int i = 0; i < menuTelas.Items.Count; i++)
-                if ((menuTelas.Items[i].Name).Replace("appSSI.", "").Equals(nmTela))
+                if ((menuTelas.Items[i].Name).Replace("appRelatorios.", "").Replace(",appRelatorios", "").Replace("appSSI.", "").Equals(nmTela))
                 {
                     IndAnterior = Convert.ToInt32(alIntSeqTelas[i].ToString());
                     pos0 = i;
@@ -194,13 +193,7 @@ namespace appSSI
 
             for (int i = 0; i < menuTelas.Items.Count; i++)
             {
-                if ((menuTelas.Items[i].Name).Replace("appSSI.", "").Equals(((Form)sender).Name))
-                {
-                    menuTelas.Items.RemoveAt(i);
-                    alIntSeqTelas.RemoveAt(i);
-                }
-
-                if ((menuTelas.Items[i].Name).Replace("appRelatorios.", "").Replace(",appRelatorios", "").Equals(((Form)sender).Name))
+                if ((menuTelas.Items[i].Name).Replace("appRelatorios.", "").Replace(",appRelatorios", "").Replace("appSSI.", "").Equals(((Form)sender).Name))
                 {
                     menuTelas.Items.RemoveAt(i);
                     alIntSeqTelas.RemoveAt(i);
@@ -229,7 +222,7 @@ namespace appSSI
 
             for (int i = 0; i < menuTelas.Items.Count; i++)
             {
-                if ((menuTelas.Items[i].Name).Replace("appSSI.", "").Equals(tipo.Name))
+                if ((menuTelas.Items[i].Name).Replace("appRelatorios.", "").Replace(",appRelatorios", "").Replace("appSSI.", "").Equals(tipo.Name))
                     menuTelas.Items[i].BackColor = Color.LightGray;
                 else
                     menuTelas.Items[i].BackColor = Color.White;
