@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using appRelatorios;
 
 namespace appSSI
 {
@@ -291,6 +292,35 @@ namespace appSSI
                 lblCriticaConfSenha.Text = "Confirmação da senha Ok.";
                 lblCriticaConfSenha.ForeColor = Color.Green;
             }
+        }
+
+        public void ImprimirRelatorio(string strNmRelatorio)
+        {
+            conRelatorio objConRelatorio = new conRelatorio();
+            caRelatorios objCaRelatorios = new caRelatorios();
+
+            objConRelatorio.objCoRelatorios.nmRelatorio = strNmRelatorio;
+
+            if (!objConRelatorio.Select())
+            {
+                MessageBox.Show(objConRelatorio.strMensagemErro);
+                return;
+            }
+
+            appRelatorios.frmGerenciadorRPT frm = new appRelatorios.frmGerenciadorRPT();
+            frm.GerarRelatorio(Convert.ToInt32(objConRelatorio.dtDados.Rows[0][objCaRelatorios.cdRelatorio].ToString()), dtDados);
+        }
+
+        public override void tsmiResultadoSimples_Click(object sender, EventArgs e)
+        {
+            ImprimirRelatorio("crUsuarios.rpt");
+            base.tsmiResultadoSimples_Click(sender, e);
+        }
+
+        public override void tsmiResultadoCompleto_Click(object sender, EventArgs e)
+        {
+            ImprimirRelatorio("crUsuariosC.rpt");
+            base.tsmiResultadoCompleto_Click(sender, e);
         }
     }
 }
