@@ -67,6 +67,12 @@
     <Compile Include="Componentes Visuais\ucImagens.Designer.cs">
       <DependentUpon>ucImagens.cs</DependentUpon>
     </Compile>
+    <Compile Include="Componentes Visuais\ucParametroRelatorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes Visuais\ucParametroRelatorio.Designer.cs">
+      <DependentUpon>ucParametroRelatorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componentes Visuais\ucTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

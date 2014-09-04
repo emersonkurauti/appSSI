@@ -28,80 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucSistemasCons1 = new appSSI.ucSistemasCons();
-            this.ucModulosCons1 = new appSSI.ucModulosCons();
-            this.ucTelasCons1 = new appSSI.ucTelasCons();
-            this.ucAcoesCons1 = new appSSI.ucAcoesCons();
+            this.ucSistemasCons = new appSSI.ucSistemasCons();
+            this.ucModulosCons = new appSSI.ucModulosCons();
+            this.ucTelasCons = new appSSI.ucTelasCons();
+            this.ucAcoesCons = new appSSI.ucAcoesCons();
             this.SuspendLayout();
             // 
-            // ucSistemasCons1
+            // ucSistemasCons
             // 
-            this.ucSistemasCons1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.ucSistemasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucSistemasCons1.bMudouCodigo = false;
-            this.ucSistemasCons1.CampoObrigatorio = false;
-            this.ucSistemasCons1.Location = new System.Drawing.Point(0, 0);
-            this.ucSistemasCons1.MensagemCampoObrigatorio = null;
-            this.ucSistemasCons1.Name = "ucSistemasCons1";
-            this.ucSistemasCons1.Rotulo = "Sistema :";
-            this.ucSistemasCons1.Size = new System.Drawing.Size(436, 36);
-            this.ucSistemasCons1.TabIndex = 0;
-            this.ucSistemasCons1.TelaConsulta = "appSSI.frmConsSistemas";
+            this.ucSistemasCons.bMudouCodigo = false;
+            this.ucSistemasCons.CampoObrigatorio = true;
+            this.ucSistemasCons.Location = new System.Drawing.Point(0, 0);
+            this.ucSistemasCons.MensagemCampoObrigatorio = "Selecione  o sistema.";
+            this.ucSistemasCons.Name = "ucSistemasCons";
+            this.ucSistemasCons.Rotulo = "Sistema :";
+            this.ucSistemasCons.Size = new System.Drawing.Size(436, 36);
+            this.ucSistemasCons.TabIndex = 0;
+            this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";
+            this.ucSistemasCons.AoConsultarRegistro += new KuraFrameWork.Componentes_Visuais.AoConsultarRegistroEventHandler(this.ucSistemasCons_AoConsultarRegistro);
             // 
-            // ucModulosCons1
+            // ucModulosCons
             // 
-            this.ucModulosCons1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.ucModulosCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucModulosCons1.bMudouCodigo = false;
-            this.ucModulosCons1.CampoObrigatorio = false;
-            this.ucModulosCons1.cdSistema = 0;
-            this.ucModulosCons1.Location = new System.Drawing.Point(0, 42);
-            this.ucModulosCons1.MensagemCampoObrigatorio = null;
-            this.ucModulosCons1.Name = "ucModulosCons1";
-            this.ucModulosCons1.Rotulo = "Modulo :";
-            this.ucModulosCons1.Size = new System.Drawing.Size(436, 36);
-            this.ucModulosCons1.TabIndex = 1;
-            this.ucModulosCons1.TelaConsulta = null;
+            this.ucModulosCons.bMudouCodigo = false;
+            this.ucModulosCons.CampoObrigatorio = true;
+            this.ucModulosCons.cdSistema = 0;
+            this.ucModulosCons.Location = new System.Drawing.Point(0, 42);
+            this.ucModulosCons.MensagemCampoObrigatorio = "Selecione o módulo.";
+            this.ucModulosCons.Name = "ucModulosCons";
+            this.ucModulosCons.Rotulo = "Modulo :";
+            this.ucModulosCons.Size = new System.Drawing.Size(436, 36);
+            this.ucModulosCons.TabIndex = 1;
+            this.ucModulosCons.TelaConsulta = null;
+            this.ucModulosCons.AoConsultarRegistro += new KuraFrameWork.Componentes_Visuais.AoConsultarRegistroEventHandler(this.ucModulosCons_AoConsultarRegistro);
             // 
-            // ucTelasCons1
+            // ucTelasCons
             // 
-            this.ucTelasCons1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.ucTelasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucTelasCons1.bMudouCodigo = false;
-            this.ucTelasCons1.CampoObrigatorio = false;
-            this.ucTelasCons1.cdModulo = 0;
-            this.ucTelasCons1.Location = new System.Drawing.Point(0, 84);
-            this.ucTelasCons1.MensagemCampoObrigatorio = null;
-            this.ucTelasCons1.Name = "ucTelasCons1";
-            this.ucTelasCons1.Rotulo = "Tela :";
-            this.ucTelasCons1.Size = new System.Drawing.Size(436, 36);
-            this.ucTelasCons1.TabIndex = 2;
-            this.ucTelasCons1.TelaConsulta = null;
+            this.ucTelasCons.bMudouCodigo = false;
+            this.ucTelasCons.CampoObrigatorio = true;
+            this.ucTelasCons.cdModulo = 0;
+            this.ucTelasCons.Location = new System.Drawing.Point(0, 84);
+            this.ucTelasCons.MensagemCampoObrigatorio = "Selecione a tela.";
+            this.ucTelasCons.Name = "ucTelasCons";
+            this.ucTelasCons.Rotulo = "Tela :";
+            this.ucTelasCons.Size = new System.Drawing.Size(436, 36);
+            this.ucTelasCons.TabIndex = 2;
+            this.ucTelasCons.TelaConsulta = null;
+            this.ucTelasCons.AoConsultarRegistro += new KuraFrameWork.Componentes_Visuais.AoConsultarRegistroEventHandler(this.ucTelasCons_AoConsultarRegistro);
             // 
-            // ucAcoesCons1
+            // ucAcoesCons
             // 
-            this.ucAcoesCons1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.ucAcoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.ucAcoesCons1.bMudouCodigo = false;
-            this.ucAcoesCons1.CampoObrigatorio = false;
-            this.ucAcoesCons1.cdTela = 0;
-            this.ucAcoesCons1.Location = new System.Drawing.Point(0, 126);
-            this.ucAcoesCons1.MensagemCampoObrigatorio = null;
-            this.ucAcoesCons1.Name = "ucAcoesCons1";
-            this.ucAcoesCons1.Rotulo = "Ação :";
-            this.ucAcoesCons1.Size = new System.Drawing.Size(436, 36);
-            this.ucAcoesCons1.TabIndex = 3;
-            this.ucAcoesCons1.TelaConsulta = null;
+            this.ucAcoesCons.bMudouCodigo = false;
+            this.ucAcoesCons.CampoObrigatorio = true;
+            this.ucAcoesCons.cdTela = 0;
+            this.ucAcoesCons.Location = new System.Drawing.Point(0, 126);
+            this.ucAcoesCons.MensagemCampoObrigatorio = "Selecione a ação.";
+            this.ucAcoesCons.Name = "ucAcoesCons";
+            this.ucAcoesCons.Rotulo = "Ação :";
+            this.ucAcoesCons.Size = new System.Drawing.Size(436, 36);
+            this.ucAcoesCons.TabIndex = 3;
+            this.ucAcoesCons.TelaConsulta = null;
+            this.ucAcoesCons.AoConsultarRegistro += new KuraFrameWork.Componentes_Visuais.AoConsultarRegistroEventHandler(this.ucAcoesCons_AoConsultarRegistro);
             // 
             // ucParametroSistemaModuloAcaoTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.ucAcoesCons1);
-            this.Controls.Add(this.ucTelasCons1);
-            this.Controls.Add(this.ucModulosCons1);
-            this.Controls.Add(this.ucSistemasCons1);
+            this.Controls.Add(this.ucAcoesCons);
+            this.Controls.Add(this.ucTelasCons);
+            this.Controls.Add(this.ucModulosCons);
+            this.Controls.Add(this.ucSistemasCons);
             this.Name = "ucParametroSistemaModuloAcaoTela";
             this.Size = new System.Drawing.Size(436, 165);
             this.ResumeLayout(false);
@@ -110,9 +114,9 @@
 
         #endregion
 
-        private ucSistemasCons ucSistemasCons1;
-        private ucModulosCons ucModulosCons1;
-        private ucTelasCons ucTelasCons1;
-        private ucAcoesCons ucAcoesCons1;
+        private ucSistemasCons ucSistemasCons;
+        private ucModulosCons ucModulosCons;
+        private ucTelasCons ucTelasCons;
+        private ucAcoesCons ucAcoesCons;
     }
 }
