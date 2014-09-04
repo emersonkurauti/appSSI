@@ -173,3 +173,4 @@ C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmMenu.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.Properties.Resources.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroSistemaModuloAcaoTela.resources

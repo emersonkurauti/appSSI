@@ -63,6 +63,7 @@
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -144,6 +145,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>crDefeitos.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\crSolucoesConsultasTempoCadastrado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSolucoesConsultasTempoCadastrado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.Designer.cs">
+      <DependentUpon>ucParametroSistemaModuloAcaoTela.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorios\Modulos\crModulos.cs">
       <AutoGen>True</AutoGen>
@@ -396,6 +409,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crDefeitos.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\crSolucoesConsultasTempoCadastrado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSolucoesConsultasTempoCadastrado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.resx">
+      <DependentUpon>ucParametroSistemaModuloAcaoTela.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Modulos\crModulos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crModulos.cs</LastGenOutput>
@@ -601,7 +621,6 @@
     <Folder Include="Arquivos\Imagens\Defeitos\" />
     <Folder Include="Arquivos\Imagens\Solucoes\" />
     <Folder Include="Integracao Task\View\" />
-    <Folder Include="Relatorios\Gerenciador\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">

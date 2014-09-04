@@ -30,19 +30,27 @@ namespace appRelatorios
             get { return _cdRelatorio; }
             set { _cdRelatorio = value; }
         }
-        private int _nmParamRelatorio;
+        private string _nmParamRelatorio = "";
 
-        public int nmParamRelatorio
+        public string nmParamRelatorio
         {
             get { return _nmParamRelatorio; }
             set { _nmParamRelatorio = value; }
         }
-        private int _deSqlParamRelatorio;
+        private string _deSqlParamRelatorio = "";
 
-        public int deSqlParamRelatorio
+        public string deSqlParamRelatorio
         {
             get { return _deSqlParamRelatorio; }
             set { _deSqlParamRelatorio = value; }
+        }
+
+        private string _deComponente = "";
+
+        public string deComponente
+        {
+            get { return _deComponente; }
+            set { _deComponente = value; }
         }
 
         /// <summary>

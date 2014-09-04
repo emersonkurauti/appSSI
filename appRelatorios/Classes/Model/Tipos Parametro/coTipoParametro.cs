@@ -9,19 +9,19 @@ namespace appRelatorios
     {
         private caTipoParametro objCaTipoParametro;
 
-        private int _cdTipoParametro;
+        private int _cdTpParametro;
 
-        public int cdTipoParametro
+        public int cdTpParametro
         {
-            get { return _cdTipoParametro; }
-            set { _cdTipoParametro = value; }
+            get { return _cdTpParametro; }
+            set { _cdTpParametro = value; }
         }
-        private string _deTipoParametro = "";
+        private string _deTpParametro = "";
 
-        public string deTipoParametro
+        public string deTpParametro
         {
-            get { return _deTipoParametro; }
-            set { _deTipoParametro = value; }
+            get { return _deTpParametro; }
+            set { _deTpParametro = value; }
         }
 
         /// <summary>

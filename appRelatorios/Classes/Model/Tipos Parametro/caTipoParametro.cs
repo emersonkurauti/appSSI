@@ -14,17 +14,17 @@ namespace appRelatorios
 
         public string nmCampoChave
         {
-            get { return "cdTipoParametro"; }
+            get { return "cdTpParametro"; }
         }
 
         public string cdTipoParametro
         {
-            get { return "cdTipoParametro"; }
+            get { return "cdTpParametro"; }
         }
 
         public string deTipoParametro
         {
-            get { return "deTipoParametro"; }
+            get { return "deTpParametro"; }
         }
     }
 }

@@ -182,9 +182,9 @@ namespace appRelatorios
 
                 for (int i = 0; i < dtParamRel.Rows.Count; i++)
                 {
-                    objConTipoParametro.objCoTipoParametro.cdTipoParametro = Convert.ToInt32(dtParamRel.Rows[i][objCaParametros.cdTpParametro].ToString());
+                    objConTipoParametro.objCoTipoParametro.cdTpParametro = Convert.ToInt32(dtParamRel.Rows[i][objCaParametros.cdTpParametro].ToString());
 
-                    if (objConTipoParametro.Select())
+                    if (!objConTipoParametro.Select())
                     {
                         MessageBox.Show(objConTipoParametro.strMensagemErro);
                         return;
@@ -192,7 +192,7 @@ namespace appRelatorios
                     
                     strParam = objConTipoParametro.dtDados.Rows[0][objCaTipoParametro.deTipoParametro].ToString();
 
-                    if (strParam != "CHECK")
+                    if ((strParam != "CHECK") && (strParam != "CUSTOM"))
                     {
                         Label lbl = new Label();
                         lbl.Text = dtParamRel.Rows[i][objCaParametros.nmParamRelatorio].ToString();
@@ -261,6 +261,12 @@ namespace appRelatorios
                             lbParam.Height = 250;
                             flpParam.Controls.Add(lbParam);
                             //colocar sql
+                            break;
+                        case "CUSTOM":
+                            Type tipo = Type.GetType(dtParamRel.Rows[i][objCaParametros.deComponente].ToString());
+                            System.Windows.Forms.UserControl ucComponente = (System.Windows.Forms.UserControl)Activator.CreateInstance(tipo);
+                            flpParam.Controls.Add(ucComponente);
+                            
                             break;
                     }
                 }

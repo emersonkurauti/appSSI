@@ -41,5 +41,10 @@ namespace appRelatorios
         {
             get { return "deSqlParamRelatorio"; }
         }
+
+        public string deComponente
+        {
+            get { return "deComponente"; }
+        }
     }
 }

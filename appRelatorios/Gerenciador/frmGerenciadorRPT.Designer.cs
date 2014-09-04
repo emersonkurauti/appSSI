@@ -57,7 +57,7 @@
             this.gbParam.Controls.Add(this.flpParam);
             this.gbParam.Location = new System.Drawing.Point(198, 12);
             this.gbParam.Name = "gbParam";
-            this.gbParam.Size = new System.Drawing.Size(433, 301);
+            this.gbParam.Size = new System.Drawing.Size(550, 301);
             this.gbParam.TabIndex = 1;
             this.gbParam.TabStop = false;
             this.gbParam.Text = "Parâmetros";
@@ -68,7 +68,7 @@
             this.flpParam.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpParam.Location = new System.Drawing.Point(3, 16);
             this.flpParam.Name = "flpParam";
-            this.flpParam.Size = new System.Drawing.Size(427, 282);
+            this.flpParam.Size = new System.Drawing.Size(544, 282);
             this.flpParam.TabIndex = 0;
             // 
             // groupBox2
@@ -85,10 +85,11 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVisualizar.Location = new System.Drawing.Point(201, 316);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(430, 23);
+            this.btnVisualizar.Size = new System.Drawing.Size(547, 23);
             this.btnVisualizar.TabIndex = 3;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
@@ -99,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(643, 349);
+            this.ClientSize = new System.Drawing.Size(760, 349);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbParam);
