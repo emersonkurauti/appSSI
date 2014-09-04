@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace appRelatorios
 {
@@ -45,6 +46,20 @@ namespace appRelatorios
             set { _deCaminhoRelatorio = value; }
         }
 
+        private char _flGerenciado = ' ';
+        public char flGerenciado
+        {
+            get { return _flGerenciado; }
+            set { _flGerenciado = value; }
+        }
+
+        private string _Objeto;
+        public string Objeto
+        {
+            get { return _Objeto; }
+            set { _Objeto = value; }
+        }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -63,6 +78,25 @@ namespace appRelatorios
             base.AtualizaObj();
             objBanco.strCampoChave = objCaRelatorios.nmCampoChave;
             objBanco.strTabela = objCaRelatorios.nmTabela;
+        }
+
+        public bool GerarRelatorio(out DataTable dtDados)
+        {
+            try
+            {
+                AtualizaObj();
+
+                _Objeto = "Select " + _Objeto + " from dual";
+
+                dtDados = objBanco.RetornaDT(_Objeto);
+
+                return true;
+            }
+            catch
+            {
+                dtDados = null;
+                return false;
+            }
         }
     }
 }

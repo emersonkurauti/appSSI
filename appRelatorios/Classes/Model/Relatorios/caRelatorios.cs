@@ -41,5 +41,10 @@ namespace appRelatorios
         {
             get { return "deCaminhoRelatorio"; }
         }
+
+        public string flGerenciado
+        {
+            get { return "flGerenciado"; }
+        }
     }
 }

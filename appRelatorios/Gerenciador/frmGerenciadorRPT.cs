@@ -132,6 +132,8 @@ namespace appRelatorios
             coRelatorios objcoRelatorios = new coRelatorios();
             conRelatorio objConRelatorio = new conRelatorio();
 
+            objConRelatorio.objCoRelatorios.flGerenciado = 'S';
+
             if (!objConRelatorio.Select())
             {
                 MessageBox.Show(objConRelatorio.strMensagemErro);
@@ -270,15 +272,24 @@ namespace appRelatorios
             conRelatorio objConRelatorio = new conRelatorio();
             DataTable dt = new DataTable();
 
-            PreencheParametros(flpParam.Controls);
+            if (lbRPT.SelectedIndex != -1)
+            {
+                PreencheParametros(flpParam.Controls);
 
-            //strProcExec = strNomeProc + "(";
-            //strProcExec = "CALL " + strProcExec.Substring(0, strProcExec.Length - 1) + ")";
+                strProcExec = strNomeProc + "(" + strProcExec.Substring(0, strProcExec.Length - 1) + ")";
 
-            //if (!objConRelatorio.GerarRelatorio(strProcExec, out dt))
-            //    throw new Exception("Erro ao executar consulta do relatório!");
+                objConRelatorio.objCoRelatorios.Objeto = strProcExec;
 
-            GerarRelatorio(dt);
+                if (!objConRelatorio.GerarRelatorio())
+                {
+                    MessageBox.Show(objConRelatorio.strMensagemErro);
+                    return;
+                }
+
+                GerarRelatorio(dt);
+            }
+            else
+                MessageBox.Show(csMensagens.msgRelatorioNaoSelecionado);
         }
 
         private void GerarRelatorio(DataTable dt)

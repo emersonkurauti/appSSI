@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace appRelatorios
 {
@@ -20,6 +21,23 @@ namespace appRelatorios
         public conRelatorio()
         {
             _objCoRelatorios = new coRelatorios();
+        }
+
+        /// <summary>
+        /// Gerar o relatório
+        /// </summary>
+        /// <returns></returns>
+        public bool GerarRelatorio()
+        {
+            _strMensagemErro = "";
+
+            if (!_objCoRelatorios.GerarRelatorio(out _dtDados))
+            {
+                _strMensagemErro = csMensagens.msgErroGerarRelatorio;
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>

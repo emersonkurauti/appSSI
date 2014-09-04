@@ -12,6 +12,8 @@ namespace appRelatorios
         public const string msgErroInserirRelatorio = "Erro ao inserir relatório.";
         public const string msgErroAlterarRelatorio = "Erro ao alterar relatório.";
         public const string msgErroExcluirRelatorio = "Erro ao excluir relatório.";
+        public const string msgErroGerarRelatorio = "Erro ao gerar relatório.";
+        public const string msgRelatorioNaoSelecionado = "Selecione um relatório antes de continuar.";
 
         //Parâmetros
         public const string msgErroSelectParamRelatorio = "Erro ao consultar parâmetros do relatório.";
