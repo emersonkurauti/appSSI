@@ -621,6 +621,7 @@
     <Folder Include="Arquivos\Imagens\Defeitos\" />
     <Folder Include="Arquivos\Imagens\Solucoes\" />
     <Folder Include="Integracao Task\View\" />
+    <Folder Include="Model\Relatorios Gerenciados\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">

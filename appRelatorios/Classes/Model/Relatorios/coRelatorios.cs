@@ -86,7 +86,7 @@ namespace appRelatorios
             {
                 AtualizaObj();
 
-                _Objeto = "Select " + _Objeto + " from dual";
+                _Objeto = "select * from table(" + _Objeto + ")";
 
                 dtDados = objBanco.RetornaDT(_Objeto);
 
