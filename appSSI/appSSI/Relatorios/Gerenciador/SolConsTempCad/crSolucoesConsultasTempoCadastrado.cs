@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace appSSI.Relatorios.Gerenciador {
+namespace appSSI.Relatorios.Gerenciador.SolConsTempCad {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,8 @@ namespace appSSI.Relatorios.Gerenciador {
         
         public override string FullResourceName {
             get {
-                return "appSSI.Relatorios.Gerenciador.crSolucoesConsultasTempoCadastrado.rpt";
+                return "appSSI.Relatorios.Gerenciador.SolConsTempCad.crSolucoesConsultasTempoCadastrado.r" +
+                    "pt";
             }
             set {
                 // Do nothing

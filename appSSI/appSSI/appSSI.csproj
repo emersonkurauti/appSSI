@@ -146,16 +146,17 @@
       <DependentUpon>crDefeitos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Relatorios\Gerenciador\crSolucoesConsultasTempoCadastrado.cs">
+    <Compile Include="Relatorios\Gerenciador\SolConsTempCad\coSlucoesConsultasTempoCadastrado.cs" />
+    <Compile Include="Relatorios\Gerenciador\SolConsTempCad\crSolucoesConsultasTempoCadastrado.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crSolucoesConsultasTempoCadastrado.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.cs">
+    <Compile Include="Relatorios\Gerenciador\SolConsTempCad\ucParametroSistemaModuloAcaoTela.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.Designer.cs">
+    <Compile Include="Relatorios\Gerenciador\SolConsTempCad\ucParametroSistemaModuloAcaoTela.Designer.cs">
       <DependentUpon>ucParametroSistemaModuloAcaoTela.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorios\Modulos\crModulos.cs">
@@ -409,11 +410,11 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crDefeitos.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Gerenciador\crSolucoesConsultasTempoCadastrado.rpt">
+    <EmbeddedResource Include="Relatorios\Gerenciador\SolConsTempCad\crSolucoesConsultasTempoCadastrado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crSolucoesConsultasTempoCadastrado.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Gerenciador\ucParametroSistemaModuloAcaoTela.resx">
+    <EmbeddedResource Include="Relatorios\Gerenciador\SolConsTempCad\ucParametroSistemaModuloAcaoTela.resx">
       <DependentUpon>ucParametroSistemaModuloAcaoTela.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Modulos\crModulos.rpt">
@@ -621,7 +622,6 @@
     <Folder Include="Arquivos\Imagens\Defeitos\" />
     <Folder Include="Arquivos\Imagens\Solucoes\" />
     <Folder Include="Integracao Task\View\" />
-    <Folder Include="Model\Relatorios Gerenciados\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">

@@ -62,6 +62,7 @@ C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucImagens.resources
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucTextBoxMaskCPF.resources
