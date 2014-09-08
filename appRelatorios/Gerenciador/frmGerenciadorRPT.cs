@@ -125,7 +125,7 @@ namespace appRelatorios
                             {
                                 if (control is KuraFrameWork.Componentes_Visuais.ucParametroRelatorio)
                                 {
-                                    strProcExec += ((KuraFrameWork.Componentes_Visuais.ucParametroRelatorio)control).strParamtros + ",";
+                                    strProcExec += ((KuraFrameWork.Componentes_Visuais.ucParametroRelatorio)control).GetParametros() + ",";
                                 }
                             }
                         }
@@ -283,7 +283,6 @@ namespace appRelatorios
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
             conRelatorio objConRelatorio = new conRelatorio();
-            DataTable dt = new DataTable();
 
             if (lbRPT.SelectedIndex != -1)
             {
@@ -299,7 +298,8 @@ namespace appRelatorios
                     return;
                 }
 
-                GerarRelatorio(dt);
+                strProcExec = "";
+                GerarRelatorio(objConRelatorio.dtDados);
             }
             else
                 MessageBox.Show(csMensagens.msgRelatorioNaoSelecionado);

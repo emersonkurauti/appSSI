@@ -22,5 +22,10 @@ namespace KuraFrameWork.Componentes_Visuais
         {
             InitializeComponent();
         }
+
+        public virtual string GetParametros()
+        {
+            return "";
+        }
     }
 }
