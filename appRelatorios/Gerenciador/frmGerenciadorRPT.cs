@@ -121,6 +121,13 @@ namespace appRelatorios
                                     }
                                 }
                             }
+                            else
+                            {
+                                if (control is KuraFrameWork.Componentes_Visuais.ucParametroRelatorio)
+                                {
+                                    strProcExec += ((KuraFrameWork.Componentes_Visuais.ucParametroRelatorio)control).strParamtros + ",";
+                                }
+                            }
                         }
                     }
                 }
