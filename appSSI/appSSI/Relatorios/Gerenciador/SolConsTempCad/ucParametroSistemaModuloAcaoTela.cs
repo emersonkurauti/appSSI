@@ -11,10 +11,10 @@ namespace appSSI
 {
     public partial class ucParametroSistemaModuloAcaoTela : KuraFrameWork.Componentes_Visuais.ucParametroRelatorio
     {
-        private int cdSistema;
-        private int cdModulo;
-        private int cdTela;
-        private int cdAcao;
+        private int cdSistema = 0;
+        private int cdModulo = 0;
+        private int cdTela = 0;
+        private int cdAcao = 0;
 
         public ucParametroSistemaModuloAcaoTela()
         {
@@ -61,10 +61,16 @@ namespace appSSI
         {
             if (ucAcoesCons.bMudouCodigo)
                 cdAcao = Convert.ToInt32(ucAcoesCons.txtCodigo.Text);
-
-            strParamtros = cdSistema.ToString() + ',' + cdModulo.ToString() + ',' + cdTela.ToString() + ',' + cdAcao.ToString();
         }
 
         ///compoente terá os parâmetros montados somente para o gerenciador montar a execução
+
+        public override string GetParametros()
+        {
+            return strParamtros = cdSistema.ToString() + ',' + 
+                                  cdModulo.ToString() + ',' + 
+                                  cdTela.ToString() + ',' + 
+                                  cdAcao.ToString();
+        }
     }
 }
