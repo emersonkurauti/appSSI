@@ -217,6 +217,7 @@ namespace appSSI
 
                 ucSistemasCons.LimparCampos();
 
+                dgvSistemasEmpresas.AutoGenerateColumns = false;
                 dgvSistemasEmpresas.DataSource = dtSistemas;
             }
             else
