@@ -105,6 +105,12 @@ namespace appSSI
 
         public override void tsbExcluir_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Deseja realmente excluir o registro?", "",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question,
+                                MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.No)
+                return;
+
             objConModulos.objCoModulos.cdModulo= Convert.ToInt32(txtCodigo.Text);
             if (!objConModulos.Excluir())
                 MessageBox.Show(objConModulos.strMensagemErro);

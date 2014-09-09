@@ -164,6 +164,12 @@ namespace appSSI
 
         public override void tsbExcluir_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Deseja realmente excluir o registro?", "",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question,
+                                MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.No)
+                return;
+
             objConTelas.objCoTelas.cdTela = Convert.ToInt32(txtCodigo.Text);
             if (!objConTelas.Excluir())
                 MessageBox.Show(objConTelas.strMensagemErro);
