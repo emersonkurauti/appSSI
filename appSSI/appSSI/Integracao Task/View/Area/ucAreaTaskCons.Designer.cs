@@ -1,6 +1,6 @@
 ﻿namespace appSSI
 {
-    partial class ucConsAreaTask
+    partial class ucAreaTaskCons
     {
         /// <summary>
         /// Required designer variable.

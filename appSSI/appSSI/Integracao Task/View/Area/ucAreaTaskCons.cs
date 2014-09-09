@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace appSSI
 {
-    public partial class ucConsAreaTask : KuraFrameWork.Componentes_Visuais.ucConsulta
+    public partial class ucAreaTaskCons : KuraFrameWork.Componentes_Visuais.ucConsulta
     {
         conAreaTask objConAreaTask;
         caAreaTask objCaAreaTask;
@@ -20,7 +20,7 @@ namespace appSSI
             set { _cd_area = value; }
         }
 
-        public ucConsAreaTask()
+        public ucAreaTaskCons()
         {
             InitializeComponent();
             objConAreaTask = new conAreaTask();

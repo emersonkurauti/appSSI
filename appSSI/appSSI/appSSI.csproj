@@ -100,11 +100,11 @@
     <Compile Include="Integracao Task\Classes\Banco\csBancoTask.cs" />
     <Compile Include="Integracao Task\Classes\Model\Integracao\caIntegracaoTask.cs" />
     <Compile Include="Integracao Task\Classes\Model\Integracao\coIntegracaoTask.cs" />
-    <Compile Include="Integracao Task\View\Area\ucConsAreaTask.cs">
+    <Compile Include="Integracao Task\View\Area\ucAreaTaskCons.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Integracao Task\View\Area\ucConsAreaTask.Designer.cs">
-      <DependentUpon>ucConsAreaTask.cs</DependentUpon>
+    <Compile Include="Integracao Task\View\Area\ucAreaTaskCons.Designer.cs">
+      <DependentUpon>ucAreaTaskCons.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Acoes\caAcoes.cs" />
     <Compile Include="Model\Acoes\coAcoes.cs" />
@@ -411,8 +411,8 @@
     <Compile Include="View\Operacaoes\OpDefeitoTelaAcao\OpConsultarDefeitosSimilares.Designer.cs">
       <DependentUpon>OpConsultarDefeitosSimilares.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Integracao Task\View\Area\ucConsAreaTask.resx">
-      <DependentUpon>ucConsAreaTask.cs</DependentUpon>
+    <EmbeddedResource Include="Integracao Task\View\Area\ucAreaTaskCons.resx">
+      <DependentUpon>ucAreaTaskCons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Acoes\crAcoes.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

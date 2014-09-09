@@ -37,6 +37,7 @@
             this.lblAreaTask = new System.Windows.Forms.Label();
             this.txtProjetoTask = new KuraFrameWork.Componentes_Visuais.ucTextBox();
             this.lblProjetoTask = new System.Windows.Forms.Label();
+            this.ucAreaTaskCons = new appSSI.ucAreaTaskCons();
             this.pnFiltro.SuspendLayout();
             this.pnForm.SuspendLayout();
             this.pnBotoes.SuspendLayout();
@@ -105,13 +106,14 @@
             // 
             // gbIntegracao
             // 
+            this.gbIntegracao.Controls.Add(this.ucAreaTaskCons);
             this.gbIntegracao.Controls.Add(this.txtAreaTASK);
             this.gbIntegracao.Controls.Add(this.lblAreaTask);
             this.gbIntegracao.Controls.Add(this.txtProjetoTask);
             this.gbIntegracao.Controls.Add(this.lblProjetoTask);
             this.gbIntegracao.Location = new System.Drawing.Point(3, 99);
             this.gbIntegracao.Name = "gbIntegracao";
-            this.gbIntegracao.Size = new System.Drawing.Size(299, 103);
+            this.gbIntegracao.Size = new System.Drawing.Size(453, 163);
             this.gbIntegracao.TabIndex = 27;
             this.gbIntegracao.TabStop = false;
             this.gbIntegracao.Text = "Dados Integração TASK";
@@ -126,7 +128,7 @@
             this.txtAreaTASK.Location = new System.Drawing.Point(10, 75);
             this.txtAreaTASK.MensagemCampoObrigatorio = "Informe a área para cadastro de OS no TASK.";
             this.txtAreaTASK.Name = "txtAreaTASK";
-            this.txtAreaTASK.Size = new System.Drawing.Size(283, 20);
+            this.txtAreaTASK.Size = new System.Drawing.Size(437, 20);
             this.txtAreaTASK.TabIndex = 3;
             // 
             // lblAreaTask
@@ -148,7 +150,7 @@
             this.txtProjetoTask.Location = new System.Drawing.Point(10, 36);
             this.txtProjetoTask.MensagemCampoObrigatorio = "Informe o projeto para cadastro de OS no TASK.";
             this.txtProjetoTask.Name = "txtProjetoTask";
-            this.txtProjetoTask.Size = new System.Drawing.Size(283, 20);
+            this.txtProjetoTask.Size = new System.Drawing.Size(437, 20);
             this.txtProjetoTask.TabIndex = 1;
             // 
             // lblProjetoTask
@@ -159,6 +161,22 @@
             this.lblProjetoTask.Size = new System.Drawing.Size(75, 13);
             this.lblProjetoTask.TabIndex = 0;
             this.lblProjetoTask.Text = "*Projeto TASK";
+            // 
+            // ucAreaTaskCons
+            // 
+            this.ucAreaTaskCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucAreaTaskCons.bCadastrar = false;
+            this.ucAreaTaskCons.bMudouCodigo = false;
+            this.ucAreaTaskCons.CampoObrigatorio = false;
+            this.ucAreaTaskCons.cd_area = 0;
+            this.ucAreaTaskCons.Location = new System.Drawing.Point(10, 101);
+            this.ucAreaTaskCons.MensagemCampoObrigatorio = "Informe a AREA para integração.";
+            this.ucAreaTaskCons.Name = "ucAreaTaskCons";
+            this.ucAreaTaskCons.Rotulo = "*Área TASK";
+            this.ucAreaTaskCons.Size = new System.Drawing.Size(437, 36);
+            this.ucAreaTaskCons.TabIndex = 4;
+            this.ucAreaTaskCons.TelaConsulta = null;
             // 
             // frmCadSistemas
             // 
@@ -194,5 +212,6 @@
         private System.Windows.Forms.Label lblAreaTask;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtProjetoTask;
         private System.Windows.Forms.Label lblProjetoTask;
+        public ucAreaTaskCons ucAreaTaskCons;
     }
 }

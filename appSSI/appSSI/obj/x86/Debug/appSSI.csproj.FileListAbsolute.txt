@@ -174,4 +174,4 @@ C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
-C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucConsAreaTask.resources
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAreaTaskCons.resources
