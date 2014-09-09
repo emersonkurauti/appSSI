@@ -13,6 +13,17 @@ namespace KuraFrameWork.Componentes_Visuais
 
     public partial class ucConsulta : UserControl
     {
+        private bool _bCadastrar;
+        public bool bCadastrar
+        {
+            get { return _bCadastrar; }
+            set
+            {
+                _bCadastrar = value;
+                SetBCadastrar(value);
+            }
+        }
+
         private string _Rotulo;
         public string Rotulo
         {
@@ -66,6 +77,11 @@ namespace KuraFrameWork.Componentes_Visuais
         public ucConsulta()
         {
             InitializeComponent();
+        }
+
+        public void SetBCadastrar(bool bVisible)
+        {
+            btnCadastrar.Visible = bVisible;
         }
 
         public void LimparCampos()

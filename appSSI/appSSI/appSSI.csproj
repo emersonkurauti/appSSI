@@ -78,8 +78,10 @@
     <Compile Include="Controller\conConsultaDefeitoTelaAcao.cs" />
     <Compile Include="Controller\conDefeitoAcaoTela.cs" />
     <Compile Include="Controller\conIndicadores.cs" />
-    <Compile Include="Integracao Task\Classes\Model\caIntegracaoTask.cs" />
-    <Compile Include="Integracao Task\Classes\Model\coIntegracaoTask.cs" />
+    <Compile Include="Integracao Task\Classes\Controller\conAreaTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\Area\caAreaTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\Area\coAreaTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\Base\csModeloBaseTask.cs" />
     <Compile Include="Integracao Task\Classes\Controller\conIntegracaoTask.cs" />
     <Compile Include="Controller\conParametros.cs" />
     <Compile Include="Controller\conSolucoes.cs" />
@@ -96,7 +98,14 @@
     <Compile Include="Controller\conUsuarios.cs" />
     <Compile Include="Controller\ClasseBase\csControllerBase.cs" />
     <Compile Include="Integracao Task\Classes\Banco\csBancoTask.cs" />
-    <Compile Include="Integracao Task\Classes\Model\csModeloBaseTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\Integracao\caIntegracaoTask.cs" />
+    <Compile Include="Integracao Task\Classes\Model\Integracao\coIntegracaoTask.cs" />
+    <Compile Include="Integracao Task\View\Area\ucConsAreaTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Integracao Task\View\Area\ucConsAreaTask.Designer.cs">
+      <DependentUpon>ucConsAreaTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Acoes\caAcoes.cs" />
     <Compile Include="Model\Acoes\coAcoes.cs" />
     <Compile Include="Model\ClassesBase\csModelBase.cs" />
@@ -402,6 +411,9 @@
     <Compile Include="View\Operacaoes\OpDefeitoTelaAcao\OpConsultarDefeitosSimilares.Designer.cs">
       <DependentUpon>OpConsultarDefeitosSimilares.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Integracao Task\View\Area\ucConsAreaTask.resx">
+      <DependentUpon>ucConsAreaTask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Acoes\crAcoes.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crAcoes.cs</LastGenOutput>
@@ -621,7 +633,12 @@
   <ItemGroup>
     <Folder Include="Arquivos\Imagens\Defeitos\" />
     <Folder Include="Arquivos\Imagens\Solucoes\" />
-    <Folder Include="Integracao Task\View\" />
+    <Folder Include="Integracao Task\Classes\Model\Modulo\" />
+    <Folder Include="Integracao Task\Classes\Model\Projeto\" />
+    <Folder Include="Integracao Task\Classes\Model\Usuario\" />
+    <Folder Include="Integracao Task\View\Modulo\" />
+    <Folder Include="Integracao Task\View\Projeto\" />
+    <Folder Include="Integracao Task\View\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\appRelatorios\appRelatorios.csproj">

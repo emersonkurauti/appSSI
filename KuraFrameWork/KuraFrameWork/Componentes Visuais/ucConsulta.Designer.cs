@@ -120,11 +120,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblRotulo;
         public ucTextBoxNumero txtCodigo;
         public ucTextBox txtDescricao;
         public System.Windows.Forms.Button btnConsultar;
         public System.Windows.Forms.Button btnCadastrar;
+        public System.Windows.Forms.Label lblCodigo;
+        public System.Windows.Forms.Label lblRotulo;
     }
 }

@@ -130,5 +130,7 @@ namespace appSSI
         public const string msgErroAlterarIntegracaoTask = "Erro ao alterar registros no Task.";
         public const string msgErroExcluirIntegracaoTask = "Erro ao excluir registros no Task.";
 
+        //Area TASK
+        public const string msgErroSelectAreaTask = "Erro ao consultar área do Task.";
     }
 }
