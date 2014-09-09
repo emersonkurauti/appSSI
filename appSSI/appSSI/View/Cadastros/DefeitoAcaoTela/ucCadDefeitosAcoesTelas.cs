@@ -82,9 +82,10 @@ namespace appSSI
                 _dtDados = objConDefeitoAcaoTela.dtDados.Copy();
             }
 
-            dgvAcoesTelas.AutoGenerateColumns = false;
             dgvAcoesTelas.DataSource = null;
+            dgvAcoesTelas.AutoGenerateColumns = false;
             dgvAcoesTelas.DataSource = _dtDados;
+            dgvAcoesTelas.Columns[0].Visible = false;
         }
 
         /// <summary>
@@ -133,7 +134,6 @@ namespace appSSI
                         _dtDados.Rows.Add(dr);
 
                         dgvAcoesTelas.AutoGenerateColumns = false;
-                        dgvAcoesTelas.DataSource = null;
                         dgvAcoesTelas.DataSource = _dtDados;
                     }
                     else
