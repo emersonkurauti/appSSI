@@ -233,6 +233,9 @@ namespace appSSI
 
         private void txtLogin_Leave(object sender, EventArgs e)
         {
+            caUsuarios objCaUsuarios = new caUsuarios();
+            conUsuarios objConUsuarios = new conUsuarios();
+
             lblCriticaLogin.Text = "*";
             lblCriticaLogin.ForeColor = Color.Black;
             bLoginValido = true;
@@ -246,8 +249,27 @@ namespace appSSI
             }
             else
             {
-                lblCriticaLogin.Text = "Login válido.";
-                lblCriticaLogin.ForeColor = Color.Green;
+                objConUsuarios.objCoUsuarios.deLogin = txtLogin.Text;
+
+                if (!objConUsuarios.Select())
+                {
+                    MessageBox.Show(objConUsuarios.strMensagemErro);
+                    return;
+                }
+
+                if ((objConUsuarios.dtDados == null) || (objConUsuarios.dtDados.Rows.Count == 0))
+                {
+                    lblCriticaLogin.Text = "Login válido.";
+                    lblCriticaLogin.ForeColor = Color.Green;
+                }
+                else
+                {
+                    lblCriticaLogin.Text = "Login já existente p/ outro usuário.";
+                    lblCriticaLogin.ForeColor = Color.Red;
+                    txtLogin.SelectAll();
+                    bLoginValido = false;
+                }
+
             }
         }
 
