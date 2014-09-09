@@ -84,6 +84,34 @@ namespace appSSI
             get { return _qtd; }
             set { _qtd = value; }
         }
+        private string _pcdSistema;
+
+        public string pcdSistema
+        {
+            get { return _pcdSistema; }
+            set { _pcdSistema = value; }
+        }
+        private string _pcdModulo;
+
+        public string pcdModulo
+        {
+            get { return _pcdModulo; }
+            set { _pcdModulo = value; }
+        }
+        private string _pcdTela;
+
+        public string pcdTela
+        {
+            get { return _pcdTela; }
+            set { _pcdTela = value; }
+        }
+        private string _pcdAcao;
+
+        public string pcdAcao
+        {
+            get { return _pcdAcao; }
+            set { _pcdAcao = value; }
+        }
 
         /// <summary>
         /// Construtor

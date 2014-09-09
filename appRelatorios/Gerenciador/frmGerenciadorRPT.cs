@@ -290,6 +290,7 @@ namespace appRelatorios
 
                 strProcExec = strNomeProc + "(" + strProcExec.Substring(0, strProcExec.Length - 1) + ")";
 
+                objConRelatorio.objCoRelatorios.LimparAtributos();
                 objConRelatorio.objCoRelatorios.Objeto = strProcExec;
 
                 if (!objConRelatorio.GerarRelatorio())
@@ -316,6 +317,8 @@ namespace appRelatorios
                     crDocument.Load(_strPath + "/" + strNomeRpt);
 
                     crDocument.SetDataSource(dt);
+
+                    //Add parametros
 
                     frmVisualizador f = new frmVisualizador();
                     f.carregar(crDocument);
