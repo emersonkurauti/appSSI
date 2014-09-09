@@ -87,9 +87,9 @@
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(61, 13);
+            this.lblDescricao.Size = new System.Drawing.Size(65, 13);
             this.lblDescricao.TabIndex = 6;
-            this.lblDescricao.Text = "Descrição :";
+            this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescricao
             // 
@@ -134,9 +134,9 @@
             this.lblAreaTask.AutoSize = true;
             this.lblAreaTask.Location = new System.Drawing.Point(7, 59);
             this.lblAreaTask.Name = "lblAreaTask";
-            this.lblAreaTask.Size = new System.Drawing.Size(60, 13);
+            this.lblAreaTask.Size = new System.Drawing.Size(64, 13);
             this.lblAreaTask.TabIndex = 2;
-            this.lblAreaTask.Text = "Área TASK";
+            this.lblAreaTask.Text = "*Área TASK";
             // 
             // txtProjetoTask
             // 
@@ -156,9 +156,9 @@
             this.lblProjetoTask.AutoSize = true;
             this.lblProjetoTask.Location = new System.Drawing.Point(7, 20);
             this.lblProjetoTask.Name = "lblProjetoTask";
-            this.lblProjetoTask.Size = new System.Drawing.Size(71, 13);
+            this.lblProjetoTask.Size = new System.Drawing.Size(75, 13);
             this.lblProjetoTask.TabIndex = 0;
-            this.lblProjetoTask.Text = "Projeto TASK";
+            this.lblProjetoTask.Text = "*Projeto TASK";
             // 
             // frmCadSistemas
             // 

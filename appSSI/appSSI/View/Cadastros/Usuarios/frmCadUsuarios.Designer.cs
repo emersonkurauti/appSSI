@@ -51,10 +51,10 @@
             this.cbTpUsuario = new KuraFrameWork.Componentes_Visuais.ucComboBox();
             this.ucEmpresasCons = new appSSI.ucEmpresasCons();
             this.gbIntegracao = new System.Windows.Forms.GroupBox();
-            this.txtProjetoTask = new KuraFrameWork.Componentes_Visuais.ucTextBox();
-            this.lblProjetoTask = new System.Windows.Forms.Label();
             this.txtUsuarioTASK = new KuraFrameWork.Componentes_Visuais.ucTextBox();
             this.lblUsuarioTask = new System.Windows.Forms.Label();
+            this.txtProjetoTask = new KuraFrameWork.Componentes_Visuais.ucTextBox();
+            this.lblProjetoTask = new System.Windows.Forms.Label();
             this.pnFiltro.SuspendLayout();
             this.pnForm.SuspendLayout();
             this.pnBotoes.SuspendLayout();
@@ -122,9 +122,9 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(0, 57);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(41, 13);
+            this.lblNome.Size = new System.Drawing.Size(45, 13);
             this.lblNome.TabIndex = 6;
-            this.lblNome.Text = "Nome :";
+            this.lblNome.Text = "*Nome :";
             // 
             // txtCodigo
             // 
@@ -139,9 +139,9 @@
             this.lblCPF.AutoSize = true;
             this.lblCPF.Location = new System.Drawing.Point(0, 96);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(33, 13);
+            this.lblCPF.Size = new System.Drawing.Size(37, 13);
             this.lblCPF.TabIndex = 9;
-            this.lblCPF.Text = "CPF :";
+            this.lblCPF.Text = "*CPF :";
             // 
             // lblEmail
             // 
@@ -158,9 +158,9 @@
             this.lblTpUsuario.AutoSize = true;
             this.lblTpUsuario.Location = new System.Drawing.Point(440, 96);
             this.lblTpUsuario.Name = "lblTpUsuario";
-            this.lblTpUsuario.Size = new System.Drawing.Size(85, 13);
+            this.lblTpUsuario.Size = new System.Drawing.Size(89, 13);
             this.lblTpUsuario.TabIndex = 13;
-            this.lblTpUsuario.Text = "Tipo do Usuário:";
+            this.lblTpUsuario.Text = "*Tipo do Usuário:";
             // 
             // gbAutenticacao
             // 
@@ -259,27 +259,27 @@
             this.lblConfirmSenha.AutoSize = true;
             this.lblConfirmSenha.Location = new System.Drawing.Point(3, 95);
             this.lblConfirmSenha.Name = "lblConfirmSenha";
-            this.lblConfirmSenha.Size = new System.Drawing.Size(91, 13);
+            this.lblConfirmSenha.Size = new System.Drawing.Size(95, 13);
             this.lblConfirmSenha.TabIndex = 4;
-            this.lblConfirmSenha.Text = "Confirmar Senha :";
+            this.lblConfirmSenha.Text = "*Confirmar Senha :";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Location = new System.Drawing.Point(3, 55);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(44, 13);
+            this.lblSenha.Size = new System.Drawing.Size(48, 13);
             this.lblSenha.TabIndex = 2;
-            this.lblSenha.Text = "Senha :";
+            this.lblSenha.Text = "*Senha :";
             // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Location = new System.Drawing.Point(3, 16);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(39, 13);
+            this.lblLogin.Size = new System.Drawing.Size(43, 13);
             this.lblLogin.TabIndex = 0;
-            this.lblLogin.Text = "Login :";
+            this.lblLogin.Text = "*Login :";
             // 
             // ckAtivo
             // 
@@ -350,7 +350,7 @@
             this.ucEmpresasCons.Location = new System.Drawing.Point(364, 145);
             this.ucEmpresasCons.MensagemCampoObrigatorio = "Informe a empresa.";
             this.ucEmpresasCons.Name = "ucEmpresasCons";
-            this.ucEmpresasCons.Rotulo = "Empresa :";
+            this.ucEmpresasCons.Rotulo = "*Empresa :";
             this.ucEmpresasCons.Size = new System.Drawing.Size(299, 36);
             this.ucEmpresasCons.TabIndex = 25;
             this.ucEmpresasCons.TelaConsulta = null;
@@ -370,28 +370,6 @@
             this.gbIntegracao.TabStop = false;
             this.gbIntegracao.Text = "Dados Integração TASK";
             // 
-            // txtProjetoTask
-            // 
-            this.txtProjetoTask.AceitaEspaco = true;
-            this.txtProjetoTask.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProjetoTask.CampoObrigatorio = true;
-            this.txtProjetoTask.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProjetoTask.Location = new System.Drawing.Point(10, 38);
-            this.txtProjetoTask.MensagemCampoObrigatorio = "Informe o projeto para cadastro de OS no TASK.";
-            this.txtProjetoTask.Name = "txtProjetoTask";
-            this.txtProjetoTask.Size = new System.Drawing.Size(283, 20);
-            this.txtProjetoTask.TabIndex = 1;
-            // 
-            // lblProjetoTask
-            // 
-            this.lblProjetoTask.AutoSize = true;
-            this.lblProjetoTask.Location = new System.Drawing.Point(7, 22);
-            this.lblProjetoTask.Name = "lblProjetoTask";
-            this.lblProjetoTask.Size = new System.Drawing.Size(71, 13);
-            this.lblProjetoTask.TabIndex = 0;
-            this.lblProjetoTask.Text = "Projeto TASK";
-            // 
             // txtUsuarioTASK
             // 
             this.txtUsuarioTASK.AceitaEspaco = true;
@@ -410,9 +388,31 @@
             this.lblUsuarioTask.AutoSize = true;
             this.lblUsuarioTask.Location = new System.Drawing.Point(7, 61);
             this.lblUsuarioTask.Name = "lblUsuarioTask";
-            this.lblUsuarioTask.Size = new System.Drawing.Size(74, 13);
+            this.lblUsuarioTask.Size = new System.Drawing.Size(84, 13);
             this.lblUsuarioTask.TabIndex = 2;
-            this.lblUsuarioTask.Text = "Usuário TASK";
+            this.lblUsuarioTask.Text = "*Usuário TASK :";
+            // 
+            // txtProjetoTask
+            // 
+            this.txtProjetoTask.AceitaEspaco = true;
+            this.txtProjetoTask.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProjetoTask.CampoObrigatorio = true;
+            this.txtProjetoTask.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtProjetoTask.Location = new System.Drawing.Point(10, 38);
+            this.txtProjetoTask.MensagemCampoObrigatorio = "Informe o projeto para cadastro de OS no TASK.";
+            this.txtProjetoTask.Name = "txtProjetoTask";
+            this.txtProjetoTask.Size = new System.Drawing.Size(283, 20);
+            this.txtProjetoTask.TabIndex = 1;
+            // 
+            // lblProjetoTask
+            // 
+            this.lblProjetoTask.AutoSize = true;
+            this.lblProjetoTask.Location = new System.Drawing.Point(7, 22);
+            this.lblProjetoTask.Name = "lblProjetoTask";
+            this.lblProjetoTask.Size = new System.Drawing.Size(81, 13);
+            this.lblProjetoTask.TabIndex = 0;
+            this.lblProjetoTask.Text = "*Projeto TASK :";
             // 
             // frmCadUsuarios
             // 

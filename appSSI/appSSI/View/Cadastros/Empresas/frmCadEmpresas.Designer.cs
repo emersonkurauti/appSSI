@@ -169,36 +169,36 @@
             this.lbNome.AutoSize = true;
             this.lbNome.Location = new System.Drawing.Point(0, 57);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(41, 13);
+            this.lbNome.Size = new System.Drawing.Size(45, 13);
             this.lbNome.TabIndex = 7;
-            this.lbNome.Text = "Nome :";
+            this.lbNome.Text = "*Nome :";
             // 
             // lbNomeFantasia
             // 
             this.lbNomeFantasia.AutoSize = true;
             this.lbNomeFantasia.Location = new System.Drawing.Point(263, 57);
             this.lbNomeFantasia.Name = "lbNomeFantasia";
-            this.lbNomeFantasia.Size = new System.Drawing.Size(81, 13);
+            this.lbNomeFantasia.Size = new System.Drawing.Size(85, 13);
             this.lbNomeFantasia.TabIndex = 9;
-            this.lbNomeFantasia.Text = "Nome fantasia :";
+            this.lbNomeFantasia.Text = "*Nome fantasia :";
             // 
             // lbCNPJ
             // 
             this.lbCNPJ.AutoSize = true;
             this.lbCNPJ.Location = new System.Drawing.Point(0, 96);
             this.lbCNPJ.Name = "lbCNPJ";
-            this.lbCNPJ.Size = new System.Drawing.Size(40, 13);
+            this.lbCNPJ.Size = new System.Drawing.Size(44, 13);
             this.lbCNPJ.TabIndex = 11;
-            this.lbCNPJ.Text = "CNPJ :";
+            this.lbCNPJ.Text = "*CNPJ :";
             // 
             // lbLogradouro
             // 
             this.lbLogradouro.AutoSize = true;
             this.lbLogradouro.Location = new System.Drawing.Point(121, 96);
             this.lbLogradouro.Name = "lbLogradouro";
-            this.lbLogradouro.Size = new System.Drawing.Size(67, 13);
+            this.lbLogradouro.Size = new System.Drawing.Size(71, 13);
             this.lbLogradouro.TabIndex = 14;
-            this.lbLogradouro.Text = "Logradouro :";
+            this.lbLogradouro.Text = "*Logradouro :";
             // 
             // lbNumero
             // 
@@ -206,9 +206,9 @@
             this.lbNumero.AutoSize = true;
             this.lbNumero.Location = new System.Drawing.Point(561, 96);
             this.lbNumero.Name = "lbNumero";
-            this.lbNumero.Size = new System.Drawing.Size(50, 13);
+            this.lbNumero.Size = new System.Drawing.Size(54, 13);
             this.lbNumero.TabIndex = 16;
-            this.lbNumero.Text = "Número :";
+            this.lbNumero.Text = "*Número :";
             // 
             // lbBairro
             // 
@@ -234,9 +234,9 @@
             this.lbCEP.AutoSize = true;
             this.lbCEP.Location = new System.Drawing.Point(455, 135);
             this.lbCEP.Name = "lbCEP";
-            this.lbCEP.Size = new System.Drawing.Size(34, 13);
+            this.lbCEP.Size = new System.Drawing.Size(38, 13);
             this.lbCEP.TabIndex = 21;
-            this.lbCEP.Text = "CEP :";
+            this.lbCEP.Text = "*CEP :";
             // 
             // lbTelefone
             // 
@@ -244,9 +244,9 @@
             this.lbTelefone.AutoSize = true;
             this.lbTelefone.Location = new System.Drawing.Point(561, 135);
             this.lbTelefone.Name = "lbTelefone";
-            this.lbTelefone.Size = new System.Drawing.Size(55, 13);
+            this.lbTelefone.Size = new System.Drawing.Size(59, 13);
             this.lbTelefone.TabIndex = 24;
-            this.lbTelefone.Text = "Telefone :";
+            this.lbTelefone.Text = "*Telefone :";
             // 
             // gbSisEmpresa
             // 

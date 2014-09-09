@@ -92,9 +92,9 @@
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(61, 13);
+            this.lblDescricao.Size = new System.Drawing.Size(65, 13);
             this.lblDescricao.TabIndex = 7;
-            this.lblDescricao.Text = "Descrição :";
+            this.lblDescricao.Text = "*Descrição :";
             // 
             // frmCadAcoes
             // 
@@ -104,6 +104,7 @@
             this.ClientSize = new System.Drawing.Size(684, 367);
             this.Name = "frmCadAcoes";
             this.Text = "Cadastro de Ações";
+            this.TpCorrente = this.tpFormulario;
             this.Load += new System.EventHandler(this.frmCadAcoes_Load);
             this.pnFiltro.ResumeLayout(false);
             this.pnForm.ResumeLayout(false);

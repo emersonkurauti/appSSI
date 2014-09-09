@@ -88,9 +88,9 @@
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(61, 13);
+            this.lblDescricao.Size = new System.Drawing.Size(65, 13);
             this.lblDescricao.TabIndex = 7;
-            this.lblDescricao.Text = "Descrição :";
+            this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescricao
             // 
@@ -134,9 +134,9 @@
             this.lblModuloTASK.AutoSize = true;
             this.lblModuloTASK.Location = new System.Drawing.Point(7, 20);
             this.lblModuloTASK.Name = "lblModuloTASK";
-            this.lblModuloTASK.Size = new System.Drawing.Size(73, 13);
+            this.lblModuloTASK.Size = new System.Drawing.Size(77, 13);
             this.lblModuloTASK.TabIndex = 0;
-            this.lblModuloTASK.Text = "Modulo TASK";
+            this.lblModuloTASK.Text = "*Modulo TASK";
             // 
             // ucSistemasCons
             // 
@@ -146,7 +146,7 @@
             this.ucSistemasCons.Location = new System.Drawing.Point(316, 57);
             this.ucSistemasCons.MensagemCampoObrigatorio = "Selecione o sistema.";
             this.ucSistemasCons.Name = "ucSistemasCons";
-            this.ucSistemasCons.Rotulo = "Sistema :";
+            this.ucSistemasCons.Rotulo = "*Sistema :";
             this.ucSistemasCons.Size = new System.Drawing.Size(347, 36);
             this.ucSistemasCons.TabIndex = 6;
             this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";

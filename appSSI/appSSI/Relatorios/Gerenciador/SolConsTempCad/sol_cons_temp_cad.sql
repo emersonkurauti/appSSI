@@ -74,10 +74,10 @@ begin
      inner join solucoes_defeitos sd on sd.cdDefeito = td.cdDefeito
      inner join solucoes so on so.cdSolucao = sd.cdSolucao
       left join (select count(1) qtd, cdSolucao from indicadores group by cdSolucao) ind on ind.cdSolucao = so.cdSolucao
-     where s.cdSistema = pcdSistema
-       and m.cdModulo  = pcdModulo
-       and t.cdTela    = pcdTela
-       and ac.cdAcao   = pcdAcao;
+     where (s.cdSistema = pcdSistema or pcdSistema = 0)
+       and (m.cdModulo  = pcdModulo or pcdModulo = 0)
+       and (t.cdTela    = pcdTela or pcdTela = 0)
+       and (ac.cdAcao   = pcdAcao or pcdAcao = 0);
     
   return crReult;
 end get_sol_cons_temp_cad;

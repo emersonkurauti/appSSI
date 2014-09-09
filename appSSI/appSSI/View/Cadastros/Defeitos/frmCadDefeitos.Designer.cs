@@ -141,9 +141,9 @@
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(61, 13);
+            this.lblDescricao.Size = new System.Drawing.Size(65, 13);
             this.lblDescricao.TabIndex = 14;
-            this.lblDescricao.Text = "Descrição :";
+            this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescricao
             // 

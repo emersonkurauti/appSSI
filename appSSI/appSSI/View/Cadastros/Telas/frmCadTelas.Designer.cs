@@ -93,9 +93,9 @@
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(61, 13);
+            this.lblDescricao.Size = new System.Drawing.Size(65, 13);
             this.lblDescricao.TabIndex = 7;
-            this.lblDescricao.Text = "Descrição :";
+            this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescicao
             // 
@@ -183,7 +183,9 @@
             // 
             this.ucAcoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucAcoesCons.bMudouCodigo = false;
             this.ucAcoesCons.CampoObrigatorio = false;
+            this.ucAcoesCons.cdTela = 0;
             this.ucAcoesCons.Location = new System.Drawing.Point(6, 19);
             this.ucAcoesCons.MensagemCampoObrigatorio = null;
             this.ucAcoesCons.Name = "ucAcoesCons";
@@ -194,11 +196,13 @@
             // 
             // ucModulosCons
             // 
+            this.ucModulosCons.bMudouCodigo = false;
             this.ucModulosCons.CampoObrigatorio = true;
+            this.ucModulosCons.cdSistema = 0;
             this.ucModulosCons.Location = new System.Drawing.Point(264, 57);
             this.ucModulosCons.MensagemCampoObrigatorio = "Informe o módulo da tela.";
             this.ucModulosCons.Name = "ucModulosCons";
-            this.ucModulosCons.Rotulo = "Modulo :";
+            this.ucModulosCons.Rotulo = "*Modulo :";
             this.ucModulosCons.Size = new System.Drawing.Size(399, 36);
             this.ucModulosCons.TabIndex = 6;
             this.ucModulosCons.TelaConsulta = null;
