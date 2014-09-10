@@ -149,9 +149,9 @@ namespace appSSI
             if (_dtDados.Rows.Count > 0)
             {
                 if (_flDefeito)
-                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells[2];
-                else
                     dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells[3];
+                else
+                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells[2];
                 CarregarDescObs();
             }
         }
