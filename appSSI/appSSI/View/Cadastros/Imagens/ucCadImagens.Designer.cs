@@ -33,6 +33,7 @@
             // 
             // lsvImagens
             // 
+            this.lsvImagens.TabIndex = 0;
             this.lsvImagens.AfterLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.lsvImagens_AfterLabelEdit);
             // 
             // ucCadImagens

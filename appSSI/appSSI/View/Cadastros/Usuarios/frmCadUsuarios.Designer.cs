@@ -81,6 +81,7 @@
             this.pnForm.Controls.Add(this.lblNome);
             this.pnForm.Controls.Add(this.lblCodigo);
             this.pnForm.Size = new System.Drawing.Size(670, 297);
+            this.pnForm.TabIndex = 0;
             this.pnForm.Controls.SetChildIndex(this.lblCodigo, 0);
             this.pnForm.Controls.SetChildIndex(this.lblNome, 0);
             this.pnForm.Controls.SetChildIndex(this.txtCodigo, 0);
@@ -104,6 +105,22 @@
             // 
             this.tcCadastro.Size = new System.Drawing.Size(684, 329);
             // 
+            // btnNext
+            // 
+            this.btnNext.TabIndex = 2;
+            // 
+            // btnLast
+            // 
+            this.btnLast.TabIndex = 3;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.TabIndex = 0;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.TabIndex = 1;
+            // 
             // tpFormulario
             // 
             this.tpFormulario.Size = new System.Drawing.Size(676, 303);
@@ -114,7 +131,7 @@
             this.lblCodigo.Location = new System.Drawing.Point(0, 18);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 4;
+            this.lblCodigo.TabIndex = 12;
             this.lblCodigo.Text = "Código :";
             // 
             // lblNome
@@ -123,7 +140,7 @@
             this.lblNome.Location = new System.Drawing.Point(0, 57);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(45, 13);
-            this.lblNome.TabIndex = 6;
+            this.lblNome.TabIndex = 14;
             this.lblNome.Text = "*Nome :";
             // 
             // txtCodigo
@@ -132,7 +149,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TabIndex = 13;
             // 
             // lblCPF
             // 
@@ -140,7 +157,7 @@
             this.lblCPF.Location = new System.Drawing.Point(0, 96);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(37, 13);
-            this.lblCPF.TabIndex = 9;
+            this.lblCPF.TabIndex = 15;
             this.lblCPF.Text = "*CPF :";
             // 
             // lblEmail
@@ -149,7 +166,7 @@
             this.lblEmail.Location = new System.Drawing.Point(106, 96);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(42, 13);
-            this.lblEmail.TabIndex = 11;
+            this.lblEmail.TabIndex = 16;
             this.lblEmail.Text = "E-Mail :";
             // 
             // lblTpUsuario
@@ -159,7 +176,7 @@
             this.lblTpUsuario.Location = new System.Drawing.Point(440, 96);
             this.lblTpUsuario.Name = "lblTpUsuario";
             this.lblTpUsuario.Size = new System.Drawing.Size(89, 13);
-            this.lblTpUsuario.TabIndex = 13;
+            this.lblTpUsuario.TabIndex = 17;
             this.lblTpUsuario.Text = "*Tipo do Usuário:";
             // 
             // gbAutenticacao
@@ -176,7 +193,7 @@
             this.gbAutenticacao.Location = new System.Drawing.Point(6, 138);
             this.gbAutenticacao.Name = "gbAutenticacao";
             this.gbAutenticacao.Size = new System.Drawing.Size(352, 152);
-            this.gbAutenticacao.TabIndex = 14;
+            this.gbAutenticacao.TabIndex = 9;
             this.gbAutenticacao.TabStop = false;
             this.gbAutenticacao.Text = "Autenticação";
             // 
@@ -187,7 +204,7 @@
             this.lblCriticaSenha.Location = new System.Drawing.Point(159, 75);
             this.lblCriticaSenha.Name = "lblCriticaSenha";
             this.lblCriticaSenha.Size = new System.Drawing.Size(11, 13);
-            this.lblCriticaSenha.TabIndex = 11;
+            this.lblCriticaSenha.TabIndex = 7;
             this.lblCriticaSenha.Text = "*";
             // 
             // txtConfirmacaoSenha
@@ -202,7 +219,7 @@
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
             this.txtConfirmacaoSenha.PasswordChar = '*';
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(147, 20);
-            this.txtConfirmacaoSenha.TabIndex = 10;
+            this.txtConfirmacaoSenha.TabIndex = 2;
             this.txtConfirmacaoSenha.Leave += new System.EventHandler(this.txtConfirmacaoSenha_Leave);
             // 
             // txtSenha
@@ -217,7 +234,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(147, 20);
-            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TabIndex = 1;
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // txtLogin
@@ -231,7 +248,7 @@
             this.txtLogin.MensagemCampoObrigatorio = "Informe o login do usuário.";
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(147, 20);
-            this.txtLogin.TabIndex = 8;
+            this.txtLogin.TabIndex = 0;
             this.txtLogin.Leave += new System.EventHandler(this.txtLogin_Leave);
             // 
             // lblCriticaConfSenha
@@ -241,7 +258,7 @@
             this.lblCriticaConfSenha.Location = new System.Drawing.Point(159, 114);
             this.lblCriticaConfSenha.Name = "lblCriticaConfSenha";
             this.lblCriticaConfSenha.Size = new System.Drawing.Size(11, 13);
-            this.lblCriticaConfSenha.TabIndex = 7;
+            this.lblCriticaConfSenha.TabIndex = 8;
             this.lblCriticaConfSenha.Text = "*";
             // 
             // lblCriticaLogin
@@ -260,7 +277,7 @@
             this.lblConfirmSenha.Location = new System.Drawing.Point(3, 95);
             this.lblConfirmSenha.Name = "lblConfirmSenha";
             this.lblConfirmSenha.Size = new System.Drawing.Size(95, 13);
-            this.lblConfirmSenha.TabIndex = 4;
+            this.lblConfirmSenha.TabIndex = 5;
             this.lblConfirmSenha.Text = "*Confirmar Senha :";
             // 
             // lblSenha
@@ -269,7 +286,7 @@
             this.lblSenha.Location = new System.Drawing.Point(3, 55);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(48, 13);
-            this.lblSenha.TabIndex = 2;
+            this.lblSenha.TabIndex = 4;
             this.lblSenha.Text = "*Senha :";
             // 
             // lblLogin
@@ -278,7 +295,7 @@
             this.lblLogin.Location = new System.Drawing.Point(3, 16);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(43, 13);
-            this.lblLogin.TabIndex = 0;
+            this.lblLogin.TabIndex = 3;
             this.lblLogin.Text = "*Login :";
             // 
             // ckAtivo
@@ -290,7 +307,7 @@
             this.ckAtivo.Location = new System.Drawing.Point(613, 50);
             this.ckAtivo.Name = "ckAtivo";
             this.ckAtivo.Size = new System.Drawing.Size(50, 17);
-            this.ckAtivo.TabIndex = 16;
+            this.ckAtivo.TabIndex = 4;
             this.ckAtivo.Text = "Ativo";
             this.ckAtivo.UseVisualStyleBackColor = true;
             // 
@@ -304,7 +321,7 @@
             this.txtNome.MensagemCampoObrigatorio = "Informe o nome do usuário.";
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(660, 20);
-            this.txtNome.TabIndex = 20;
+            this.txtNome.TabIndex = 5;
             // 
             // txtCPF
             // 
@@ -314,7 +331,7 @@
             this.txtCPF.MensagemCampoObrigatorio = "Informe o CPF do usuário.";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 21;
+            this.txtCPF.TabIndex = 6;
             // 
             // txtEmail
             // 
@@ -327,7 +344,7 @@
             this.txtEmail.MensagemCampoObrigatorio = null;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(328, 20);
-            this.txtEmail.TabIndex = 22;
+            this.txtEmail.TabIndex = 7;
             // 
             // cbTpUsuario
             // 
@@ -339,12 +356,13 @@
             this.cbTpUsuario.MensagemCampoObrigatorio = "Selecione um tipo para o usuário.";
             this.cbTpUsuario.Name = "cbTpUsuario";
             this.cbTpUsuario.Size = new System.Drawing.Size(220, 21);
-            this.cbTpUsuario.TabIndex = 23;
+            this.cbTpUsuario.TabIndex = 8;
             // 
             // ucEmpresasCons
             // 
             this.ucEmpresasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucEmpresasCons.bCadastrar = true;
             this.ucEmpresasCons.bMudouCodigo = false;
             this.ucEmpresasCons.CampoObrigatorio = true;
             this.ucEmpresasCons.Location = new System.Drawing.Point(364, 145);
@@ -352,7 +370,7 @@
             this.ucEmpresasCons.Name = "ucEmpresasCons";
             this.ucEmpresasCons.Rotulo = "*Empresa :";
             this.ucEmpresasCons.Size = new System.Drawing.Size(299, 36);
-            this.ucEmpresasCons.TabIndex = 25;
+            this.ucEmpresasCons.TabIndex = 10;
             this.ucEmpresasCons.TelaConsulta = null;
             // 
             // gbIntegracao
@@ -366,7 +384,7 @@
             this.gbIntegracao.Location = new System.Drawing.Point(364, 187);
             this.gbIntegracao.Name = "gbIntegracao";
             this.gbIntegracao.Size = new System.Drawing.Size(299, 103);
-            this.gbIntegracao.TabIndex = 26;
+            this.gbIntegracao.TabIndex = 11;
             this.gbIntegracao.TabStop = false;
             this.gbIntegracao.Text = "Dados Integração TASK";
             // 
@@ -381,7 +399,7 @@
             this.txtUsuarioTASK.MensagemCampoObrigatorio = "Informe o usuário para cadastro de OS no TASK.";
             this.txtUsuarioTASK.Name = "txtUsuarioTASK";
             this.txtUsuarioTASK.Size = new System.Drawing.Size(283, 20);
-            this.txtUsuarioTASK.TabIndex = 3;
+            this.txtUsuarioTASK.TabIndex = 1;
             // 
             // lblUsuarioTask
             // 
@@ -389,7 +407,7 @@
             this.lblUsuarioTask.Location = new System.Drawing.Point(7, 61);
             this.lblUsuarioTask.Name = "lblUsuarioTask";
             this.lblUsuarioTask.Size = new System.Drawing.Size(84, 13);
-            this.lblUsuarioTask.TabIndex = 2;
+            this.lblUsuarioTask.TabIndex = 3;
             this.lblUsuarioTask.Text = "*Usuário TASK :";
             // 
             // txtProjetoTask
@@ -403,7 +421,7 @@
             this.txtProjetoTask.MensagemCampoObrigatorio = "Informe o projeto para cadastro de OS no TASK.";
             this.txtProjetoTask.Name = "txtProjetoTask";
             this.txtProjetoTask.Size = new System.Drawing.Size(283, 20);
-            this.txtProjetoTask.TabIndex = 1;
+            this.txtProjetoTask.TabIndex = 0;
             // 
             // lblProjetoTask
             // 
@@ -411,7 +429,7 @@
             this.lblProjetoTask.Location = new System.Drawing.Point(7, 22);
             this.lblProjetoTask.Name = "lblProjetoTask";
             this.lblProjetoTask.Size = new System.Drawing.Size(81, 13);
-            this.lblProjetoTask.TabIndex = 0;
+            this.lblProjetoTask.TabIndex = 2;
             this.lblProjetoTask.Text = "*Projeto TASK :";
             // 
             // frmCadUsuarios

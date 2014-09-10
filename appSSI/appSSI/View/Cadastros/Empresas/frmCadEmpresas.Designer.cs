@@ -87,6 +87,7 @@
             this.pnForm.Controls.Add(this.lbNome);
             this.pnForm.Controls.Add(this.lbCodigo);
             this.pnForm.Controls.Add(this.txtCodigo);
+            this.pnForm.TabIndex = 0;
             this.pnForm.Controls.SetChildIndex(this.txtCodigo, 0);
             this.pnForm.Controls.SetChildIndex(this.lbCodigo, 0);
             this.pnForm.Controls.SetChildIndex(this.lbNome, 0);
@@ -117,6 +118,22 @@
             // 
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // btnNext
+            // 
+            this.btnNext.TabIndex = 2;
+            // 
+            // btnLast
+            // 
+            this.btnLast.TabIndex = 3;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.TabIndex = 0;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.TabIndex = 1;
+            // 
             // dgvSistemasEmpresas
             // 
             this.dgvSistemasEmpresas.AllowUserToAddRows = false;
@@ -129,7 +146,7 @@
             this.dgvSistemasEmpresas.Name = "dgvSistemasEmpresas";
             this.dgvSistemasEmpresas.ReadOnly = true;
             this.dgvSistemasEmpresas.Size = new System.Drawing.Size(391, 82);
-            this.dgvSistemasEmpresas.TabIndex = 5;
+            this.dgvSistemasEmpresas.TabIndex = 3;
             // 
             // cdSistema
             // 
@@ -153,7 +170,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 4;
+            this.txtCodigo.TabIndex = 15;
             // 
             // lbCodigo
             // 
@@ -161,7 +178,7 @@
             this.lbCodigo.Location = new System.Drawing.Point(0, 18);
             this.lbCodigo.Name = "lbCodigo";
             this.lbCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lbCodigo.TabIndex = 5;
+            this.lbCodigo.TabIndex = 14;
             this.lbCodigo.Text = "Código :";
             // 
             // lbNome
@@ -170,7 +187,7 @@
             this.lbNome.Location = new System.Drawing.Point(0, 57);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(45, 13);
-            this.lbNome.TabIndex = 7;
+            this.lbNome.TabIndex = 16;
             this.lbNome.Text = "*Nome :";
             // 
             // lbNomeFantasia
@@ -179,7 +196,7 @@
             this.lbNomeFantasia.Location = new System.Drawing.Point(263, 57);
             this.lbNomeFantasia.Name = "lbNomeFantasia";
             this.lbNomeFantasia.Size = new System.Drawing.Size(85, 13);
-            this.lbNomeFantasia.TabIndex = 9;
+            this.lbNomeFantasia.TabIndex = 17;
             this.lbNomeFantasia.Text = "*Nome fantasia :";
             // 
             // lbCNPJ
@@ -188,7 +205,7 @@
             this.lbCNPJ.Location = new System.Drawing.Point(0, 96);
             this.lbCNPJ.Name = "lbCNPJ";
             this.lbCNPJ.Size = new System.Drawing.Size(44, 13);
-            this.lbCNPJ.TabIndex = 11;
+            this.lbCNPJ.TabIndex = 18;
             this.lbCNPJ.Text = "*CNPJ :";
             // 
             // lbLogradouro
@@ -197,7 +214,7 @@
             this.lbLogradouro.Location = new System.Drawing.Point(121, 96);
             this.lbLogradouro.Name = "lbLogradouro";
             this.lbLogradouro.Size = new System.Drawing.Size(71, 13);
-            this.lbLogradouro.TabIndex = 14;
+            this.lbLogradouro.TabIndex = 19;
             this.lbLogradouro.Text = "*Logradouro :";
             // 
             // lbNumero
@@ -207,7 +224,7 @@
             this.lbNumero.Location = new System.Drawing.Point(561, 96);
             this.lbNumero.Name = "lbNumero";
             this.lbNumero.Size = new System.Drawing.Size(54, 13);
-            this.lbNumero.TabIndex = 16;
+            this.lbNumero.TabIndex = 22;
             this.lbNumero.Text = "*Número :";
             // 
             // lbBairro
@@ -216,7 +233,7 @@
             this.lbBairro.Location = new System.Drawing.Point(0, 135);
             this.lbBairro.Name = "lbBairro";
             this.lbBairro.Size = new System.Drawing.Size(40, 13);
-            this.lbBairro.TabIndex = 18;
+            this.lbBairro.TabIndex = 24;
             this.lbBairro.Text = "Bairro :";
             // 
             // lbComplemento
@@ -245,7 +262,7 @@
             this.lbTelefone.Location = new System.Drawing.Point(561, 135);
             this.lbTelefone.Name = "lbTelefone";
             this.lbTelefone.Size = new System.Drawing.Size(59, 13);
-            this.lbTelefone.TabIndex = 24;
+            this.lbTelefone.TabIndex = 23;
             this.lbTelefone.Text = "*Telefone :";
             // 
             // gbSisEmpresa
@@ -259,12 +276,13 @@
             this.gbSisEmpresa.Location = new System.Drawing.Point(6, 177);
             this.gbSisEmpresa.Name = "gbSisEmpresa";
             this.gbSisEmpresa.Size = new System.Drawing.Size(657, 104);
-            this.gbSisEmpresa.TabIndex = 26;
+            this.gbSisEmpresa.TabIndex = 13;
             this.gbSisEmpresa.TabStop = false;
             this.gbSisEmpresa.Text = "Sistemas da Empresa";
             // 
             // ucSistemasCons
             // 
+            this.ucSistemasCons.bCadastrar = true;
             this.ucSistemasCons.bMudouCodigo = false;
             this.ucSistemasCons.CampoObrigatorio = false;
             this.ucSistemasCons.Location = new System.Drawing.Point(6, 16);
@@ -272,7 +290,7 @@
             this.ucSistemasCons.Name = "ucSistemasCons";
             this.ucSistemasCons.Rotulo = "Sistema :";
             this.ucSistemasCons.Size = new System.Drawing.Size(248, 36);
-            this.ucSistemasCons.TabIndex = 6;
+            this.ucSistemasCons.TabIndex = 0;
             this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";
             // 
             // btnRemove
@@ -281,7 +299,7 @@
             this.btnRemove.Location = new System.Drawing.Point(133, 59);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(121, 39);
-            this.btnRemove.TabIndex = 4;
+            this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "Remover";
             this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -293,7 +311,7 @@
             this.btnAdd.Location = new System.Drawing.Point(6, 59);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(121, 39);
-            this.btnAdd.TabIndex = 3;
+            this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -308,7 +326,7 @@
             this.txtNome.MensagemCampoObrigatorio = "Informe o nome da empresa.";
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(257, 20);
-            this.txtNome.TabIndex = 32;
+            this.txtNome.TabIndex = 4;
             // 
             // txtNomeFantasia
             // 
@@ -321,7 +339,7 @@
             this.txtNomeFantasia.MensagemCampoObrigatorio = "Informe o nome fantasia da empresa.";
             this.txtNomeFantasia.Name = "txtNomeFantasia";
             this.txtNomeFantasia.Size = new System.Drawing.Size(397, 20);
-            this.txtNomeFantasia.TabIndex = 33;
+            this.txtNomeFantasia.TabIndex = 5;
             // 
             // txtCNPJ
             // 
@@ -332,7 +350,7 @@
             this.txtCNPJ.MinimumSize = new System.Drawing.Size(100, 20);
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Size = new System.Drawing.Size(115, 20);
-            this.txtCNPJ.TabIndex = 34;
+            this.txtCNPJ.TabIndex = 6;
             // 
             // txtLogradouro
             // 
@@ -345,7 +363,7 @@
             this.txtLogradouro.MensagemCampoObrigatorio = "Informe o logradouro da empresa.";
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(434, 20);
-            this.txtLogradouro.TabIndex = 35;
+            this.txtLogradouro.TabIndex = 7;
             // 
             // txtNuLogradouro
             // 
@@ -356,7 +374,7 @@
             this.txtNuLogradouro.MensagemCampoObrigatorio = "Informe o número do endereço da empresa.";
             this.txtNuLogradouro.Name = "txtNuLogradouro";
             this.txtNuLogradouro.Size = new System.Drawing.Size(99, 20);
-            this.txtNuLogradouro.TabIndex = 37;
+            this.txtNuLogradouro.TabIndex = 8;
             // 
             // txtBairro
             // 
@@ -367,7 +385,7 @@
             this.txtBairro.MensagemCampoObrigatorio = null;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(257, 20);
-            this.txtBairro.TabIndex = 38;
+            this.txtBairro.TabIndex = 9;
             // 
             // txtComplemento
             // 
@@ -380,7 +398,7 @@
             this.txtComplemento.MensagemCampoObrigatorio = null;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(186, 20);
-            this.txtComplemento.TabIndex = 39;
+            this.txtComplemento.TabIndex = 10;
             // 
             // txtCEP
             // 
@@ -391,7 +409,7 @@
             this.txtCEP.MensagemCampoObrigatorio = "Informe o CEP da empresa.";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(100, 20);
-            this.txtCEP.TabIndex = 40;
+            this.txtCEP.TabIndex = 11;
             // 
             // txtTelefone
             // 
@@ -402,7 +420,7 @@
             this.txtTelefone.MensagemCampoObrigatorio = "Informe o telefone da empresa.";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(99, 20);
-            this.txtTelefone.TabIndex = 41;
+            this.txtTelefone.TabIndex = 12;
             // 
             // frmCadEmpresas
             // 

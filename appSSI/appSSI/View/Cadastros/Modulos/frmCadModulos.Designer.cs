@@ -52,6 +52,7 @@
             this.pnForm.Controls.Add(this.ucSistemasCons);
             this.pnForm.Controls.Add(this.txtCodigo);
             this.pnForm.Controls.Add(this.lblCodigo);
+            this.pnForm.TabIndex = 0;
             this.pnForm.Controls.SetChildIndex(this.btnLast, 0);
             this.pnForm.Controls.SetChildIndex(this.btnPrevious, 0);
             this.pnForm.Controls.SetChildIndex(this.btnNext, 0);
@@ -63,13 +64,29 @@
             this.pnForm.Controls.SetChildIndex(this.txtDescricao, 0);
             this.pnForm.Controls.SetChildIndex(this.gbIntegracao, 0);
             // 
+            // btnNext
+            // 
+            this.btnNext.TabIndex = 2;
+            // 
+            // btnLast
+            // 
+            this.btnLast.TabIndex = 3;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.TabIndex = 0;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.TabIndex = 1;
+            // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(0, 18);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 4;
+            this.lblCodigo.TabIndex = 7;
             this.lblCodigo.Text = "Código :";
             // 
             // txtCodigo
@@ -81,7 +98,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 5;
+            this.txtCodigo.TabIndex = 8;
             // 
             // lblDescricao
             // 
@@ -89,7 +106,7 @@
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(65, 13);
-            this.lblDescricao.TabIndex = 7;
+            this.lblDescricao.TabIndex = 9;
             this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescricao
@@ -103,7 +120,7 @@
             this.txtDescricao.MensagemCampoObrigatorio = "Informe a descrição.";
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(307, 20);
-            this.txtDescricao.TabIndex = 8;
+            this.txtDescricao.TabIndex = 4;
             // 
             // gbIntegracao
             // 
@@ -112,7 +129,7 @@
             this.gbIntegracao.Location = new System.Drawing.Point(3, 99);
             this.gbIntegracao.Name = "gbIntegracao";
             this.gbIntegracao.Size = new System.Drawing.Size(299, 64);
-            this.gbIntegracao.TabIndex = 28;
+            this.gbIntegracao.TabIndex = 6;
             this.gbIntegracao.TabStop = false;
             this.gbIntegracao.Text = "Dados Integração TASK";
             // 
@@ -127,7 +144,7 @@
             this.txtModuloTASK.MensagemCampoObrigatorio = "Informe o modulo para cadastro de OS no TASK.";
             this.txtModuloTASK.Name = "txtModuloTASK";
             this.txtModuloTASK.Size = new System.Drawing.Size(283, 20);
-            this.txtModuloTASK.TabIndex = 1;
+            this.txtModuloTASK.TabIndex = 0;
             // 
             // lblModuloTASK
             // 
@@ -135,12 +152,13 @@
             this.lblModuloTASK.Location = new System.Drawing.Point(7, 20);
             this.lblModuloTASK.Name = "lblModuloTASK";
             this.lblModuloTASK.Size = new System.Drawing.Size(77, 13);
-            this.lblModuloTASK.TabIndex = 0;
+            this.lblModuloTASK.TabIndex = 1;
             this.lblModuloTASK.Text = "*Modulo TASK";
             // 
             // ucSistemasCons
             // 
             this.ucSistemasCons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSistemasCons.bCadastrar = true;
             this.ucSistemasCons.bMudouCodigo = false;
             this.ucSistemasCons.CampoObrigatorio = true;
             this.ucSistemasCons.Location = new System.Drawing.Point(316, 57);
@@ -148,7 +166,7 @@
             this.ucSistemasCons.Name = "ucSistemasCons";
             this.ucSistemasCons.Rotulo = "*Sistema :";
             this.ucSistemasCons.Size = new System.Drawing.Size(347, 36);
-            this.ucSistemasCons.TabIndex = 6;
+            this.ucSistemasCons.TabIndex = 5;
             this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";
             // 
             // frmCadModulos

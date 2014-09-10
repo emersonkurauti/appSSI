@@ -64,7 +64,7 @@
             this.dgvSolucoesDefeitos.Name = "dgvSolucoesDefeitos";
             this.dgvSolucoesDefeitos.ReadOnly = true;
             this.dgvSolucoesDefeitos.Size = new System.Drawing.Size(377, 142);
-            this.dgvSolucoesDefeitos.TabIndex = 0;
+            this.dgvSolucoesDefeitos.TabIndex = 4;
             this.dgvSolucoesDefeitos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSolucoesDefeitos_CellClick);
             this.dgvSolucoesDefeitos.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSolucoesDefeitos_ColumnHeaderMouseClick);
             // 
@@ -108,7 +108,7 @@
             this.btnAdd.Location = new System.Drawing.Point(3, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(89, 36);
-            this.btnAdd.TabIndex = 5;
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             this.btnRemove.Location = new System.Drawing.Point(98, 3);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(89, 36);
-            this.btnRemove.TabIndex = 6;
+            this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Remover";
             this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -137,7 +137,7 @@
             this.tcDescricaoObs.Name = "tcDescricaoObs";
             this.tcDescricaoObs.SelectedIndex = 0;
             this.tcDescricaoObs.Size = new System.Drawing.Size(336, 142);
-            this.tcDescricaoObs.TabIndex = 7;
+            this.tcDescricaoObs.TabIndex = 5;
             // 
             // tpDescricao
             // 
@@ -187,26 +187,30 @@
             // 
             this.ucDefeitosCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucDefeitosCons.bCadastrar = true;
+            this.ucDefeitosCons.bMudouCodigo = false;
             this.ucDefeitosCons.CampoObrigatorio = false;
             this.ucDefeitosCons.Location = new System.Drawing.Point(193, 3);
             this.ucDefeitosCons.MensagemCampoObrigatorio = null;
             this.ucDefeitosCons.Name = "ucDefeitosCons";
             this.ucDefeitosCons.Rotulo = "Descrição do Defeito :";
             this.ucDefeitosCons.Size = new System.Drawing.Size(529, 36);
-            this.ucDefeitosCons.TabIndex = 8;
+            this.ucDefeitosCons.TabIndex = 1;
             this.ucDefeitosCons.TelaConsulta = null;
             // 
             // ucSolucoesCons
             // 
             this.ucSolucoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSolucoesCons.bCadastrar = true;
+            this.ucSolucoesCons.bMudouCodigo = false;
             this.ucSolucoesCons.CampoObrigatorio = false;
             this.ucSolucoesCons.Location = new System.Drawing.Point(193, 3);
             this.ucSolucoesCons.MensagemCampoObrigatorio = null;
             this.ucSolucoesCons.Name = "ucSolucoesCons";
             this.ucSolucoesCons.Rotulo = "Descrição da Solução :";
-            this.ucSolucoesCons.Size = new System.Drawing.Size(529, 36);
-            this.ucSolucoesCons.TabIndex = 9;
+            this.ucSolucoesCons.Size = new System.Drawing.Size(532, 36);
+            this.ucSolucoesCons.TabIndex = 0;
             this.ucSolucoesCons.TelaConsulta = null;
             // 
             // ucCadSolucoesDefeitos

@@ -66,6 +66,7 @@
             this.pnForm.Controls.Add(this.lblCodigo);
             this.pnForm.Controls.Add(this.tcImagemSolucao);
             this.pnForm.Size = new System.Drawing.Size(740, 427);
+            this.pnForm.TabIndex = 0;
             this.pnForm.Controls.SetChildIndex(this.btnPrevious, 0);
             this.pnForm.Controls.SetChildIndex(this.btnFirst, 0);
             this.pnForm.Controls.SetChildIndex(this.btnLast, 0);
@@ -96,18 +97,22 @@
             // btnNext
             // 
             this.btnNext.Location = new System.Drawing.Point(669, 3);
+            this.btnNext.TabIndex = 2;
             // 
             // btnLast
             // 
             this.btnLast.Location = new System.Drawing.Point(704, 3);
+            this.btnLast.TabIndex = 3;
             // 
             // btnFirst
             // 
             this.btnFirst.Location = new System.Drawing.Point(599, 3);
+            this.btnFirst.TabIndex = 0;
             // 
             // btnPrevious
             // 
             this.btnPrevious.Location = new System.Drawing.Point(634, 3);
+            this.btnPrevious.TabIndex = 1;
             // 
             // tpFormulario
             // 
@@ -122,7 +127,7 @@
             this.gbNivel.Location = new System.Drawing.Point(495, 34);
             this.gbNivel.Name = "gbNivel";
             this.gbNivel.Size = new System.Drawing.Size(238, 36);
-            this.gbNivel.TabIndex = 23;
+            this.gbNivel.TabIndex = 4;
             this.gbNivel.TabStop = false;
             this.gbNivel.Text = "Nível";
             // 
@@ -172,7 +177,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescricao.Size = new System.Drawing.Size(730, 138);
-            this.txtDescricao.TabIndex = 22;
+            this.txtDescricao.TabIndex = 5;
             // 
             // lblDescricao
             // 
@@ -180,7 +185,7 @@
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(65, 13);
-            this.lblDescricao.TabIndex = 21;
+            this.lblDescricao.TabIndex = 9;
             this.lblDescricao.Text = "*Descrição :";
             // 
             // txtCodigo
@@ -192,7 +197,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 20;
+            this.txtCodigo.TabIndex = 8;
             // 
             // lblCodigo
             // 
@@ -200,7 +205,7 @@
             this.lblCodigo.Location = new System.Drawing.Point(0, 18);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 19;
+            this.lblCodigo.TabIndex = 7;
             this.lblCodigo.Text = "Código :";
             // 
             // tcImagemSolucao
@@ -213,7 +218,7 @@
             this.tcImagemSolucao.Name = "tcImagemSolucao";
             this.tcImagemSolucao.SelectedIndex = 0;
             this.tcImagemSolucao.Size = new System.Drawing.Size(735, 205);
-            this.tcImagemSolucao.TabIndex = 25;
+            this.tcImagemSolucao.TabIndex = 6;
             // 
             // tpImagens
             // 
@@ -235,7 +240,7 @@
             this.ucCadImagens.Location = new System.Drawing.Point(3, 3);
             this.ucCadImagens.Name = "ucCadImagens";
             this.ucCadImagens.Size = new System.Drawing.Size(721, 173);
-            this.ucCadImagens.TabIndex = 18;
+            this.ucCadImagens.TabIndex = 0;
             // 
             // tpDefeitos
             // 

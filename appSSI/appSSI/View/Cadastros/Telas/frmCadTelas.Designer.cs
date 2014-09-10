@@ -57,6 +57,7 @@
             this.pnForm.Controls.Add(this.ucModulosCons);
             this.pnForm.Controls.Add(this.txtCodigo);
             this.pnForm.Controls.Add(this.lblCodigo);
+            this.pnForm.TabIndex = 0;
             this.pnForm.Controls.SetChildIndex(this.btnLast, 0);
             this.pnForm.Controls.SetChildIndex(this.btnPrevious, 0);
             this.pnForm.Controls.SetChildIndex(this.btnNext, 0);
@@ -68,13 +69,29 @@
             this.pnForm.Controls.SetChildIndex(this.txtDescicao, 0);
             this.pnForm.Controls.SetChildIndex(this.gbAcoes, 0);
             // 
+            // btnNext
+            // 
+            this.btnNext.TabIndex = 2;
+            // 
+            // btnLast
+            // 
+            this.btnLast.TabIndex = 3;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.TabIndex = 0;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.TabIndex = 1;
+            // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(0, 18);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(70, 13);
-            this.lblCodigo.TabIndex = 4;
+            this.lblCodigo.TabIndex = 7;
             this.lblCodigo.Text = "Código Tela :";
             // 
             // txtCodigo
@@ -86,7 +103,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 5;
+            this.txtCodigo.TabIndex = 8;
             // 
             // lblDescricao
             // 
@@ -94,7 +111,7 @@
             this.lblDescricao.Location = new System.Drawing.Point(0, 57);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(65, 13);
-            this.lblDescricao.TabIndex = 7;
+            this.lblDescricao.TabIndex = 9;
             this.lblDescricao.Text = "*Descrição :";
             // 
             // txtDescicao
@@ -106,7 +123,7 @@
             this.txtDescicao.MensagemCampoObrigatorio = "Informe a descrição da tela.";
             this.txtDescicao.Name = "txtDescicao";
             this.txtDescicao.Size = new System.Drawing.Size(255, 20);
-            this.txtDescicao.TabIndex = 8;
+            this.txtDescicao.TabIndex = 4;
             // 
             // gbAcoes
             // 
@@ -119,7 +136,7 @@
             this.gbAcoes.Location = new System.Drawing.Point(3, 99);
             this.gbAcoes.Name = "gbAcoes";
             this.gbAcoes.Size = new System.Drawing.Size(660, 182);
-            this.gbAcoes.TabIndex = 9;
+            this.gbAcoes.TabIndex = 6;
             this.gbAcoes.TabStop = false;
             this.gbAcoes.Text = "Ações da Tela";
             // 
@@ -137,7 +154,7 @@
             this.dgvAcao.Name = "dgvAcao";
             this.dgvAcao.ReadOnly = true;
             this.dgvAcao.Size = new System.Drawing.Size(393, 157);
-            this.dgvAcao.TabIndex = 7;
+            this.dgvAcao.TabIndex = 3;
             // 
             // cdAcao
             // 
@@ -161,7 +178,7 @@
             this.txtRemove.Location = new System.Drawing.Point(134, 61);
             this.txtRemove.Name = "txtRemove";
             this.txtRemove.Size = new System.Drawing.Size(121, 39);
-            this.txtRemove.TabIndex = 6;
+            this.txtRemove.TabIndex = 2;
             this.txtRemove.Text = "Remover";
             this.txtRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.txtRemove.UseVisualStyleBackColor = true;
@@ -173,7 +190,7 @@
             this.btnAdd.Location = new System.Drawing.Point(6, 61);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(121, 39);
-            this.btnAdd.TabIndex = 5;
+            this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -183,6 +200,7 @@
             // 
             this.ucAcoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucAcoesCons.bCadastrar = true;
             this.ucAcoesCons.bMudouCodigo = false;
             this.ucAcoesCons.CampoObrigatorio = false;
             this.ucAcoesCons.cdTela = 0;
@@ -196,6 +214,7 @@
             // 
             // ucModulosCons
             // 
+            this.ucModulosCons.bCadastrar = true;
             this.ucModulosCons.bMudouCodigo = false;
             this.ucModulosCons.CampoObrigatorio = true;
             this.ucModulosCons.cdSistema = 0;
@@ -204,7 +223,7 @@
             this.ucModulosCons.Name = "ucModulosCons";
             this.ucModulosCons.Rotulo = "*Modulo :";
             this.ucModulosCons.Size = new System.Drawing.Size(399, 36);
-            this.ucModulosCons.TabIndex = 6;
+            this.ucModulosCons.TabIndex = 5;
             this.ucModulosCons.TelaConsulta = null;
             // 
             // frmCadTelas

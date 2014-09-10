@@ -80,18 +80,22 @@
             // btnNext
             // 
             this.btnNext.Location = new System.Drawing.Point(755, 3);
+            this.btnNext.TabIndex = 6;
             // 
             // btnLast
             // 
             this.btnLast.Location = new System.Drawing.Point(790, 3);
+            this.btnLast.TabIndex = 7;
             // 
             // btnFirst
             // 
             this.btnFirst.Location = new System.Drawing.Point(685, 3);
+            this.btnFirst.TabIndex = 3;
             // 
             // btnPrevious
             // 
             this.btnPrevious.Location = new System.Drawing.Point(720, 3);
+            this.btnPrevious.TabIndex = 4;
             // 
             // tpFormulario
             // 
@@ -101,39 +105,47 @@
             // 
             this.ucTelasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucTelasCons.bCadastrar = false;
+            this.ucTelasCons.bMudouCodigo = false;
             this.ucTelasCons.CampoObrigatorio = true;
+            this.ucTelasCons.cdModulo = 0;
             this.ucTelasCons.Location = new System.Drawing.Point(3, 37);
             this.ucTelasCons.MensagemCampoObrigatorio = "Selecione a tela.";
             this.ucTelasCons.Name = "ucTelasCons";
             this.ucTelasCons.Rotulo = "Tela :";
             this.ucTelasCons.Size = new System.Drawing.Size(818, 36);
-            this.ucTelasCons.TabIndex = 15;
+            this.ucTelasCons.TabIndex = 0;
             this.ucTelasCons.TelaConsulta = null;
             // 
             // ucAcoesCons
             // 
             this.ucAcoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucAcoesCons.bCadastrar = false;
+            this.ucAcoesCons.bMudouCodigo = false;
             this.ucAcoesCons.CampoObrigatorio = true;
+            this.ucAcoesCons.cdTela = 0;
             this.ucAcoesCons.Location = new System.Drawing.Point(3, 79);
             this.ucAcoesCons.MensagemCampoObrigatorio = "Selecione a ação.";
             this.ucAcoesCons.Name = "ucAcoesCons";
             this.ucAcoesCons.Rotulo = "Ação :";
             this.ucAcoesCons.Size = new System.Drawing.Size(818, 36);
-            this.ucAcoesCons.TabIndex = 14;
+            this.ucAcoesCons.TabIndex = 1;
             this.ucAcoesCons.TelaConsulta = null;
             // 
             // ucDefeitosCons
             // 
             this.ucDefeitosCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucDefeitosCons.bCadastrar = false;
+            this.ucDefeitosCons.bMudouCodigo = false;
             this.ucDefeitosCons.CampoObrigatorio = true;
             this.ucDefeitosCons.Location = new System.Drawing.Point(3, 121);
             this.ucDefeitosCons.MensagemCampoObrigatorio = "Selecione o defeito da ação/tela.";
             this.ucDefeitosCons.Name = "ucDefeitosCons";
             this.ucDefeitosCons.Rotulo = "Descrição do Defeito :";
             this.ucDefeitosCons.Size = new System.Drawing.Size(818, 36);
-            this.ucDefeitosCons.TabIndex = 16;
+            this.ucDefeitosCons.TabIndex = 2;
             this.ucDefeitosCons.TelaConsulta = null;
             this.ucDefeitosCons.AoConsultarRegistro += new KuraFrameWork.Componentes_Visuais.AoConsultarRegistroEventHandler(this.ucDefeitosCons_AoConsultarRegistro);
             // 

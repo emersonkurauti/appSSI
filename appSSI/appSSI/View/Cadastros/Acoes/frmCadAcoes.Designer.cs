@@ -54,6 +54,34 @@
             this.pnForm.Controls.SetChildIndex(this.txtDescricao, 0);
             this.pnForm.Controls.SetChildIndex(this.lblDescricao, 0);
             // 
+            // btnLimparFiltro
+            // 
+            this.btnLimparFiltro.TabIndex = 1;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.TabIndex = 0;
+            // 
+            // tcCadastro
+            // 
+            this.tcCadastro.TabIndex = 0;
+            // 
+            // btnNext
+            // 
+            this.btnNext.TabIndex = 3;
+            // 
+            // btnLast
+            // 
+            this.btnLast.TabIndex = 4;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.TabIndex = 1;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.TabIndex = 2;
+            // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
@@ -85,7 +113,7 @@
             this.txtDescricao.MensagemCampoObrigatorio = "Informe a descrição da ação.";
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(660, 20);
-            this.txtDescricao.TabIndex = 6;
+            this.txtDescricao.TabIndex = 0;
             // 
             // lblDescricao
             // 
