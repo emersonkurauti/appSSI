@@ -583,6 +583,8 @@ namespace appSSI
             }
             catch
             {
+                if (_bControlaConxao)
+                    DesconectaBanco();
                 return false;
             }
 

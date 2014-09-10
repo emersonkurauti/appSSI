@@ -73,7 +73,7 @@ namespace appSSI
         {
             if (!_objCoSistemas.Excluir())
             {
-                _strMensagemErro = csMensagens.msgErroAlterarSistema;
+                _strMensagemErro = csMensagens.msgErroExcluirSistema;
                 return false;
             }
             return true;
