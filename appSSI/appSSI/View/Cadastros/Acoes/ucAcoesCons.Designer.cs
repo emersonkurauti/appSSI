@@ -42,6 +42,11 @@
             // 
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
+            // lblRotulo
+            // 
+            this.lblRotulo.Size = new System.Drawing.Size(38, 13);
+            this.lblRotulo.Text = "Ação :";
+            // 
             // ucAcoesCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

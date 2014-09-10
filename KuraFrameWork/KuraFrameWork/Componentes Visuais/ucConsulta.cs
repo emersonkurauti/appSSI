@@ -13,7 +13,7 @@ namespace KuraFrameWork.Componentes_Visuais
 
     public partial class ucConsulta : UserControl
     {
-        private bool _bCadastrar;
+        private bool _bCadastrar = true;
         public bool bCadastrar
         {
             get { return _bCadastrar; }

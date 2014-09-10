@@ -139,6 +139,7 @@ C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appRelatorios.pdb
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\KuraFrameWork.pdb
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\LibrarySimetric.pdb
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAreaTaskCons.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroSistemaModuloAcaoTela.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadAcoes.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoes.resources
@@ -174,4 +175,3 @@ C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
-C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAreaTaskCons.resources

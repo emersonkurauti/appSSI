@@ -210,6 +210,7 @@ namespace appSSI
 
                 ucAcoesCons.LimparCampos();
 
+                dgvAcao.AutoGenerateColumns = false;
                 dgvAcao.DataSource = dtAcoes;
             }
             else
