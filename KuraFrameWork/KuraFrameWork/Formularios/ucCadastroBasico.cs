@@ -202,7 +202,7 @@ namespace KuraFrameWork.Formularios
             {
                 if (control is UserControl)
                 {
-                    ((UserControl)control).Enabled = bStatus;
+                    ControleCampos(((UserControl)control).Controls, bStatus);
                 }
                 else
                     if (control is MaskedTextBox)
@@ -259,7 +259,7 @@ namespace KuraFrameWork.Formularios
                                                             if (control is TabControl)
                                                             {
                                                                 ControleCampos(((TabControl)control).Controls, bStatus);
-                                                                ((TabControl)control).Enabled = bStatus;
+                                                                //((TabControl)control).Enabled = bStatus;
                                                             }
                                                             else
                                                                 if (control is GroupBox)
