@@ -156,6 +156,9 @@ namespace appSSI
             conTelasAcoes objConTelasAcoes = new conTelasAcoes();
             caTelasAcoes objCaTelasAcoes = new caTelasAcoes();
 
+            conDefeitoAcaoTela objconDefeitoAcaoTela = new conDefeitoAcaoTela();
+            caDefeitoAcaoTela objcaDefeitoAcaoTela = new caDefeitoAcaoTela();
+
             try
             {
                 AtualizaObj();
@@ -164,19 +167,55 @@ namespace appSSI
                 if (objBanco.Alterar())
                 {
                     objConTelasAcoes.objCoTelasAcoes.cdTela = _cdTela;
-                    objConTelasAcoes.Excluir();
+
+                    /*//Remover somente se nao tiver vinculo com defeito
+                    if (!objConTelasAcoes.Select())
+                    {
+                        objBanco.RollbackTransaction();
+                        return false;
+                    }
+
+                    for (int i = 0; i < objConTelasAcoes.dtDados.Rows.Count; i++)
+                    {
+                        objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdAcao = 
+                            Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objcaDefeitoAcaoTela.cdAcao].ToString());
+                        objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdTela = _cdTela;
+
+                        if(!objconDefeitoAcaoTela.Select())
+                        {
+                            objBanco.RollbackTransaction();
+                            return false;
+                        }
+
+                        if (objconDefeitoAcaoTela.dtDados.Rows.Count == 0)
+                        { 
+                            objConTelasAcoes.objCoTelasAcoes.cdAcao =
+                                Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objcaDefeitoAcaoTela.cdAcao].ToString());
+                        }
+                    }*/
 
                     for (int i = 0; i < _dtTelasAcoes.Rows.Count; i++)
                     {
                         objConTelasAcoes.objCoTelasAcoes.cdAcao =
                             Convert.ToInt32(_dtTelasAcoes.Rows[i][objCaTelasAcoes.cdAcao].ToString());
 
-                        if (!objConTelasAcoes.Inserir())
+                        /*//Somente inserir se nao existir na acaotela
+                        if (!objConTelasAcoes.Select())
                         {
                             objBanco.RollbackTransaction();
                             return false;
-                        }
+                        }*/
+
+                        //if (objConTelasAcoes.dtDados.Rows.Count == 0)
+                        //{
+                            if (!objConTelasAcoes.Inserir())
+                            {
+                                objBanco.RollbackTransaction();
+                                return false;
+                            }
+                        //}
                     }
+
                     objBanco.CommitTransaction();
                     return true;
                 }

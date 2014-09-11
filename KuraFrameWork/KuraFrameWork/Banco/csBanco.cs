@@ -164,7 +164,8 @@ namespace Banco
         {
             try
             {
-                _conexao.Open();
+                if (_conexao.State == ConnectionState.Closed)
+                    _conexao.Open();
                 return true;
             }
             catch

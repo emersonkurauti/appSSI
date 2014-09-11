@@ -158,6 +158,7 @@ namespace appSSI
                         PreencheDadosGridView();
                     }
                 }
+                CarregarTelasAcoes();
             }
             
         }
