@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using appSSI;
 using System.Data;
 using System.Text;
+using System.Net.Mail;
 
 namespace wappSSI
 {
@@ -257,6 +258,17 @@ namespace wappSSI
                 return;
             }
 
+            string strCorpo = "";
+
+            strCorpo = "Código do Defeito: " + objConIndicadores.objCoIndicador.cdDefeito.ToString();
+            strCorpo = strCorpo + "\n" + "Sistema: " + Session["cdSistema"].ToString();
+            strCorpo = strCorpo + "\n" + "Modulo: " + Session["cdModulo"].ToString();
+            strCorpo = strCorpo + "\n" + "Tela: " + Session["cdTela"].ToString();
+            strCorpo = strCorpo + "\n" + "Ação: " + Session["cdAcao"].ToString();
+            strCorpo = strCorpo + "\n" + "Usuário: " + Session["nmUsuario"].ToString();
+
+            EnviarNotificacao("Defeito sem solução", strCorpo);
+
             Session["bOpSucesso"] = true;
             Response.Redirect("consultardefeitos.aspx");
         }
@@ -273,6 +285,45 @@ namespace wappSSI
             sbMsgSucesso.AppendLine("</div>");
 
             ltMensagem.Text = sbMsgSucesso.ToString();
+        }
+
+        public void EnviarNotificacao(string strAssunto, string strCorpo)
+        {
+            MailMessage mail = new MailMessage();
+            mail.To.Add(csConstantes.emailDestinatario);
+
+            mail.From = new MailAddress(csConstantes.emailRemetente, "SSI Notificação", System.Text.Encoding.UTF8);
+
+            mail.Subject = strAssunto;
+            mail.SubjectEncoding = System.Text.Encoding.UTF8;
+            mail.Body = strCorpo;
+            mail.BodyEncoding = System.Text.Encoding.UTF8;
+            mail.IsBodyHtml = false;
+            mail.Priority = MailPriority.High; //Prioridade do E-Mail 
+
+            SmtpClient client = new SmtpClient();  //Adicionando as credenciais do seu e-mail e senha:
+            client.Credentials = new System.Net.NetworkCredential(csConstantes.emailRemetente, csConstantes.senhaEmailRemetente);
+            client.Port = 587; // Esta porta é a utilizada pelo Gmail para envio
+
+            if (csConstantes.emailRemetente.IndexOf("@hotmail.com") > 0)
+                client.Host = "smtp.live.com"; //Definindo o provedor que irá disparar o e-mail
+
+            if (csConstantes.emailRemetente.IndexOf("@gmail.com") > 0)
+                client.Host = "smtp.gmail.com"; //Definindo o provedor que irá disparar o e-mail
+
+            if (csConstantes.emailRemetente.IndexOf("@db1.com.br") > 0)
+                client.Host = "mail.db1.com.br"; //Definindo o provedor que irá disparar o e-mail
+
+
+            client.EnableSsl = true; //Gmail trabalha com Server Secured Layer
+
+            try
+            {
+                client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+            }
         }
     }
 }

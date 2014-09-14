@@ -20,7 +20,8 @@
                                 <asp:Label ID="lblNenhumDefeito" class="label label-default" runat="server" Visible="True">
                                     Caso não seja um dos defeitos listados,
                                     <asp:LinkButton ID="lnkNenhumDefeito" runat="server" 
-                                        onclick="lnkNenhumDefeito_Click">clique aqui.</asp:LinkButton>
+                                        onclick="lnkNenhumDefeito_Click">clique aqui</asp:LinkButton>
+                                        para abrir um chamado.
                                 </asp:Label>
                             </h4>
                         </div>

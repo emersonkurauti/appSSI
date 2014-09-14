@@ -80,6 +80,11 @@ namespace wappSSI
             {
                 sbSlide.AppendLine("<li data-target=\"#carouselimagens\" data-slide-to=\"0\" class=\"active\"></li>");
                 sbImagens.AppendLine("<div class=\"item active\">");
+
+                sbImagens.AppendLine("<div class=\"alert alert-info\" role=\"alert\">");
+                sbImagens.AppendLine(objConImagens.dtDados.Rows[0][objCaImagensSolucoes.deImagem].ToString());
+                sbImagens.AppendLine("</div>");
+
                 sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
                         csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.blImagem].ToString() +
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
@@ -91,6 +96,11 @@ namespace wappSSI
                 {
                     sbSlide.AppendLine("<li data-target=\"#carouselimagens\" data-slide-to=\"" + i.ToString() + "\"></li>");
                     sbImagens.AppendLine("<div class=\"item\">");
+
+                    sbImagens.AppendLine("<div class=\"alert alert-info\" role=\"alert\">");
+                    sbImagens.AppendLine(objConImagens.dtDados.Rows[i][objCaImagensSolucoes.deImagem].ToString());
+                    sbImagens.AppendLine("</div>");
+
                     sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
                         csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.blImagem].ToString() +
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +

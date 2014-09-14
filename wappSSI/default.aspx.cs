@@ -17,9 +17,10 @@ namespace wappSSI
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["cdUsuario"] = null;
-            Session["Senha"] = null;
+            Session["Senha"]     = null;
             Session["TpUsuario"] = null;
             Session["cdEmpresa"] = null;
+            Session["nmUsuario"] = null;
         }
 
         /// <summary>
@@ -47,6 +48,7 @@ namespace wappSSI
                     Session["Senha"] = objConUsuarios.dtDados.Rows[0][objCaUsuarios.deSenha].ToString();
                     Session["TpUsuario"] = objConUsuarios.dtDados.Rows[0][objCaUsuarios.flTpUsuario].ToString();
                     Session["cdEmpresa"] = objConUsuarios.dtDados.Rows[0][objCaUsuarios.cdEmpresa].ToString();
+                    Session["nmUsuario"] = objConUsuarios.dtDados.Rows[0][objCaUsuarios.nmUsuario].ToString();
 
                     Response.Redirect("consultardefeitos.aspx");
                     //Response.Redirect("frmConsultarDefeito.aspx");

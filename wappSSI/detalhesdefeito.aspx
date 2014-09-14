@@ -77,7 +77,8 @@
                                 <asp:Label ID="lblNenhumaSolucaoValida" class="label label-default" runat="server" Visible="True">
                                     Caso seja este o defeito mas nenhuma solução foi válida ou não existe,
                                     <asp:LinkButton ID="lnkNenhumaSolucaoEncontrada" runat="server" 
-                                        onclick="lnkNenhumaSolucaoEncontrada_Click">clique aqui.</asp:LinkButton>
+                                        onclick="lnkNenhumaSolucaoEncontrada_Click">clique aqui </asp:LinkButton>
+                                        para solicitar a priorização da solução para o defeito.
                                 </asp:Label>
                             </h4>
                         </div>
