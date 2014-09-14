@@ -144,7 +144,6 @@ namespace wappSSI
 
         protected void gvSolucoes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Session["dtSolucoes"] = dtSolucoes;
             Session["cdSolucao"] = Convert.ToInt32(gvSolucoes.DataKeys[gvSolucoes.SelectedRow.RowIndex]["cdSolucao"].ToString());
             Session["IndiceSolucao"] = gvSolucoes.SelectedRow.RowIndex;
             Session["QtdSolucoes"] = gvSolucoes.Rows.Count;
