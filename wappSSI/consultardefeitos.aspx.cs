@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using appSSI;
 using System.Data;
 using System.Text;
+using System.Net.Mail;
 
 namespace wappSSI
 {
@@ -335,10 +336,11 @@ namespace wappSSI
 
             if (ddlTela.SelectedValue.ToString() != "" && ddlAcao.SelectedValue.ToString() != "")
             {
-                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela = Convert.ToInt32(ddlTela.SelectedValue.ToString());
-                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo    = Convert.ToInt32(ddlModulo.SelectedValue.ToString());
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela      = Convert.ToInt32(ddlTela.SelectedValue.ToString());
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao      = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
                 objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.flTpUsuario = Convert.ToChar(Session["TpUsuario"].ToString());
-                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.deDesricao = txtDescDefeito.Text;
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.deDesricao  = txtDescDefeito.Text;
 
                 if (!objConConsultaDefeitoTelaAcao.Select())
                 {
@@ -346,11 +348,56 @@ namespace wappSSI
                     return;
                 }
 
-                Session["cdSistema"] = Convert.ToInt32(ddlSistema.SelectedValue.ToString());
-                Session["cdModulo"] = Convert.ToInt32(ddlModulo.SelectedValue.ToString());
-                Session["cdTela"] = Convert.ToInt32(ddlTela.SelectedValue.ToString());
-                Session["cdAcao"] = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
-                Session["descDefeito"] = txtDescDefeito.Text;
+                if (((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo == 0) && 
+                     (txtModulo.Text.Trim() != "")) ||
+                    ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela == 0) &&
+                     (txtTela.Text.Trim() != "")) ||
+                    ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao == 0) && 
+                     (txtAcao.Text.Trim() != "")))
+                {
+                    string strCorpo = "";
+
+                    strCorpo = strCorpo + "\n" + "Sistema: " + ddlSistema.SelectedItem.Text.ToString();
+
+                    if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo == 0) &&
+                        (txtModulo.Text.Trim() != ""))
+                        strCorpo = strCorpo + "\n" + "Módulo: " + txtModulo.Text;
+                    else
+                        if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo != 0)
+                        {
+                            strCorpo = strCorpo + "\n" + "Módulo: " + ddlModulo.SelectedItem.Text.ToString();
+                        }
+
+                    if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela == 0) &&
+                        (txtTela.Text.Trim() != ""))
+                    {
+                        strCorpo = strCorpo + "\n" + "Tela: " + txtTela.Text;
+                    }
+                    else
+                        if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela != 0)
+                        {
+                            strCorpo = strCorpo + "\n" + "Tela: " + ddlTela.SelectedItem.Text.ToString();
+                        }
+
+                    if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao == 0) &&
+                        (txtAcao.Text.Trim() != ""))
+                    {
+                        strCorpo = strCorpo + "\n" + "Ação: " + txtAcao.Text;
+                    }
+                    else
+                        if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao != 0)
+                        {
+                            strCorpo = strCorpo + "\n" + "Ação: " + ddlAcao.SelectedItem.Text.ToString();
+                        }
+
+                    EnviarNotificacao("Solicitação de cadastro", strCorpo);
+                }
+
+                Session["cdSistema"]    = Convert.ToInt32(ddlSistema.SelectedValue.ToString());
+                Session["cdModulo"]     = Convert.ToInt32(ddlModulo.SelectedValue.ToString());
+                Session["cdTela"]       = Convert.ToInt32(ddlTela.SelectedValue.ToString());
+                Session["cdAcao"]       = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
+                Session["descDefeito"]  = txtDescDefeito.Text;
                 Session["dtResultados"] = objConConsultaDefeitoTelaAcao.dtDados;
                 Response.Redirect("resultadodefeitos.aspx");
             }
@@ -368,6 +415,45 @@ namespace wappSSI
             sbMsgSucesso.AppendLine("</div>");
 
             ltMensagem.Text = sbMsgSucesso.ToString();
+        }
+
+        public void EnviarNotificacao(string strAssunto, string strCorpo)
+        {
+            MailMessage mail = new MailMessage();
+            mail.To.Add(csConstantes.emailDestinatario);
+
+            mail.From = new MailAddress(csConstantes.emailRemetente, "SSI Notificação", System.Text.Encoding.UTF8);
+
+            mail.Subject = strAssunto;
+            mail.SubjectEncoding = System.Text.Encoding.UTF8;
+            mail.Body = strCorpo;
+            mail.BodyEncoding = System.Text.Encoding.UTF8;
+            mail.IsBodyHtml = false;
+            mail.Priority = MailPriority.High; //Prioridade do E-Mail 
+            
+            SmtpClient client = new SmtpClient();  //Adicionando as credenciais do seu e-mail e senha:
+            client.Credentials = new System.Net.NetworkCredential(csConstantes.emailRemetente, csConstantes.senhaEmailRemetente);
+            client.Port = 587; // Esta porta é a utilizada pelo Gmail para envio
+
+            if (csConstantes.emailRemetente.IndexOf("@hotmail.com") > 0)
+                client.Host = "smtp.live.com"; //Definindo o provedor que irá disparar o e-mail
+
+            if (csConstantes.emailRemetente.IndexOf("@gmail.com") > 0)
+                client.Host = "smtp.gmail.com"; //Definindo o provedor que irá disparar o e-mail
+
+            if (csConstantes.emailRemetente.IndexOf("@db1.com.br") > 0)
+                client.Host = "mail.db1.com.br"; //Definindo o provedor que irá disparar o e-mail
+            
+            
+            client.EnableSsl = true; //Gmail trabalha com Server Secured Layer
+
+            try
+            {
+               client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+            }
         }
     }
 }

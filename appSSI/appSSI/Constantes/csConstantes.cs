@@ -9,6 +9,11 @@ namespace appSSI
 {
     public static class csConstantes
     {
+        //e-mail para notificações
+        public const string emailDestinatario   = "emerson.m.k@hotmail.com";
+        public const string emailRemetente      = "emerson.m.k@hotmail.com";
+        public const string senhaEmailRemetente = "asd9376552023049";
+
         //String conexão Task
         public const string strStringConexaoTASK = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.199.200)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=orcl))); User Id=taskdesenv; Password=taskdesenv";
 
