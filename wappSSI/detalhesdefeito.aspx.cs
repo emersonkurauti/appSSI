@@ -82,18 +82,31 @@ namespace wappSSI
             if(objConImagens.dtDados.Rows.Count > 0)
             {
                 sbSlide.AppendLine("<li data-target=\"#carouselimagens\" data-slide-to=\"0\" class=\"active\"></li>");
+
                 sbImagens.AppendLine("<div class=\"item active\">");
+
+                sbImagens.AppendLine("<div class=\"alert alert-info\" role=\"alert\">");
+                sbImagens.AppendLine(objConImagens.dtDados.Rows[0][objCaImagensDefeitos.deImagem].ToString());
+                sbImagens.AppendLine("</div>");
+
                 sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
                         csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +   
                         csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +                    
                         "\" alt=\"" + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.deImagem].ToString() + "\"/>");
+
                 sbImagens.AppendLine("</div>");
 
                 for (int i = 1; i < objConImagens.dtDados.Rows.Count; i++)
                 {
                     sbSlide.AppendLine("<li data-target=\"#carouselimagens\" data-slide-to=\"" + i.ToString() + "\"></li>");
+
                     sbImagens.AppendLine("<div class=\"item\">");
+
+                    sbImagens.AppendLine("<div class=\"alert alert-info\" role=\"alert\">");
+                    sbImagens.AppendLine(objConImagens.dtDados.Rows[i][objCaImagensDefeitos.deImagem].ToString());
+                    sbImagens.AppendLine("</div>");
+
                     sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" + 
                         csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.blImagem].ToString() + 
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
