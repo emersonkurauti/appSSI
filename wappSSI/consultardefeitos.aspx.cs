@@ -90,10 +90,10 @@ namespace wappSSI
                 if (objConSistemas.dtDados.Rows.Count == 0)
                     txtSistema.Visible = true;
 
-                DataRow dr = objConSistemas.dtDados.NewRow();
+                /*DataRow dr = objConSistemas.dtDados.NewRow();
                 dr[objCaSistemas.cdSistema] = 0;
                 dr[objCaSistemas.nmSistema] = "Outros";
-                objConSistemas.dtDados.Rows.Add(dr);
+                objConSistemas.dtDados.Rows.Add(dr);*/
 
                 if (objConSistemas.dtDados != null && objConSistemas.dtDados.Rows.Count > 0)
                 {
