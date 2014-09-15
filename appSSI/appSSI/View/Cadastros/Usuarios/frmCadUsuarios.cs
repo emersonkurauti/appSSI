@@ -270,10 +270,18 @@ namespace appSSI
                 }
                 else
                 {
-                    lblCriticaLogin.Text = "Login já existente p/ outro usuário.";
-                    lblCriticaLogin.ForeColor = Color.Red;
-                    txtLogin.SelectAll();
-                    bLoginValido = false;
+                    if (objConUsuarios.dtDados.Rows[0][objCaUsuarios.cdUsuario].ToString() != txtCodigo.Text.ToString())
+                    {
+                        lblCriticaLogin.Text = "Login já existente p/ outro usuário.";
+                        lblCriticaLogin.ForeColor = Color.Red;
+                        txtLogin.SelectAll();
+                        bLoginValido = false;
+                    }
+                    else
+                    {
+                        lblCriticaLogin.Text = "Login válido.";
+                        lblCriticaLogin.ForeColor = Color.Green;
+                    }
                 }
 
             }

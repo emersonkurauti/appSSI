@@ -161,15 +161,18 @@ namespace appSSI
         /// </summary>
         public void CarregarDescObs()
         {
-            if (_flDefeito)
+            if (_dtDados.Rows.Count > 0)
             {
-                txtDescricao.Text = dgvSolucoesDefeitos.CurrentRow.Cells[objCaSolucoesDefeitos.CC_deDefeito].Value.ToString();
-                txtObs.Text = _dtDados.Rows[dgvSolucoesDefeitos.CurrentRow.Index][objCaSolucoesDefeitos.deObservacao].ToString();
-            }
-            else
-            {
-                txtDescricao.Text = dgvSolucoesDefeitos.CurrentRow.Cells[objCaSolucoesDefeitos.CC_deSolucao].Value.ToString();                
-                txtObs.Text = _dtDados.Rows[dgvSolucoesDefeitos.CurrentRow.Index][objCaSolucoesDefeitos.deObservacao].ToString();
+                if (_flDefeito)
+                {
+                    txtDescricao.Text = dgvSolucoesDefeitos.CurrentRow.Cells[objCaSolucoesDefeitos.CC_deDefeito].Value.ToString();
+                    txtObs.Text = _dtDados.Rows[dgvSolucoesDefeitos.CurrentRow.Index][objCaSolucoesDefeitos.deObservacao].ToString();
+                }
+                else
+                {
+                    txtDescricao.Text = dgvSolucoesDefeitos.CurrentRow.Cells[objCaSolucoesDefeitos.CC_deSolucao].Value.ToString();
+                    txtObs.Text = _dtDados.Rows[dgvSolucoesDefeitos.CurrentRow.Index][objCaSolucoesDefeitos.deObservacao].ToString();
+                }
             }
         }
 

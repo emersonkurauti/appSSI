@@ -66,6 +66,7 @@ namespace appSSI
         public override void AtualizaObj()
         {
             base.AtualizaObj();
+            objBanco.bControlaConxao = false;
             objBanco.strCampoChave = objCaTelas.nmCampoChave;
             objBanco.strTabela = objCaTelas.nmTabela;
         }

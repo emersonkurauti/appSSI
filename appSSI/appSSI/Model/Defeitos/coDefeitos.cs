@@ -74,6 +74,7 @@ namespace appSSI
             base.AtualizaObj();
             objBanco.strCampoChave = objCaDefeitos.nmCampoChave;
             objBanco.strTabela = objCaDefeitos.nmTabela;
+            objBanco.bControlaConxao = false;
         }
 
         /// <summary>
