@@ -104,6 +104,21 @@ namespace Banco
             set { _bGerarChave = value; }
         }
 
+        private bool _bEmTransacao = false;
+        public bool bEmTransacao
+        {
+            get { return _bEmTransacao; }
+            set { _bEmTransacao = value; }
+        }
+
+        private string _strChaveEstrangeira = "";
+        public string strChaveEstrangeira
+        {
+            get { return _strChaveEstrangeira; }
+            set { _strChaveEstrangeira = value; }
+        }
+
+
         /// <summary>
         /// Variável de conexão com o SGDB
         /// </summary>
@@ -202,11 +217,14 @@ namespace Banco
                 if (ConectaBanco())
                 {
                     _bControlaConxao = false;
+                    _bEmTransacao = true;
                     transacao = _conexao.BeginTransaction();
                     return true;
                 }
             }
             catch { }
+
+            _bEmTransacao = true;
             return false;
         }
 
@@ -223,12 +241,14 @@ namespace Banco
                     transacao.Commit();
                     transacao = null;
                     _bControlaConxao = true;
+                    _bEmTransacao = false;
                     DesconectaBanco();
                     return true;
                 }
             }
             catch { }
 
+            _bEmTransacao = false;
             DesconectaBanco();
             return true;
         }
@@ -473,6 +493,7 @@ namespace Banco
         {
             string strSql = "";
             string strCondicao = "";
+            string strValorChaveEstrangeira = "";
 
             Type type = _obj.GetType();
             PropertyInfo[] properties = type.GetProperties();
@@ -488,10 +509,15 @@ namespace Banco
                     {
                         if (property.Name.ToString() == _strCampoChave)
                             strCondicao = " Where " + _strCampoChave + " = " + temp.ToString();
+                        else
+                            if (property.Name.ToString() == _strChaveEstrangeira)
+                                strValorChaveEstrangeira = _strChaveEstrangeira + " = " + temp.ToString();
                     }
                 }
             }
 
+            if (_strChaveEstrangeira != "")
+                strCondicao += " and " +strValorChaveEstrangeira;
             strSql = "Delete From " + _strTabela + strCondicao;
 
             return ExecutarSQL(strSql);
@@ -509,7 +535,9 @@ namespace Banco
             {
                 _comando.CommandText = sSQL;
                 dtDados.Load(_comando.ExecuteReader());
-                DesconectaBanco(); 
+
+                if (!_bEmTransacao)
+                    DesconectaBanco();
             }
             return dtDados; 
         }
@@ -529,7 +557,9 @@ namespace Banco
                 _comando.CommandText = sSQL;
                 DataAdapter.SelectCommand = _comando;
                 DataAdapter.Fill(dsDados);
-                DesconectaBanco(); 
+
+                if (!_bEmTransacao)
+                    DesconectaBanco();
             }
             return dsDados; 
         }
@@ -545,10 +575,7 @@ namespace Banco
 
             try
             {
-                if (_bControlaConxao)
-                    ConectaBanco();
-
-                if (_conexao.State == System.Data.ConnectionState.Open)
+                if (ConectaBanco())
                 {
                     _comando.Transaction = _Transacao;
                     _comando.CommandText = sSQL;

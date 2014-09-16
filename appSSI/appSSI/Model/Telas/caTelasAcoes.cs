@@ -17,6 +17,11 @@ namespace appSSI
             get { return "cdTela"; }
         }
 
+        public string nmChaveEstrangeira
+        {
+            get { return "cdAcao"; }
+        }
+
         public string cdTela
         {
             get { return "cdTela"; }

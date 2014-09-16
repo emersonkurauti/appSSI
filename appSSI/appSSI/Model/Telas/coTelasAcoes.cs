@@ -81,6 +81,7 @@ namespace appSSI
             objBanco.bControlaConxao = false;
             objBanco.strCampoChave = objCaTelasAcoes.nmCampoChave;
             objBanco.strTabela = objCaTelasAcoes.nmTabela;
+            objBanco.strChaveEstrangeira = objCaTelasAcoes.nmChaveEstrangeira;
         }
     }
 }

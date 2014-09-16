@@ -160,6 +160,9 @@ namespace appSSI
             conDefeitoAcaoTela objconDefeitoAcaoTela = new conDefeitoAcaoTela();
             caDefeitoAcaoTela objcaDefeitoAcaoTela = new caDefeitoAcaoTela();
 
+            DataTable dtTelasAcoesIntermediaria = objConTelasAcoes.objCoTelasAcoes.RetornaEstruturaDT();
+            bool bAchou;
+
             try
             {
                 AtualizaObj();
@@ -168,53 +171,76 @@ namespace appSSI
                 if (objBanco.Alterar())
                 {
                     objConTelasAcoes.objCoTelasAcoes.cdTela = _cdTela;
+                    objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdTela = _cdTela;
 
-                    /*//Remover somente se nao tiver vinculo com defeito
+                    //consulta as ações da tela
                     if (!objConTelasAcoes.Select())
                     {
                         objBanco.RollbackTransaction();
                         return false;
                     }
 
+                    //Faz o merge
                     for (int i = 0; i < objConTelasAcoes.dtDados.Rows.Count; i++)
                     {
-                        objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdAcao = 
-                            Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objcaDefeitoAcaoTela.cdAcao].ToString());
-                        objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdTela = _cdTela;
+                        bAchou = false;
 
-                        if(!objconDefeitoAcaoTela.Select())
+                        for (int k = 0; k < _dtTelasAcoes.Rows.Count; k++)
                         {
-                            objBanco.RollbackTransaction();
-                            return false;
+                            if (_dtTelasAcoes.Rows[k][objCaTelasAcoes.cdAcao].ToString() ==
+                                objConTelasAcoes.dtDados.Rows[i][objCaTelasAcoes.cdAcao].ToString())
+                                bAchou = true;
                         }
 
-                        if (objconDefeitoAcaoTela.dtDados.Rows.Count == 0)
-                        { 
-                            objConTelasAcoes.objCoTelasAcoes.cdAcao =
-                                Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objcaDefeitoAcaoTela.cdAcao].ToString());
-                        }
-                    }*/
+                        //Foi removido por tela
+                        if (!bAchou)
+                        {
+                            //verifica se nao está associado a um defeito
+                            objconDefeitoAcaoTela.objCoDefeitoAcaoTela.cdAcao = Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objCaTelasAcoes.cdAcao].ToString());
 
+                            if (!objconDefeitoAcaoTela.Select())
+                            {
+                                objBanco.RollbackTransaction();
+                                return false;
+                            }
+
+                            //Se não achou remove
+                            if (objconDefeitoAcaoTela.dtDados.Rows.Count == 0)
+                            {
+                                objConTelasAcoes.objCoTelasAcoes.cdAcao = Convert.ToInt32(objConTelasAcoes.dtDados.Rows[i][objCaTelasAcoes.cdAcao].ToString());
+
+                                if (!objConTelasAcoes.Excluir())
+                                {
+                                    objBanco.RollbackTransaction();
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+
+                    //Faz o merge inverso
                     for (int i = 0; i < _dtTelasAcoes.Rows.Count; i++)
                     {
-                        objConTelasAcoes.objCoTelasAcoes.cdAcao =
-                            Convert.ToInt32(_dtTelasAcoes.Rows[i][objCaTelasAcoes.cdAcao].ToString());
+                        bAchou = false;
 
-                        /*//Somente inserir se nao existir na acaotela
-                        if (!objConTelasAcoes.Select())
+                        for (int k = 0; k < objConTelasAcoes.dtDados.Rows.Count; k++)
                         {
-                            objBanco.RollbackTransaction();
-                            return false;
-                        }*/
+                            if (_dtTelasAcoes.Rows[i][objCaTelasAcoes.cdAcao].ToString() ==
+                                objConTelasAcoes.dtDados.Rows[k][objCaTelasAcoes.cdAcao].ToString())
+                                bAchou = true;
+                        }
 
-                        //if (objConTelasAcoes.dtDados.Rows.Count == 0)
-                        //{
+                        //Foi inserido por tela
+                        if (!bAchou)
+                        {
+                            objConTelasAcoes.objCoTelasAcoes.cdAcao = Convert.ToInt32(_dtTelasAcoes.Rows[i][objCaTelasAcoes.cdAcao].ToString());
+
                             if (!objConTelasAcoes.Inserir())
                             {
                                 objBanco.RollbackTransaction();
                                 return false;
                             }
-                        //}
+                        }
                     }
 
                     objBanco.CommitTransaction();

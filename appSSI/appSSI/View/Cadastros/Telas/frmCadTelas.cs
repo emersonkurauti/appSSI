@@ -113,6 +113,8 @@ namespace appSSI
 
         public override void CarregaDados(DataRow drEmpresa)
         {
+            dtAcoes.Rows.Clear();
+
             base.CarregaDados(drEmpresa);
 
             txtCodigo.Text = drEmpresa[objCaTelas.cdTela].ToString();
@@ -127,6 +129,7 @@ namespace appSSI
         public override void tsbNovo_Click(object sender, EventArgs e)
         {
             dtTelasAcoes.Rows.Clear();
+            dtAcoes.Rows.Clear();
             base.tsbNovo_Click(sender, e);
         }
 
@@ -185,6 +188,7 @@ namespace appSSI
         {
             base.tsbLimpar_Click(sender, e);
             objConTelas.objCoTelas.LimparAtributos();
+            dtAcoes.Rows.Clear();
         }
 
         public override void btnConsultar_Click(object sender, EventArgs e)
