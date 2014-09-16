@@ -149,9 +149,9 @@ namespace appSSI
             if (_dtDados.Rows.Count > 0)
             {
                 if (_flDefeito)
-                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells[2];
+                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells["CC_deDefeito"];
                 else
-                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells[3];
+                    dgvSolucoesDefeitos.CurrentCell = dgvSolucoesDefeitos.Rows[0].Cells["CC_deSolucao"];
                 CarregarDescObs();
             }
         }
@@ -238,6 +238,7 @@ namespace appSSI
 
                         _dtDados.Rows.Add(dr);
 
+                        dgvSolucoesDefeitos.AutoGenerateColumns = false;
                         dgvSolucoesDefeitos.DataSource = _dtDados;
                         CarregarPrimeiroSelecionado();
                     }
@@ -266,6 +267,7 @@ namespace appSSI
 
                         _dtDados.Rows.Add(dr);
 
+                        dgvSolucoesDefeitos.AutoGenerateColumns = false;
                         dgvSolucoesDefeitos.DataSource = _dtDados;
                         CarregarPrimeiroSelecionado();
                     }

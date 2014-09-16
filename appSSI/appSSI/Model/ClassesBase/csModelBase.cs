@@ -162,6 +162,7 @@ namespace appSSI
             objBanco.obj = this;
             objBanco.bGerarChave = true;
             objBanco.bControlaConxao = true;
+            objBanco.strChaveEstrangeira = "";
         }
     }
 }
