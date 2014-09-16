@@ -200,72 +200,77 @@ namespace KuraFrameWork.Formularios
         {
             foreach (var control in Controles)
             {
-                if (control is UserControl)
+                if (control is KuraFrameWork.Componentes_Visuais.ucImagens)
                 {
-                    ControleCampos(((UserControl)control).Controls, bStatus);
+                    ControleCampos(((KuraFrameWork.Componentes_Visuais.ucImagens)control).Controls, bStatus);
                 }
                 else
-                    if (control is MaskedTextBox)
+                    if (control is UserControl)
                     {
-                        ((MaskedTextBox)control).Enabled = bStatus;
+                        ControleCampos(((UserControl)control).Controls, bStatus);
                     }
                     else
-                        if (control is Button)
+                        if (control is MaskedTextBox)
                         {
-                            ((Button)control).Enabled = bStatus;
+                            ((MaskedTextBox)control).Enabled = bStatus;
                         }
                         else
-                            if (control is TextBox)
+                            if (control is Button)
                             {
-                                ((TextBox)control).Enabled = bStatus;
+                                ((Button)control).Enabled = bStatus;
                             }
                             else
-                                if (control is RadioButton)
+                                if (control is TextBox)
                                 {
-                                    ((RadioButton)control).Enabled = bStatus;
+                                    ((TextBox)control).Enabled = bStatus;
                                 }
                                 else
-                                    if (control is DataGridView)
+                                    if (control is RadioButton)
                                     {
-                                        //((DataGridView)control).Enabled = bStatus;
-                                        //((DataGridView)control).ReadOnly = !bStatus;
+                                        ((RadioButton)control).Enabled = bStatus;
                                     }
                                     else
-                                        if (control is DateTimePicker)
+                                        if (control is DataGridView)
                                         {
-                                            ((DateTimePicker)control).Enabled = bStatus;
+                                            //((DataGridView)control).Enabled = bStatus;
+                                            //((DataGridView)control).ReadOnly = !bStatus;
                                         }
                                         else
-                                            if (control is ComboBox)
+                                            if (control is DateTimePicker)
                                             {
-                                                ((ComboBox)control).Enabled = bStatus;
+                                                ((DateTimePicker)control).Enabled = bStatus;
                                             }
                                             else
-                                                if (control is DataGridView)
+                                                if (control is ComboBox)
                                                 {
-                                                    ((DataGridView)control).Enabled = bStatus;
+                                                    ((ComboBox)control).Enabled = bStatus;
                                                 }
                                                 else
-                                                    if (control is CheckBox)
+                                                    if (control is DataGridView)
                                                     {
-                                                        ((CheckBox)control).Enabled = bStatus;
+                                                        ((DataGridView)control).Enabled = bStatus;
                                                     }
                                                     else
-                                                        if (control is TabPage)
+                                                        if (control is CheckBox)
                                                         {
-                                                            ControleCampos(((TabPage)control).Controls, bStatus);
+                                                            ((CheckBox)control).Enabled = bStatus;
                                                         }
                                                         else
-                                                            if (control is TabControl)
+                                                            if (control is TabPage)
                                                             {
-                                                                ControleCampos(((TabControl)control).Controls, bStatus);
-                                                                //((TabControl)control).Enabled = bStatus;
+                                                                ControleCampos(((TabPage)control).Controls, bStatus);
                                                             }
                                                             else
-                                                                if (control is GroupBox)
+                                                                if (control is TabControl)
                                                                 {
-                                                                    ControleCampos(((GroupBox)control).Controls, bStatus);
+                                                                    ControleCampos(((TabControl)control).Controls, bStatus);
+                                                                    //((TabControl)control).Enabled = bStatus;
                                                                 }
+                                                                else
+                                                                    if (control is GroupBox)
+                                                                    {
+                                                                        ControleCampos(((GroupBox)control).Controls, bStatus);
+                                                                    }
             }
         }
 

@@ -202,5 +202,4 @@ namespace appSSI
             ImprimirRelatorio("crSolucoes.rpt");
             base.tsbImprimir_ButtonClick(sender, e);
         }
-    }
 }
