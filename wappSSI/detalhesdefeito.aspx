@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-sm-4" align="left">
                             <asp:Button ID="imgbtnPrevious" CssClass="btn btn-lg btn-primary" 
-                                runat="server" Text="Defeito Anterior" onclick="imgbtnPrevious_Click" 
+                                runat="server" Text="<< Defeito Anterior" onclick="imgbtnPrevious_Click" 
                                 Width="225px"/>
                         </div>
                         <div class="col-sm-4" align="center" style="vertical-align:middle">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-sm-4" align="right">
                             <asp:Button ID="imgbtnNext" CssClass="btn btn-lg btn-primary" runat="server" 
-                                Text="Próximo Defeito" onclick="imgbtnNext_Click" Width="225px"/>
+                                Text="Próximo Defeito >>" onclick="imgbtnNext_Click" Width="225px"/>
                         </div>
                     </div>
                     <div class="page-header"><h3>Descrição do defeito</h3></div>     

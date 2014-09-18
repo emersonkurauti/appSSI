@@ -357,7 +357,8 @@ namespace wappSSI
                 {
                     string strCorpo = "";
 
-                    strCorpo = strCorpo + "\n" + "Sistema: " + ddlSistema.SelectedItem.Text.ToString();
+                    strCorpo = strCorpo + "\n" + "Sistema: " + Convert.ToInt32(ddlSistema.SelectedValue.ToString())
+                        + " - " + ddlSistema.SelectedItem.Text.ToString();
 
                     if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo == 0) &&
                         (txtModulo.Text.Trim() != ""))
@@ -365,7 +366,8 @@ namespace wappSSI
                     else
                         if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdModulo != 0)
                         {
-                            strCorpo = strCorpo + "\n" + "Módulo: " + ddlModulo.SelectedItem.Text.ToString();
+                            strCorpo = strCorpo + "\n" + "Módulo: " + Convert.ToInt32(ddlModulo.SelectedValue.ToString())
+                                                + " - " + ddlModulo.SelectedItem.Text.ToString();
                         }
 
                     if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela == 0) &&
@@ -376,7 +378,8 @@ namespace wappSSI
                     else
                         if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdTela != 0)
                         {
-                            strCorpo = strCorpo + "\n" + "Tela: " + ddlTela.SelectedItem.Text.ToString();
+                            strCorpo = strCorpo + "\n" + "Tela: " + Convert.ToInt32(ddlTela.SelectedValue.ToString())
+                                                + " - " + ddlTela.SelectedItem.Text.ToString();
                         }
 
                     if ((objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao == 0) &&
@@ -387,16 +390,21 @@ namespace wappSSI
                     else
                         if (objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao != 0)
                         {
-                            strCorpo = strCorpo + "\n" + "Ação: " + ddlAcao.SelectedItem.Text.ToString();
+                            strCorpo = strCorpo + "\n" + "Ação: " + Convert.ToInt32(ddlAcao.SelectedValue.ToString())
+                                                + " - " + ddlAcao.SelectedItem.Text.ToString();
                         }
 
                     EnviarNotificacao("Solicitação de cadastro", strCorpo);
                 }
 
                 Session["cdSistema"]    = Convert.ToInt32(ddlSistema.SelectedValue.ToString());
+                Session["nmSistema"]    = ddlSistema.SelectedItem.Text;
                 Session["cdModulo"]     = Convert.ToInt32(ddlModulo.SelectedValue.ToString());
+                Session["nmModulo"]     = ddlModulo.SelectedItem.Text;
                 Session["cdTela"]       = Convert.ToInt32(ddlTela.SelectedValue.ToString());
+                Session["nmTela"]       = ddlTela.SelectedItem.Text;
                 Session["cdAcao"]       = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
+                Session["deAcao"]       = ddlAcao.SelectedItem.Text;
                 Session["descDefeito"]  = txtDescDefeito.Text;
                 Session["dtResultados"] = objConConsultaDefeitoTelaAcao.dtDados;
                 Response.Redirect("resultadodefeitos.aspx");
@@ -451,7 +459,7 @@ namespace wappSSI
             {
                client.Send(mail);
             }
-            catch (Exception ex)
+            catch
             {
             }
         }

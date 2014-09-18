@@ -260,10 +260,10 @@ namespace wappSSI
             string strCorpo = "";
 
             strCorpo = "Código do Defeito: " + objConIndicadores.objCoIndicador.cdDefeito.ToString();
-            strCorpo = strCorpo + "\n" + "Sistema: " + Session["cdSistema"].ToString();
-            strCorpo = strCorpo + "\n" + "Modulo: " + Session["cdModulo"].ToString();
-            strCorpo = strCorpo + "\n" + "Tela: " + Session["cdTela"].ToString();
-            strCorpo = strCorpo + "\n" + "Ação: " + Session["cdAcao"].ToString();
+            strCorpo = strCorpo + "\n" + "Sistema: " + Session["cdSistema"].ToString() + " - " + Session["nmSistema"].ToString();
+            strCorpo = strCorpo + "\n" + "Modulo: "  + Session["cdModulo"].ToString()  + " - " + Session["nmModulo"].ToString();
+            strCorpo = strCorpo + "\n" + "Tela: "    + Session["cdTela"].ToString()    + " - " + Session["nmTela"].ToString();
+            strCorpo = strCorpo + "\n" + "Ação: "    + Session["cdAcao"].ToString()    + " - " + Session["deAcao"].ToString();
             strCorpo = strCorpo + "\n" + "Usuário: " + Session["nmUsuario"].ToString();
 
             EnviarNotificacao("Defeito sem solução", strCorpo);
@@ -320,7 +320,7 @@ namespace wappSSI
             {
                 client.Send(mail);
             }
-            catch (Exception ex)
+            catch
             {
             }
         }

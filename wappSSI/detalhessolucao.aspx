@@ -29,28 +29,22 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4" align="left">
+                        <div class="col-sm-3" align="left">
                             <asp:Button ID="imgbtnPrevious" CssClass="btn btn-lg btn-primary" 
-                                runat="server" Text="Solução Anterior" onclick="imgbtnPrevious_Click" 
+                                runat="server" Text="<< Solução Anterior" onclick="imgbtnPrevious_Click" 
                                 Width="225px"/>
                         </div>
-                        <div class="col-sm-4" align="center" style="vertical-align:middle">
+                        <div class="col-sm-3" align="right" style="vertical-align:middle">
                             <asp:Button ID="btnVoltar" CssClass="btn btn-lg btn-primary" runat="server" 
                                 Text="Voltar - lista de solção" onclick="btnVoltar_Click" Width="225px"/>
                         </div>
-                        <div class="col-sm-4" align="right">
+                        <div class="col-sm-3" align="left" style="vertical-align:middle">
+                            <asp:Button ID="Button1" CssClass="btn btn-lg btn-success" runat="server" 
+                                    Text="Defeito Solucionado" Width="225px" onclick="btnSolucionado_Click"/>
+                        </div>
+                        <div class="col-sm-3" align="right">
                             <asp:Button ID="imgbtnNext" CssClass="btn btn-lg btn-primary" runat="server" 
-                                Text="Próxima Solução" onclick="imgbtnNext_Click" Width="225px"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4" align="left">
-                        </div>
-                        <div class="col-sm-4" align="center" style="vertical-align:middle">
-                            <asp:Button ID="btnSolucionado" CssClass="btn btn-lg btn-success" runat="server" 
-                                Text="Defeito Solucionado" Width="225px" onclick="btnSolucionado_Click"/>
-                        </div>
-                        <div class="col-sm-4" align="right">
+                                Text="Próxima Solução >>" onclick="imgbtnNext_Click" Width="225px"/>
                         </div>
                     </div>
                     <div class="page-header"><h3>Descrição da solução</h3></div>

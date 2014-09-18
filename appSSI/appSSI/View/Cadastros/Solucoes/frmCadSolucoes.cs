@@ -19,7 +19,7 @@ namespace appSSI
             InitializeComponent();
             this.ControleFiltro(null, null);
             ControleCampos(pnForm.Controls, false);
-            
+
             objCaSolucoes = new caSolucoes();
             objConSolucoes = new conSolucoes();
         }
@@ -52,8 +52,8 @@ namespace appSSI
             objConSolucoes.objCoSolucoes.LimparAtributos();
 
             int.TryParse(txtCodigo.Text, out cdSolucao);
-            objConSolucoes.objCoSolucoes.cdSolucao= cdSolucao;
-            objConSolucoes.objCoSolucoes.deSolucao= txtDescricao.Text;
+            objConSolucoes.objCoSolucoes.cdSolucao = cdSolucao;
+            objConSolucoes.objCoSolucoes.deSolucao = txtDescricao.Text;
 
             if (rbCliente.Checked)
                 objConSolucoes.objCoSolucoes.flNivel = 'C';
@@ -61,7 +61,7 @@ namespace appSSI
                 objConSolucoes.objCoSolucoes.flNivel = 'S';
             if (rbDesenvolvedor.Checked)
                 objConSolucoes.objCoSolucoes.flNivel = 'D';
-            
+
             objConSolucoes.objCoSolucoes.dtImgSolucoes = ucCadImagens.dtImagens;
             objConSolucoes.objCoSolucoes.dtSolucoesDefeitos = ucCadSolucoesDefeitos.dtDados;
         }
@@ -72,7 +72,7 @@ namespace appSSI
 
             txtCodigo.Text = drSolucao[objCaSolucoes.cdSolucao].ToString();
             txtDescricao.Text = drSolucao[objCaSolucoes.deSolucao].ToString();
-            
+
             if (Convert.ToChar(drSolucao[objCaSolucoes.flNivel].ToString()) == 'C')
                 rbCliente.Checked = true;
             if (Convert.ToChar(drSolucao[objCaSolucoes.flNivel].ToString()) == 'S')
@@ -116,7 +116,7 @@ namespace appSSI
                         base.tsbSalvar_Click(sender, e);
                         PreencheDadosGridView();
                     }
-                
+
                 }
                 if (Status == csConstantes.sAlterando)
                 {
@@ -129,7 +129,7 @@ namespace appSSI
                     }
                 }
             }
-            
+
         }
 
         public override void tsbExcluir_Click(object sender, EventArgs e)
@@ -202,4 +202,5 @@ namespace appSSI
             ImprimirRelatorio("crSolucoes.rpt");
             base.tsbImprimir_ButtonClick(sender, e);
         }
+    }
 }
