@@ -64,6 +64,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abrirchamado.aspx" />
     <Content Include="consultardefeitos.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -104,6 +105,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abrirchamado.aspx.cs">
+      <DependentUpon>abrirchamado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abrirchamado.aspx.designer.cs">
+      <DependentUpon>abrirchamado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="consultardefeitos.aspx.cs">
       <DependentUpon>consultardefeitos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
