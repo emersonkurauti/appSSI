@@ -47,7 +47,8 @@
                                 Text="Próxima Solução >>" onclick="imgbtnNext_Click" Width="225px"/>
                         </div>
                     </div>
-                    <div class="page-header"><h3>Descrição da solução</h3></div>
+                    <div class="page-header">
+                        <h3>Descrição da solução</h3></div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="well">

@@ -31,13 +31,58 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.TextBox txtDescDefeito;
         
         /// <summary>
-        /// btnEnviar control.
+        /// imgUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviar;
+        protected global::System.Web.UI.WebControls.Image imgUp;
+        
+        /// <summary>
+        /// btnCarregar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCarregar;
+        
+        /// <summary>
+        /// txtDescIMG control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDescIMG;
+        
+        /// <summary>
+        /// btnEnviarImg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEnviarImg;
+        
+        /// <summary>
+        /// gvImagens control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvImagens;
+        
+        /// <summary>
+        /// btnConfirmar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmar;
         
         /// <summary>
         /// btnCancelar control.
