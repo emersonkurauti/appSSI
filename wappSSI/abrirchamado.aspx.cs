@@ -40,12 +40,13 @@ namespace wappSSI
 
                 if ((extension == ".jpeg") || (extension == ".png") || (extension == ".jpg") || (extension == ".gif"))
                 {
+                    Session["CaminhoImg"] = path;
+                    Session["FileName"] = fileName;
+
                     path += fileName;
                     fluImagem.SaveAs(path);
 
                     imgUp.ImageUrl = "~/Imagens/Temp/" + fileName;
-
-                    Session["CaminhoImg"] = path;
 
                 }
                 else
@@ -68,7 +69,7 @@ namespace wappSSI
 
                     dr[_objCaImagensDefeitos.deCaminhoImagem] = Session["CaminhoImg"].ToString();
                     dr[_objCaImagensDefeitos.deImagem] = txtDescIMG.Text;
-                    dr[_objCaImagensDefeitos.blImagem] = Session["CaminhoImg"].ToString();
+                    dr[_objCaImagensDefeitos.blImagem] = Session["FileName"].ToString();
 
                     _dtImagens.Rows.Add(dr);
 
@@ -78,6 +79,9 @@ namespace wappSSI
                     gvImagens.AutoGenerateColumns = false;
                     gvImagens.DataSource = _dtImagens;
                     gvImagens.DataBind();
+
+                    imgUp.ImageUrl = csConstantes.imgNull;
+                    txtDescIMG.Text = "";
                 }
             }
             else
@@ -88,84 +92,94 @@ namespace wappSSI
 
         protected void btnConfirmar_Click(object sender, EventArgs e)
         {
-            //Inserir OS
-            //Gerar os e recuperar o código
-            conIntegracaoTask objConIntegracaoTask = new conIntegracaoTask();
-
-            objConIntegracaoTask.objCoIntegracaoTask.CC_cdUsuario = Convert.ToInt32(Session["cdUsuario"].ToString());
-            objConIntegracaoTask.objCoIntegracaoTask.CC_cdSistema = Convert.ToInt32(Session["cdSistema"].ToString());
-            objConIntegracaoTask.objCoIntegracaoTask.CC_cdModelo = Convert.ToInt32(Session["cdModulo"].ToString());
-            objConIntegracaoTask.objCoIntegracaoTask.CC_cdTela = Convert.ToInt32(Session["cdTela"].ToString());
-            objConIntegracaoTask.objCoIntegracaoTask.CC_descDefeito = Session["descDefeito"].ToString();
-            objConIntegracaoTask.objCoIntegracaoTask.DS_TAREFA = txtTitulo.Text;
-
-            //if (!objConIntegracaoTask.Inserir())
-            //{
-            //    MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
-            //    return;
-            //}
-
-            if (!InserirDefeito())
+            if (txtTitulo.Text.Trim() != "")
             {
-                MostraMensagem(csMensagens.msgPadrao, csMensagens.msgDefeito, "danger");
-                return;
+                if (txtDescDefeito.Text.Trim() != "")
+                {
+                    //Inserir OS
+                    //Gerar os e recuperar o código
+                    conIntegracaoTask objConIntegracaoTask = new conIntegracaoTask();
+
+                    objConIntegracaoTask.objCoIntegracaoTask.CC_cdUsuario = Convert.ToInt32(Session["cdUsuario"].ToString());
+                    objConIntegracaoTask.objCoIntegracaoTask.CC_cdSistema = Convert.ToInt32(Session["cdSistema"].ToString());
+                    objConIntegracaoTask.objCoIntegracaoTask.CC_cdModelo = Convert.ToInt32(Session["cdModulo"].ToString());
+                    objConIntegracaoTask.objCoIntegracaoTask.CC_cdTela = Convert.ToInt32(Session["cdTela"].ToString());
+                    objConIntegracaoTask.objCoIntegracaoTask.CC_descDefeito = Session["descDefeito"].ToString();
+                    objConIntegracaoTask.objCoIntegracaoTask.DS_TAREFA = txtTitulo.Text;
+
+                    //if (!objConIntegracaoTask.Inserir())
+                    //{
+                    //    MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
+                    //    return;
+                    //}
+
+                    if (!InserirDefeito())
+                    {
+                        MostraMensagem(csMensagens.msgPadrao, csMensagens.msgDefeito, "danger");
+                        return;
+                    }
+
+                    //Inserir Indicador
+                    //Colocar no Obs do indicador o motivo da não solução
+                    caParametros objCaParametros = new caParametros();
+                    conParametros objConParametros = new conParametros();
+                    caIndicador objCaIndicador = new caIndicador();
+                    conIndicadores objConIndicadores = new conIndicadores();
+                    DataTable dtParametros = objConParametros.objCoParametros.RetornaEstruturaDT();
+
+                    objConIndicadores.objCoIndicador.cdUsuario = Convert.ToInt32(Session["cdUsuario"].ToString());
+                    objConIndicadores.objCoIndicador.cdDefeito = 0;
+                    objConIndicadores.objCoIndicador.cdSolucao = 0;
+                    objConIndicadores.objCoIndicador.flResultado = 'N';
+                    objConIndicadores.objCoIndicador.cdOSGerada = objConIntegracaoTask.objCoIntegracaoTask.CD_TAREFA;
+
+                    if (Session["bNenhumDefeito"].ToString() == "S")
+                        objConIndicadores.objCoIndicador.deObservacao = "Nenhum defeito válido.";
+                    else
+                        objConIndicadores.objCoIndicador.deObservacao = "Nenhum defeito encontrado.";
+
+                    DataRow dr;
+                    dr = dtParametros.NewRow(); //Sistema
+                    dr[objCaParametros.nmParametro] = "Sistema";
+                    dr[objCaParametros.vlParametro] = Session["cdSistema"].ToString();
+                    dtParametros.Rows.Add(dr);
+
+                    dr = dtParametros.NewRow();//Módulo
+                    dr[objCaParametros.nmParametro] = "Modulo";
+                    dr[objCaParametros.vlParametro] = Session["cdModulo"].ToString();
+                    dtParametros.Rows.Add(dr);
+
+                    dr = dtParametros.NewRow();//Tela
+                    dr[objCaParametros.nmParametro] = "Tela";
+                    dr[objCaParametros.vlParametro] = Session["cdTela"].ToString();
+                    dtParametros.Rows.Add(dr);
+
+                    dr = dtParametros.NewRow();//Ação
+                    dr[objCaParametros.nmParametro] = "Acao";
+                    dr[objCaParametros.vlParametro] = Session["cdAcao"].ToString();
+                    dtParametros.Rows.Add(dr);
+
+                    dr = dtParametros.NewRow();//DescDefeito
+                    dr[objCaParametros.nmParametro] = "DescDefeito";
+                    dr[objCaParametros.vlParametro] = Session["descDefeito"].ToString();
+                    dtParametros.Rows.Add(dr);
+
+                    objConIndicadores.objCoIndicador.dtParametros = dtParametros;
+
+                    if (!objConIndicadores.Inserir())
+                    {
+                        MostraMensagem(csMensagens.msgPadrao, objConIndicadores.strMensagemErro, "danger");
+                        return;
+                    }
+
+                    Session["bOpSucesso"] = true;
+                    Response.Redirect("consultardefeitos.aspx");
+                }
+                else
+                    MostraMensagem("", csMensagens.msgInformeDesc, "warning");
             }
-
-            //Inserir Indicador
-            //Colocar no Obs do indicador o motivo da não solução
-            caParametros objCaParametros = new caParametros();
-            conParametros objConParametros = new conParametros();
-            caIndicador objCaIndicador = new caIndicador();
-            conIndicadores objConIndicadores = new conIndicadores();
-            DataTable dtParametros = objConParametros.objCoParametros.RetornaEstruturaDT();
-
-            objConIndicadores.objCoIndicador.cdUsuario = Convert.ToInt32(Session["cdUsuario"].ToString());
-            objConIndicadores.objCoIndicador.cdDefeito = 0;
-            objConIndicadores.objCoIndicador.cdSolucao = 0;
-            objConIndicadores.objCoIndicador.flResultado = 'N';
-            objConIndicadores.objCoIndicador.cdOSGerada = objConIntegracaoTask.objCoIntegracaoTask.CD_TAREFA;
-
-            if (Session["bNenhumDefeito"].ToString() == "S")
-                objConIndicadores.objCoIndicador.deObservacao = "Nenhum defeito válido.";
             else
-                objConIndicadores.objCoIndicador.deObservacao = "Nenhum defeito encontrado.";
-
-            DataRow dr;
-            dr = dtParametros.NewRow(); //Sistema
-            dr[objCaParametros.nmParametro] = "Sistema";
-            dr[objCaParametros.vlParametro] = Session["cdSistema"].ToString();
-            dtParametros.Rows.Add(dr);
-
-            dr = dtParametros.NewRow();//Módulo
-            dr[objCaParametros.nmParametro] = "Modulo";
-            dr[objCaParametros.vlParametro] = Session["cdModulo"].ToString();
-            dtParametros.Rows.Add(dr);
-
-            dr = dtParametros.NewRow();//Tela
-            dr[objCaParametros.nmParametro] = "Tela";
-            dr[objCaParametros.vlParametro] = Session["cdTela"].ToString();
-            dtParametros.Rows.Add(dr);
-
-            dr = dtParametros.NewRow();//Ação
-            dr[objCaParametros.nmParametro] = "Acao";
-            dr[objCaParametros.vlParametro] = Session["cdAcao"].ToString();
-            dtParametros.Rows.Add(dr);
-
-            dr = dtParametros.NewRow();//DescDefeito
-            dr[objCaParametros.nmParametro] = "DescDefeito";
-            dr[objCaParametros.vlParametro] = Session["descDefeito"].ToString();
-            dtParametros.Rows.Add(dr);
-
-            objConIndicadores.objCoIndicador.dtParametros = dtParametros;
-
-            if (!objConIndicadores.Inserir())
-            {
-                MostraMensagem(csMensagens.msgPadrao, objConIndicadores.strMensagemErro, "danger");
-                return;
-            }
-
-            Session["bOpSucesso"] = true;
-            Response.Redirect("consultardefeitos.aspx");
+                MostraMensagem("", csMensagens.msgInformeTitulo, "warning");
         }
 
         public bool InserirDefeito()
@@ -188,7 +202,7 @@ namespace wappSSI
 
             dtAcoesTelas.Rows.Add(dr);
 
-            objConDefeito.objCoDefeitos.deDefeito = Session["descDefeito"].ToString();
+            objConDefeito.objCoDefeitos.deDefeito = txtDescDefeito.Text;
             objConDefeito.objCoDefeitos.dtDefeitosAcoesTelas = dtAcoesTelas;
             objConDefeito.objCoDefeitos.flEstagio = 'I';
             objConDefeito.objCoDefeitos.dtImgDefeitos = _dtImagens;
@@ -219,18 +233,18 @@ namespace wappSSI
             Response.Redirect("consultardefeitos.aspx");
         }
 
-        protected void gvImagens_SelectedIndexChanged(object sender, EventArgs e)
+        protected void gvImagens_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            //_dtImagens = (DataTable)Session["_dtImagens"];
+            _dtImagens = (DataTable)Session["_dtImagens"];
 
-            //_dtImagens.Rows.RemoveAt(gvImagens.SelectedRow.RowIndex);
+            _dtImagens.Rows.RemoveAt(e.RowIndex);
 
-            //Session["_dtImagens"] = _dtImagens;
+            Session["_dtImagens"] = _dtImagens;
 
-            //gvImagens.DataSource = null;
-            //gvImagens.AutoGenerateColumns = false;
-            //gvImagens.DataSource = _dtImagens;
-            //gvImagens.DataBind();
+            gvImagens.DataSource = null;
+            gvImagens.AutoGenerateColumns = false;
+            gvImagens.DataSource = _dtImagens;
+            gvImagens.DataBind();
         }
     }
 }

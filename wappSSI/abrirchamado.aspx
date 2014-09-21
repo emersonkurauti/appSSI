@@ -23,7 +23,7 @@
                             <h1 class="panel-title">Descrição</h1>
                             <asp:TextBox ID="txtDescDefeito" runat="server" Height="100%" class="form-control"
                                 TextMode="MultiLine" placeholder="Descrição do defeito..." Width="100%" 
-                                Rows="7"></asp:TextBox>
+                                Rows="5"></asp:TextBox>
                             <br />
                             <h1 class="panel-title">Imagens</h1>
                             <div class="row">
@@ -36,7 +36,7 @@
                             <div class="row">
                                 <div class="col-sm-3">
                                     <asp:Image ID="imgUp" runat="server" Height="150px" Width="100%" 
-                                        ImageAlign="Middle" />
+                                        ImageAlign="Middle" ImageUrl="~/Imagens/null.png" />
                                     <br /><br />
                                     <asp:Button ID="btnCarregar" CssClass="btn btn-lg btn-info" runat="server" 
                                         Text="Carregar imagem" Width="100%" onclick="btnCarregar_Click"/>
@@ -58,10 +58,11 @@
                                     <br />
                                     <asp:GridView ID="gvImagens" runat="server"
                                         CssClass="table table-bordered table-hover" AllowPaging="True" 
-                                        onselectedindexchanged="gvImagens_SelectedIndexChanged">
+                                        DataKeyNames="deCaminho" onrowdeleting="gvImagens_RowDeleting">
                                         <AlternatingRowStyle CssClass="warning" />
                                         <Columns>
                                             <asp:BoundField DataField="deImagem" HeaderText="Descrição da imagem" />
+                                            <asp:BoundField DataField="deCaminho" HeaderText="deCaminho" Visible="False" />
                                             <asp:CommandField DeleteText="Remover..." ShowDeleteButton="True" >
                                                 <ControlStyle CssClass="btn btn-lg btn-danger btn-block" />
                                                 <ItemStyle Width="20%" />

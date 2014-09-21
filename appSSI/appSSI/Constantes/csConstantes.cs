@@ -9,6 +9,9 @@ namespace appSSI
 {
     public static class csConstantes
     {
+        //Imagem Nulla
+        public const string imgNull = "~/Imagens/null.png";
+
         //e-mail para notificações
         public const string emailDestinatario   = "emerson.m.k@hotmail.com";
         public const string emailRemetente      = "emerson.m.k@hotmail.com";

@@ -34,5 +34,10 @@ namespace wappSSI
         //Imagens
         public const string msgImagemSemDesc = "Informe a descrição da imagem.";
         public const string msgExtensaoImagem = "Verifique a extensão do arquivo. (gif, png, jpg ou jpeg)";
+
+        //Abrir Chamado
+        public const string msgInformeTitulo = "Por favor, informe o título do defeito.";
+        public const string msgInformeDesc = "Por favor, informe a descrição do defeito.";
+
     }
 }
