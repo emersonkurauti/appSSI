@@ -62,12 +62,14 @@ namespace wappSSI
         protected void lnkAbrirChamado_Click(object sender, EventArgs e)
         {
             //InserirOSTask(false);
+            Session["bNenhumDefeito"] = "N";
             Response.Redirect("abrirchamado.aspx");
         }
 
         protected void lnkNenhumDefeito_Click(object sender, EventArgs e)
         {
             //InserirOSTask(true);
+            Session["bNenhumDefeito"] = "S";
             Response.Redirect("abrirchamado.aspx");
         }
 

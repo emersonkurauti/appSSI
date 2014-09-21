@@ -30,5 +30,9 @@ namespace wappSSI
 
         //Memsagem padrão
         public const string msgPadrao = "Por favor, contate o suporte repassando a mensagem: ";
+
+        //Imagens
+        public const string msgImagemSemDesc = "Informe a descrição da imagem.";
+        public const string msgExtensaoImagem = "Verifique a extensão do arquivo. (gif, png, jpg ou jpeg)";
     }
 }

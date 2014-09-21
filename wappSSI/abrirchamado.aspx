@@ -11,6 +11,11 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-sm-12">
+                            <asp:Literal ID="ltMensagem" runat="server"></asp:Literal>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
                             <h1 class="panel-title">Título do defeito</h1>
                             <asp:TextBox ID="txtTitulo" class="form-control" runat="server" 
                                 placeholder="Título..." Visible="true"></asp:TextBox>
@@ -22,11 +27,19 @@
                             <br />
                             <h1 class="panel-title">Imagens</h1>
                             <div class="row">
+                                <div class="col-sm-7">
+                                    <asp:FileUpload ID="fluImagem" runat="server" CssClass="btn-lg btn-default" Width="100%" />
+                                </div>
+                                <div class="col-sm-5">
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-sm-3">
-                                    <asp:Image ID="imgUp" runat="server" Height="150px" Width="100%" />
+                                    <asp:Image ID="imgUp" runat="server" Height="150px" Width="100%" 
+                                        ImageAlign="Middle" />
                                     <br /><br />
-                                    <asp:Button ID="btnCarregar" CssClass="btn btn-lg btn-success" runat="server" 
-                                        Text="Carregar imagem" Width="100%"/>
+                                    <asp:Button ID="btnCarregar" CssClass="btn btn-lg btn-info" runat="server" 
+                                        Text="Carregar imagem" Width="100%" onclick="btnCarregar_Click"/>
                                 </div>
                                 <div class="col-sm-4">
                                     <asp:TextBox ID="txtDescIMG" runat="server" Height="150px" class="form-control"
@@ -34,7 +47,7 @@
                                         Rows="4"></asp:TextBox>
                                         <br />
                                     <asp:Button ID="btnEnviarImg" CssClass="btn btn-lg btn-primary" runat="server" 
-                                        Text="Enviar imagem" Width="100%"/>
+                                        Text="Adicionar imagem" Width="100%" onclick="btnEnviarImg_Click"/>
                                 </div>
                                 <div class="col-sm-5">
                                 </div>
@@ -42,8 +55,10 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                 <!-- Grid de imagens -->
+                                    <br />
                                     <asp:GridView ID="gvImagens" runat="server"
-                                        CssClass="table table-bordered table-hover" AllowPaging="True">
+                                        CssClass="table table-bordered table-hover" AllowPaging="True" 
+                                        onselectedindexchanged="gvImagens_SelectedIndexChanged">
                                         <AlternatingRowStyle CssClass="warning" />
                                         <Columns>
                                             <asp:BoundField DataField="deImagem" HeaderText="Descrição da imagem" />
@@ -60,11 +75,11 @@
                             <div class="row">
                                 <div class="col-sm-6" align="center">
                                     <asp:Button ID="btnConfirmar" CssClass="btn btn-lg btn-success" runat="server" 
-                                        Text="Confirmar" Width="225px"/>
+                                        Text="Confirmar" Width="225px" onclick="btnConfirmar_Click"/>
                                 </div>
                                 <div class="col-sm-6" align="center">
                                     <asp:Button ID="btnCancelar" CssClass="btn btn-lg btn-danger" runat="server" 
-                                        Text="Cancelar" Width="225px"/>
+                                        Text="Cancelar" Width="225px" onclick="btnCancelar_Click"/>
                                 </div>
                             </div>
                         </div>

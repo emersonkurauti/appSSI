@@ -13,6 +13,15 @@ namespace wappSSI {
     public partial class abrirchamado {
         
         /// <summary>
+        /// ltMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltMensagem;
+        
+        /// <summary>
         /// txtTitulo control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace wappSSI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescDefeito;
+        
+        /// <summary>
+        /// fluImagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fluImagem;
         
         /// <summary>
         /// imgUp control.

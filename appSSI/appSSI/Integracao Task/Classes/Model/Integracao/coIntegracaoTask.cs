@@ -204,11 +204,6 @@ namespace appSSI
 
             _INF_COMPL = _CC_descDefeito;
 
-            if (_CC_descDefeito.Length > 100)
-                _DS_TAREFA = _CC_descDefeito.Substring(1, 100);
-            else
-                _DS_TAREFA = _CC_descDefeito;
-
             return true;
         }
 
