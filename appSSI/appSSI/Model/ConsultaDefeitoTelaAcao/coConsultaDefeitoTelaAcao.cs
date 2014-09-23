@@ -118,7 +118,19 @@ namespace appSSI
                 dtTemp.Columns[objCaConsultaDefeitoTelaAcao.score].ReadOnly = false;
 
                 for (int i = 0; i < dtTemp.Rows.Count; i++)
-                    dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score] = CalculaScore(_deDesricao, dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.deDefeito].ToString());
+                    dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score] = CalculaScore(_deDesricao.ToLower(), dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.deDefeito].ToString().ToLower());
+
+                if (_deDesricao.Trim() != "")
+                {
+                    for (int i = 0; i < dtTemp.Rows.Count; i++)
+                    {
+                        if (Convert.ToDouble(dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score].ToString()) < csConstantes.dblGrauSimilaridade)
+                        {
+                            dtTemp.Rows.RemoveAt(i);
+                            i--;
+                        }
+                    }
+                }
 
                 if (dtTemp.Rows.Count > 1)
                 {

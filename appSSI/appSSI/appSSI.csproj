@@ -155,6 +155,19 @@
       <DependentUpon>crDefeitos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\coDefeitoSolucao.cs" />
+    <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\crDefeitoSolucao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crDefeitoSolucao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\ucParametroDefeitoSolucao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\ucParametroDefeitoSolucao.Designer.cs">
+      <DependentUpon>ucParametroDefeitoSolucao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Relatorios\Gerenciador\SolConsTempCad\coSlucoesConsultasTempoCadastrado.cs" />
     <Compile Include="Relatorios\Gerenciador\SolConsTempCad\crSolucoesConsultasTempoCadastrado.cs">
       <AutoGen>True</AutoGen>
@@ -421,6 +434,13 @@
     <EmbeddedResource Include="Relatorios\Defeitos\crDefeitos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crDefeitos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\DefeitoSolucao\crDefeitoSolucao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crDefeitoSolucao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\DefeitoSolucao\ucParametroDefeitoSolucao.resx">
+      <DependentUpon>ucParametroDefeitoSolucao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Gerenciador\SolConsTempCad\crSolucoesConsultasTempoCadastrado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

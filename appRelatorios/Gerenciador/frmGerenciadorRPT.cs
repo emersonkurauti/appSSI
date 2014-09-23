@@ -73,6 +73,8 @@ namespace appRelatorios
 
         public void PreencheParametros(Control.ControlCollection Controles)
         {
+            strProcExec = "";
+
             foreach (var control in Controles)
             {
                 if (control is TextBox)
