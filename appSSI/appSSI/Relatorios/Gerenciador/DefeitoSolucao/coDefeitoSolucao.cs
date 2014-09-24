@@ -63,6 +63,13 @@ namespace appSSI
             get { return _deAcao; }
             set { _deAcao = value; }
         }
+        private int _cdDefeito;
+
+        public int cdDefeito
+        {
+            get { return _cdDefeito; }
+            set { _cdDefeito = value; }
+        }
         private string _deSolucao;
 
         public string deSolucao

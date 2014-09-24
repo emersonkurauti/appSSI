@@ -12,6 +12,7 @@ create or replace type type_defeito_solucao as object
 		nmTela      VARCHAR2(30), 
 		cdAcao      NUMBER, 
 		deAcao      VARCHAR2(30), 
+    cdDefeito   NUMBER,
 		deSolucao   VARCHAR2(4000), 
 		flNivel     VARCHAR2(1), 
 		descDefeito VARCHAR(4000),
@@ -42,6 +43,7 @@ begin
            t.nmTela, 
            ac.cdAcao, 
            ac.deAcao,
+           de.cdDefeito,
            so.deSolucao,
            so.flNivel,
            de.deDefeito,
@@ -71,7 +73,7 @@ begin
      inner join telas_acoes ta on ta.cdTela = t.cdTela
      inner join acoes ac on ac.cdAcao = ta.cdAcao
      inner join telas_defeitos td on td.cdTela = ta.cdTela and td.cdAcao = ta.cdAcao
-	 inner join defeitos de on de.cdDefeito = td.cdDefeito
+     inner join defeitos de on de.cdDefeito = td.cdDefeito
       left join solucoes_defeitos sd on sd.cdDefeito = td.cdDefeito
       left join solucoes so on so.cdSolucao = sd.cdSolucao
      where (s.cdSistema = pcdSistema or pcdSistema = 0)
