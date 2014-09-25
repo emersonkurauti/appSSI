@@ -164,6 +164,11 @@ namespace wappSSI
                     dr[objCaParametros.vlParametro] = Session["descDefeito"].ToString();
                     dtParametros.Rows.Add(dr);
 
+                    dr = dtParametros.NewRow();//Data da consulta
+                    dr[objCaParametros.nmParametro] = "dtConsulta";
+                    dr[objCaParametros.vlParametro] = DateTime.Now;
+                    dtParametros.Rows.Add(dr);
+
                     objConIndicadores.objCoIndicador.dtParametros = dtParametros;
 
                     if (!objConIndicadores.Inserir())
