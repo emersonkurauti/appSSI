@@ -13,6 +13,8 @@ create or replace type type_cons_sol_nao_sol as object
 		nmTela          VARCHAR2(30), 
 		cdAcao          NUMBER, 
 		deAcao          VARCHAR2(30), 
+    cdEmpresa       NUMBER,
+    nmEmpresa       VARCHAR2(100),
 		flResultado     CHAR(1),
 		deSolucao       VARCHAR2(4000), 
 		dtConsulta      DATE,
@@ -20,6 +22,7 @@ create or replace type type_cons_sol_nao_sol as object
 		pcdModulo  VARCHAR2(200),
 		pcdTela    VARCHAR2(200),
 		pcdAcao    VARCHAR2(200),
+    pcdEmpresa NUMBER,
 		pdtIni     DATE,
 		pdtFim     DATE
 	);
@@ -31,6 +34,7 @@ create or replace function get_cons_sol_nao_sol(
     pcdModulo  IN modulos.cdModulo%TYPE,
     pcdTela    IN telas.cdTela%TYPE,
     pcdAcao    IN acoes.cdAcao%TYPE,
+    pcdEmpresa IN empresas.cdEmpresa%TYPE,
     pdtIni     IN DATE,
     pdtFim     IN DATE
   )
@@ -48,31 +52,38 @@ begin
            PT.nmTela,
            PA.cdAcao,
            PA.deAcao,
+           PU.cdEmpresa,
+           PU.nmEmpresa,
            CAST(I.FLRESULTADO AS CHAR(1)),
            NVL(S.DESOLUCAO, ' ') as deSolucao,
            NVL(PDTC.dtConsulta, ' ') as dtConsulta,
-               CASE WHEN pcdSistema = 0 THEN
-                 'Todos'
-               ELSE
-                 PS.cdSistema || ' - ' || PS.nmSistema
-               END AS pcdSistema,
-               CASE WHEN pcdModulo = 0 THEN
-                 'Todos'
-               ELSE
-                 PM.cdModulo || ' - ' || PM.nmModulo
-               END AS pcdModulo,
-               CASE WHEN pcdTela = 0 THEN
-                 'Todas'
-               ELSE
-                 PT.cdTela || ' - ' || PT.nmTela
-               END AS pcdTela,
-               CASE WHEN pcdAcao = 0 THEN
-                 'Todas'
-               ELSE
-                 PA.cdAcao || ' - ' || PA.deAcao
-               END AS pcdAcao,
-           pdtIni,
-           pdtFim
+           CASE WHEN pcdSistema = 0 THEN
+             'Todos'
+           ELSE
+             PS.cdSistema || ' - ' || PS.nmSistema
+           END AS pcdSistema,
+           CASE WHEN pcdModulo = 0 THEN
+             'Todos'
+           ELSE
+             PM.cdModulo || ' - ' || PM.nmModulo
+           END AS pcdModulo,
+           CASE WHEN pcdTela = 0 THEN
+             'Todas'
+           ELSE
+             PT.cdTela || ' - ' || PT.nmTela
+           END AS pcdTela,
+           CASE WHEN pcdAcao = 0 THEN
+             'Todas'
+           ELSE
+             PA.cdAcao || ' - ' || PA.deAcao
+           END AS pcdAcao,
+           CASE WHEN pcdEmpresa = 0 THEN
+             'Todas'
+           ELSE
+             PU.cdEmpresa || ' - ' || PU.nmEmpresa
+           END AS pcdAcao,
+           NVL(pdtIni, '---') as pdtIni,
+           NVL(pdtFim, '---') as pdtFim
         from INDICADORES I
        inner join (select NVL(VLPARAMETRO, ' ') as DescDefeitoPesq, CDINDICADOR
                from PARAMETROS
@@ -93,6 +104,11 @@ begin
                from PARAMETROS P
                left join Acoes Ac on Ac.cdAcao = P.VLPARAMETRO
               where NMPARAMETRO = 'Acao') PA on PA.CDINDICADOR = I.CDINDICADOR
+       inner join (select NVL(E.cdEmpresa, 0) as cdEmpresa, NVL(E.nmEmpresa, 'Sem Empresa') as nmEmpresa, P.CDINDICADOR
+               from PARAMETROS P
+               left join Usuarios U on U.cdUsuario = P.VLPARAMETRO
+               left join Empresas E on E.cdEmpresa = U.cdEmpresa
+              where NMPARAMETRO = 'Usuario') PU on PU.CDINDICADOR = I.CDINDICADOR
         left join (select NVL(P.VLPARAMETRO, ' ') as dtConsulta, P.CDINDICADOR
                from PARAMETROS P
               where NMPARAMETRO = 'dtConsulta') PDTC on PDTC.CDINDICADOR = I.CDINDICADOR
@@ -100,8 +116,9 @@ begin
        where (PS.cdSistema = pcdSistema or pcdSistema = 0)
            and (PM.cdModulo  = pcdModulo or pcdModulo = 0)
            and (PT.cdTela    = pcdTela or pcdTela = 0)
-           and (PA.cdAcao   = pcdAcao or pcdAcao = 0)
-         and ((PDTC.dtConsulta between pdtIni and pdtFim) or pdtIni is null);
+           and (PA.cdAcao    = pcdAcao or pcdAcao = 0)
+           and (PU.cdEmpresa = pcdEmpresa or pcdEmpresa = 0)
+           and ((PDTC.dtConsulta between pdtIni and pdtFim) or pdtIni is null);
  
     
   return crReult;
@@ -112,6 +129,7 @@ create or replace function popula_cons_sol_nao_sol(
     pcdModulo  IN modulos.cdModulo%TYPE,
     pcdTela    IN telas.cdTela%TYPE,
     pcdAcao    IN acoes.cdAcao%TYPE,
+    pcdEmpresa IN empresas.cdEmpresa%TYPE,
     pdtIni     IN DATE,
     pdtFim     IN DATE
   )
@@ -125,6 +143,7 @@ create or replace function popula_cons_sol_nao_sol(
   v_pcdModulo  VARCHAR2(200); 
   v_pcdTela    VARCHAR2(200); 
   v_pcdAcao    VARCHAR2(200);
+  v_pcdEmpresa VARCHAR2(200);
   v_dtIni      DATE;
   v_dtFim      DATE;
   
@@ -136,12 +155,14 @@ create or replace function popula_cons_sol_nao_sol(
   v_nmTela    telas.nmTela%TYPE; 
   v_cdAcao    acoes.cdAcao%TYPE; 
   v_deAcao    acoes.deAcao%TYPE;
+  v_cdEmpresa empresas.cdEmpresa%TYPE;
+  v_nmEmpresa empresas.nmEmpresa%TYPE;
   v_deSolucao solucoes.deSolucao%TYPE;
   v_DescDefeitoPesq varchar2(4000);
   v_flResultado VARCHAR2(4000);
   v_dtConsulta  DATE;
   begin
-    v_rc := get_cons_sol_nao_sol(pcdSistema, pcdModulo, pcdTela, pcdAcao, pdtIni, pdtFim);
+    v_rc := get_cons_sol_nao_sol(pcdSistema, pcdModulo, pcdTela, pcdAcao, pcdEmpresa, pdtIni, pdtFim);
 	
     loop
       fetch v_rc into 
@@ -154,6 +175,8 @@ create or replace function popula_cons_sol_nao_sol(
         v_nmTela, 
         v_cdAcao, 
         v_deAcao, 
+        v_cdEmpresa,
+        v_nmEmpresa,
         v_flResultado,
         v_deSolucao, 
         v_dtConsulta,
@@ -161,6 +184,7 @@ create or replace function popula_cons_sol_nao_sol(
         v_pcdModulo,
         v_pcdTela,
         v_pcdAcao,
+        v_pcdEmpresa,
         v_dtIni,
         v_dtFim;
       
@@ -177,6 +201,8 @@ create or replace function popula_cons_sol_nao_sol(
                             v_nmTela, 
                             v_cdAcao, 
                             v_deAcao, 
+                            v_cdEmpresa,
+                            v_nmEmpresa,
                             v_flResultado,
                             v_deSolucao,
                             v_dtConsulta,
@@ -184,6 +210,7 @@ create or replace function popula_cons_sol_nao_sol(
                             v_pcdModulo,
                             v_pcdTela,
                             v_pcdAcao,
+                            v_pcdEmpresa,
                             v_dtIni,
                             v_dtFim);
     end loop;
@@ -200,13 +227,19 @@ begin
     from relatorios;
     
   insert into relatorios (CDRELATORIO, DERELATORIO, deprocrelatorio, nmrelatorio, decaminhorelatorio, flgerenciado)
-  values (cdRelatorio, 'Defeitos/Soluções', 'popula_defeito_solucao', 'crDefeitoSolucao.rpt', 'C:\appSSI\appSSI\appSSI\appSSI\Relatorios\Gerenciador\DefeitoSolucao', 'S');
+  values (cdRelatorio, 'Consultas Solucionadas/N�o Solucionadas', 'popula_cons_sol_nao_sol', 'crConsSolNaoSol.rpt', 'C:\appSSI\appSSI\appSSI\appSSI\Relatorios\Gerenciador\ConsSolNaoSol', 'S');
   
   Select Max(cdParamRelatorio) + 1 into cdParamRel
     from parametros_relatorios;
   
   insert into parametros_relatorios(cdParamRelatorio, cdTpParametro, cdRelatorio, nmParamRelatorio, deSQLParamRelatorio, deComponente)
-  values (cdParamRel, 8, cdRelatorio, '', '', 'appSSI.ucParametroDefeitoSolucao,appSSI');
+  values (cdParamRel, 8, cdRelatorio, '', '', 'appSSI.ucParametroConsSolNaoSol,appSSI');
+  
+  Select Max(cdParamRelatorio) + 1 into cdParamRel
+    from parametros_relatorios;
+  
+  insert into parametros_relatorios(cdParamRelatorio, cdTpParametro, cdRelatorio, nmParamRelatorio, deSQLParamRelatorio, deComponente)
+  values (cdParamRel, 8, cdRelatorio, '', '', 'appSSI.ucPeriodo,appSSI');
   
   commit;
 end;

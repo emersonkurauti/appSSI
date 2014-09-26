@@ -70,6 +70,20 @@ namespace appSSI
             get { return _deAcao; }
             set { _deAcao = value; }
         }
+        private int _cdEmpresa;
+
+        public int cdEmpresa
+        {
+            get { return _cdEmpresa; }
+            set { _cdEmpresa = value; }
+        }
+        private string _nmEmpresa;
+
+        public string nmEmpresa
+        {
+            get { return _nmEmpresa; }
+            set { _nmEmpresa = value; }
+        }
         private char _flResultado;
 
         public char flResultado
@@ -118,6 +132,13 @@ namespace appSSI
         {
             get { return _pcdAcao; }
             set { _pcdAcao = value; }
+        }
+        private int _pcdEmpresa;
+
+        public int pcdEmpresa
+        {
+            get { return _pcdEmpresa; }
+            set { _pcdEmpresa = value; }
         }
         private DateTime _pdtIni;
 

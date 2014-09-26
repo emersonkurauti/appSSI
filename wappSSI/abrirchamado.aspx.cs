@@ -169,6 +169,11 @@ namespace wappSSI
                     dr[objCaParametros.vlParametro] = DateTime.Now;
                     dtParametros.Rows.Add(dr);
 
+                    dr = dtParametros.NewRow();//Usuário
+                    dr[objCaParametros.nmParametro] = "Usuario";
+                    dr[objCaParametros.vlParametro] = Session["cdUsuario"];
+                    dtParametros.Rows.Add(dr);
+
                     objConIndicadores.objCoIndicador.dtParametros = dtParametros;
 
                     if (!objConIndicadores.Inserir())

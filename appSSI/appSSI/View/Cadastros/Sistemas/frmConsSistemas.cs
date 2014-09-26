@@ -24,6 +24,13 @@ namespace appSSI
             set { _nmSistema = value; }
         }
 
+        private string _strFiltro;
+        public string strFiltro
+        {
+            get { return _strFiltro; }
+            set { _strFiltro = value; }
+        }
+
         conSistemas objConSistemas;
         caSistemas objCaSistemas;
 
@@ -53,6 +60,10 @@ namespace appSSI
         private void PreencheDadosGridView()
         {
             objConSistemas.objCoSistemas.LimparAtributos();
+
+            if (_strFiltro != "")
+                objConSistemas.objCoSistemas.strFiltro = _strFiltro;
+
             objConSistemas.Select();
             dgvDados.DataSource = dtDados = objConSistemas.dtDados;
         }
@@ -73,7 +84,12 @@ namespace appSSI
         {
             objConSistemas.objCoSistemas.LimparAtributos();
 
-            objConSistemas.objCoSistemas.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaSistemas.nmTabela);
+            if (_strFiltro != "")
+                objConSistemas.objCoSistemas.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaSistemas.nmTabela) +
+                    " AND " + strFiltro;
+            else
+                objConSistemas.objCoSistemas.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaSistemas.nmTabela);
+
             if (objConSistemas.Select())
                 dgvDados.DataSource = dtDados = objConSistemas.dtDados;
             else

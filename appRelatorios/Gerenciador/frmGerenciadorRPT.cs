@@ -301,6 +301,12 @@ namespace appRelatorios
                     return;
                 }
 
+                if (objConRelatorio.dtDados.Rows.Count == 0)
+                {
+                    MessageBox.Show("Não foram encontrados registros!");
+                    return;
+                }
+
                 strProcExec = "";
                 GerarRelatorio(objConRelatorio.dtDados);
             }
@@ -319,8 +325,6 @@ namespace appRelatorios
                     crDocument.Load(_strPath + "/" + strNomeRpt);
 
                     crDocument.SetDataSource(dt);
-
-                    //Add parametros
 
                     frmVisualizador f = new frmVisualizador();
                     f.carregar(crDocument);

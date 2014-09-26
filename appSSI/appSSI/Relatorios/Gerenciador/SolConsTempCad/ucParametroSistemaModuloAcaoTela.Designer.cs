@@ -38,6 +38,7 @@
             // 
             this.ucSistemasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSistemasCons.bCadastrar = false;
             this.ucSistemasCons.bMudouCodigo = false;
             this.ucSistemasCons.CampoObrigatorio = true;
             this.ucSistemasCons.Location = new System.Drawing.Point(0, 0);
@@ -53,6 +54,7 @@
             // 
             this.ucModulosCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucModulosCons.bCadastrar = false;
             this.ucModulosCons.bMudouCodigo = false;
             this.ucModulosCons.CampoObrigatorio = true;
             this.ucModulosCons.cdSistema = 0;
@@ -69,6 +71,7 @@
             // 
             this.ucTelasCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucTelasCons.bCadastrar = false;
             this.ucTelasCons.bMudouCodigo = false;
             this.ucTelasCons.CampoObrigatorio = true;
             this.ucTelasCons.cdModulo = 0;
@@ -85,6 +88,7 @@
             // 
             this.ucAcoesCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucAcoesCons.bCadastrar = false;
             this.ucAcoesCons.bMudouCodigo = false;
             this.ucAcoesCons.CampoObrigatorio = true;
             this.ucAcoesCons.cdTela = 0;

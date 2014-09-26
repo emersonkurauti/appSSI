@@ -80,11 +80,12 @@ namespace appSSI
         public override void btnConsultar_Click(object sender, EventArgs e)
         {
             objConModulos.objCoModulos.LimparAtributos();
-            
-            if (_cdSistema != 0)
-                objConModulos.objCoModulos.cdSistema = _cdSistema;
 
-            objConModulos.objCoModulos.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaModulos.nmTabela);
+            if (_cdSistema != 0)
+                objConModulos.objCoModulos.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaModulos.nmTabela) + " AND cdSistema = " + _cdSistema.ToString();
+            else
+                objConModulos.objCoModulos.strFiltro = MontarFiltroConsulta(dgvFiltro, objCaModulos.nmTabela);
+
             if (objConModulos.Select())
                 dgvDados.DataSource = dtDados = objConModulos.dtDados;
             else

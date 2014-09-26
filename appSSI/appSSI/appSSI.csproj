@@ -162,6 +162,18 @@
       <DependentUpon>crConsSolNaoSol.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Relatorios\Gerenciador\ConsSolNaoSol\ucParametroConsSolNaoSol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\ConsSolNaoSol\ucParametroConsSolNaoSol.Designer.cs">
+      <DependentUpon>ucParametroConsSolNaoSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\ConsSolNaoSol\ucPeriodo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Gerenciador\ConsSolNaoSol\ucPeriodo.Designer.cs">
+      <DependentUpon>ucPeriodo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\coDefeitoSolucao.cs" />
     <Compile Include="Relatorios\Gerenciador\DefeitoSolucao\crDefeitoSolucao.cs">
       <AutoGen>True</AutoGen>
@@ -445,6 +457,12 @@
     <EmbeddedResource Include="Relatorios\Gerenciador\ConsSolNaoSol\crConsSolNaoSol.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crConsSolNaoSol.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\ConsSolNaoSol\ucParametroConsSolNaoSol.resx">
+      <DependentUpon>ucParametroConsSolNaoSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Gerenciador\ConsSolNaoSol\ucPeriodo.resx">
+      <DependentUpon>ucPeriodo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Gerenciador\DefeitoSolucao\crDefeitoSolucao.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
