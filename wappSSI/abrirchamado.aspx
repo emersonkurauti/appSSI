@@ -16,14 +16,49 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="panel-title">Título do defeito</h1>
-                            <asp:TextBox ID="txtTitulo" class="form-control" runat="server" 
-                                placeholder="Título..." Visible="true"></asp:TextBox>
-                            <br />
-                            <h1 class="panel-title">Descrição</h1>
-                            <asp:TextBox ID="txtDescDefeito" runat="server" Height="100%" class="form-control"
-                                TextMode="MultiLine" placeholder="Descrição do defeito..." Width="100%" 
-                                Rows="5"></asp:TextBox>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h1 class="panel-title">Sistema</h1>
+                                        <asp:DropDownList ID="ddlSistema" class="btn btn-default dropdown-toggle" style="text-align:left" 
+                                        runat="server" Width="100%" AutoPostBack="True" 
+                                        onselectedindexchanged="ddlSistema_SelectedIndexChanged">
+                                        </asp:DropDownList>
+                                    <asp:TextBox ID="txtSistema" class="form-control" runat="server" 
+                                        placeholder="Sistema..." Visible="False"></asp:TextBox>
+                                    <h1 class="panel-title">Módulo</h1>
+                                        <asp:DropDownList ID="ddlModulo" class="btn btn-default dropdown-toggle" style="text-align:left" 
+                                        runat="server" Width="100%" AutoPostBack="True" 
+                                        onselectedindexchanged="ddlModulo_SelectedIndexChanged">
+                                        </asp:DropDownList>
+                                    <asp:TextBox ID="txtModulo" class="form-control" runat="server" 
+                                        placeholder="Módulo..." Visible="False"></asp:TextBox>
+                                    <h1 class="panel-title">Tela</h1>
+                                        <asp:DropDownList ID="ddlTela" class="btn btn-default dropdown-toggle" style="text-align:left" 
+                                        runat="server" Width="100%" AutoPostBack="True" 
+                                        onselectedindexchanged="ddlTela_SelectedIndexChanged">
+                                        </asp:DropDownList>
+                                    <asp:TextBox ID="txtTela" class="form-control" runat="server" 
+                                        placeholder="Tela..." Visible="False"></asp:TextBox>
+                                    <h1 class="panel-title">Ação</h1>
+                                        <asp:DropDownList ID="ddlAcao" class="btn btn-default dropdown-toggle" style="text-align:left" 
+                                        runat="server" Width="100%" AutoPostBack="True" 
+                                        onselectedindexchanged="ddlAcao_SelectedIndexChanged">
+                                        </asp:DropDownList>
+                                    <asp:TextBox ID="txtAcao" class="form-control" runat="server" 
+                                        placeholder="Ação..." Visible="False"></asp:TextBox>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h1 class="panel-title">Título do defeito</h1>
+                                    <asp:TextBox ID="txtTitulo" class="form-control" runat="server" 
+                                        placeholder="Título..." Visible="true"></asp:TextBox>
+                                    <br />
+                                    <h1 class="panel-title">Descrição</h1>
+                                    <asp:TextBox ID="txtDescDefeito" runat="server" Height="100%" class="form-control"
+                                        TextMode="MultiLine" placeholder="Descrição do defeito..." Width="100%" 
+                                        Rows="5"></asp:TextBox>
+                                </div>
+                            </div>
+                            
                             <br />
                             <h1 class="panel-title">Imagens</h1>
                             <div class="row">

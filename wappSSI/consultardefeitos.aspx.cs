@@ -33,13 +33,13 @@ namespace wappSSI
 
             ddlModulo.SelectedIndex = -1;
             txtModulo.Visible = false;
-            
+
             ddlTela.SelectedIndex = -1;
             txtTela.Visible = false;
-            
+
             ddlAcao.SelectedIndex = -1;
             txtAcao.Visible = false;
-            
+
             txtDescDefeito.Text = "";
 
             if (Session["bOpSucesso"] != null && Convert.ToBoolean(Session["bOpSucesso"].ToString()))
@@ -401,10 +401,13 @@ namespace wappSSI
                 Session["nmSistema"]    = ddlSistema.SelectedItem.Text;
                 Session["cdModulo"]     = Convert.ToInt32(ddlModulo.SelectedValue.ToString());
                 Session["nmModulo"]     = ddlModulo.SelectedItem.Text;
+                Session["OutroModulo"]  = txtModulo.Text;
                 Session["cdTela"]       = Convert.ToInt32(ddlTela.SelectedValue.ToString());
                 Session["nmTela"]       = ddlTela.SelectedItem.Text;
+                Session["OutraTela"]    = txtTela.Text;
                 Session["cdAcao"]       = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
                 Session["deAcao"]       = ddlAcao.SelectedItem.Text;
+                Session["OutraAcao"]    = txtAcao.Text;
                 Session["descDefeito"]  = txtDescDefeito.Text;
                 Session["dtResultados"] = objConConsultaDefeitoTelaAcao.dtDados;
                 Response.Redirect("resultadodefeitos.aspx");
