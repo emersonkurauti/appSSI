@@ -154,5 +154,14 @@ namespace appSSI
             get { return _pdtFim; }
             set { _pdtFim = value; }
         }
+
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        public coConsSolNaoSol()
+        {
+            AtualizaObj();
+            LimparAtributos();
+        }
     }
 }

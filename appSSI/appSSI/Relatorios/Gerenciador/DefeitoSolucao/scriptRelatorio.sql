@@ -114,6 +114,7 @@ create or replace function popula_defeito_solucao(
   v_deSolucao solucoes.deSolucao%TYPE;
   v_flNivel   solucoes.flNivel%TYPE;
   v_deDefeito defeitos.deDefeito%TYPE;
+  v_cdDefeito defeitos.cdDefeito%TYPE;
   begin
     v_rc := get_defeito_solucao(pcdSistema, pcdModulo, pcdTela, pcdAcao);
 	
@@ -127,6 +128,7 @@ create or replace function popula_defeito_solucao(
         v_nmTela, 
         v_cdAcao, 
         v_deAcao, 
+        v_cdDefeito,
         v_deSolucao, 
         v_flNivel, 
         v_deDefeito,
@@ -146,6 +148,7 @@ create or replace function popula_defeito_solucao(
                                                  v_nmTela, 
                                                  v_cdAcao, 
                                                  v_deAcao, 
+                                                 v_cdDefeito,
                                                  v_deSolucao, 
                                                  v_flNivel, 
                                                  v_deDefeito,

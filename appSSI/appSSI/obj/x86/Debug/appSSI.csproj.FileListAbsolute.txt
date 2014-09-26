@@ -178,3 +178,4 @@ C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cach
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucPeriodo.resources
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroDefSolConsSol.resources
