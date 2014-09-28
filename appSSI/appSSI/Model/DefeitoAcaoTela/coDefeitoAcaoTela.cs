@@ -92,13 +92,13 @@ namespace appSSI
                 foreach (DataRow dr in dtDados.Rows)
                 {
                     objconTelas.objCoTelas.LimparAtributos();
-                    objconTelas.objCoTelas.cdTela = Convert.ToInt32(dr[objCaDefeitoAcaoTela.cdTela].ToString());
+                    objconTelas.objCoTelas.strFiltro = " Where cdTela = " + dr[objCaDefeitoAcaoTela.cdTela].ToString();
 
                     if (objconTelas.Select())
                         dr[objCaDefeitoAcaoTela.CC_deTela] = objconTelas.dtDados.Rows[0][objcaTelas.nmTela].ToString();
                     
                     objconAcoes.objCoAcoes.LimparAtributos();
-                    objconAcoes.objCoAcoes.cdAcao = Convert.ToInt32(dr[objCaDefeitoAcaoTela.cdAcao].ToString());
+                    objconAcoes.objCoAcoes.strFiltro = " Where cdAcao = " + dr[objCaDefeitoAcaoTela.cdAcao].ToString();
 
                     if (objconAcoes.Select())
                         dr[objCaDefeitoAcaoTela.CC_deAcao] = objconAcoes.dtDados.Rows[0][objcaAcoes.deAcao].ToString();

@@ -140,16 +140,16 @@ namespace appSSI
             get { return _pcdEmpresa; }
             set { _pcdEmpresa = value; }
         }
-        private DateTime _pdtIni;
+        private string _pdtIni;
 
-        public DateTime pdtIni
+        public string pdtIni
         {
             get { return _pdtIni; }
             set { _pdtIni = value; }
         }
-        private DateTime _pdtFim;
+        private string _pdtFim;
 
-        public DateTime pdtFim
+        public string pdtFim
         {
             get { return _pdtFim; }
             set { _pdtFim = value; }

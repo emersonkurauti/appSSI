@@ -45,8 +45,11 @@ namespace appSSI
 
         public override string GetParametros()
         {
-            return strParamtros = "'" + dtpInicial.Value.Date.ToString().Substring(0, 10) + "'" + ',' +
-                                  "'" + dtpFinal.Value.Date.ToString().Substring(0, 10) + "'";
+            if (cbInformar.Checked)
+                return strParamtros = "'" + dtpInicial.Value.Date.ToString().Substring(0, 10) + "'" + ',' +
+                                      "'" + dtpFinal.Value.Date.ToString().Substring(0, 10) + "'";
+            else
+                return strParamtros = "null, null";
         }
     }
 }

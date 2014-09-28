@@ -22,9 +22,9 @@ create or replace type type_cons_sol_nao_sol as object
 		pcdModulo  VARCHAR2(200),
 		pcdTela    VARCHAR2(200),
 		pcdAcao    VARCHAR2(200),
-    pcdEmpresa NUMBER,
-		pdtIni     DATE,
-		pdtFim     DATE
+    pcdEmpresa VARCHAR2(200),
+		pdtIni     VARCHAR2(10),
+		pdtFim     VARCHAR2(10)
 	);
 /
 create or replace type t_type_cons_sol_nao_sol as table of type_cons_sol_nao_sol;
@@ -35,8 +35,8 @@ create or replace function get_cons_sol_nao_sol(
     pcdTela    IN telas.cdTela%TYPE,
     pcdAcao    IN acoes.cdAcao%TYPE,
     pcdEmpresa IN empresas.cdEmpresa%TYPE,
-    pdtIni     IN DATE,
-    pdtFim     IN DATE
+    pdtIni     IN VARCHAR2,
+    pdtFim     IN VARCHAR2
   )
   return sys_refcursor
 AS
@@ -56,7 +56,7 @@ begin
            PU.nmEmpresa,
            CAST(I.FLRESULTADO AS CHAR(1)),
            NVL(S.DESOLUCAO, ' ') as deSolucao,
-           NVL(PDTC.dtConsulta, ' ') as dtConsulta,
+           NVL(SUBSTR(PDTC.dtConsulta,1,10), ' ') as dtConsulta,
            CASE WHEN pcdSistema = 0 THEN
              'Todos'
            ELSE
@@ -81,7 +81,7 @@ begin
              'Todas'
            ELSE
              PU.cdEmpresa || ' - ' || PU.nmEmpresa
-           END AS pcdAcao,
+           END AS pcdEmpresa,
            NVL(pdtIni, '---') as pdtIni,
            NVL(pdtFim, '---') as pdtFim
         from INDICADORES I
@@ -130,8 +130,8 @@ create or replace function popula_cons_sol_nao_sol(
     pcdTela    IN telas.cdTela%TYPE,
     pcdAcao    IN acoes.cdAcao%TYPE,
     pcdEmpresa IN empresas.cdEmpresa%TYPE,
-    pdtIni     IN DATE,
-    pdtFim     IN DATE
+    pdtIni     IN VARCHAR2,
+    pdtFim     IN VARCHAR2
   )
   return t_type_cons_sol_nao_sol is
   v_emptype t_type_cons_sol_nao_sol := t_type_cons_sol_nao_sol();
@@ -144,8 +144,8 @@ create or replace function popula_cons_sol_nao_sol(
   v_pcdTela    VARCHAR2(200); 
   v_pcdAcao    VARCHAR2(200);
   v_pcdEmpresa VARCHAR2(200);
-  v_dtIni      DATE;
-  v_dtFim      DATE;
+  v_dtIni      VARCHAR2(10);
+  v_dtFim      VARCHAR2(10);
   
   v_cdSistema sistemas.cdSistema%TYPE;
   v_nmSistema sistemas.nmSistema%TYPE; 
@@ -186,7 +186,8 @@ create or replace function popula_cons_sol_nao_sol(
         v_pcdAcao,
         v_pcdEmpresa,
         v_dtIni,
-        v_dtFim;
+        v_dtFim
+        ;
       
       exit when v_rc%NOTFOUND;
       v_emptype.extend;
@@ -212,7 +213,8 @@ create or replace function popula_cons_sol_nao_sol(
                             v_pcdAcao,
                             v_pcdEmpresa,
                             v_dtIni,
-                            v_dtFim);
+                            v_dtFim
+                            );
     end loop;
     close v_rc;
     return v_emptype;

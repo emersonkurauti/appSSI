@@ -93,6 +93,7 @@ namespace appSSI
         private string RetornaFiltroListaSistemas()
         {
             string _sListaSistemas = "";
+            string _strCondicao = "";
 
             if (_cdEmpresa != 0)
             {
@@ -109,7 +110,8 @@ namespace appSSI
 
                 if (objconSistemasEmpresas.dtDados.Rows.Count > 0)
                 {
-                    _sListaSistemas = " cdSistema in (";
+                    _sListaSistemas = "";
+                    _strCondicao = " where cdSistema in (";
 
                     for (int i = 0; i < objconSistemasEmpresas.dtDados.Rows.Count; i++)
                     {
@@ -118,14 +120,16 @@ namespace appSSI
 
                     _sListaSistemas = _sListaSistemas.Substring(0, _sListaSistemas.Length - 1);
 
-                    _sListaSistemas += _sListaSistemas + ")";
+                    _sListaSistemas += ")";
 
                     if (txtCodigo.Text.Trim() != "")
                         _sListaSistemas += " AND cdSistema = " + txtCodigo.Text.Trim();
+
+                    _strCondicao += _sListaSistemas;
                 }
             }
 
-            return _sListaSistemas;
+            return _strCondicao;
         }
     }
 }

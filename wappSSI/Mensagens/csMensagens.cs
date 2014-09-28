@@ -38,6 +38,6 @@ namespace wappSSI
         //Abrir Chamado
         public const string msgInformeTitulo = "Por favor, informe o título do defeito.";
         public const string msgInformeDesc = "Por favor, informe a descrição do defeito.";
-
+        public const string msgInformeOutros = "Ao selecionar a opção 'Outros', deve ser preenchido o campo abaixo do módulo/tela/ação.";
     }
 }
