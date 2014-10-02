@@ -73,7 +73,7 @@
                                     <asp:Image ID="imgUp" runat="server" Height="150px" Width="100%" 
                                         ImageAlign="Middle" ImageUrl="~/Imagens/null.png" />
                                     <br /><br />
-                                    <asp:Button ID="btnCarregar" CssClass="btn btn-lg btn-info" runat="server" 
+                                    <asp:Button ID="btnCarregar" CssClass="btn btn-sm btn-info" runat="server" 
                                         Text="Carregar imagem" Width="100%" onclick="btnCarregar_Click"/>
                                 </div>
                                 <div class="col-sm-4">
@@ -81,7 +81,7 @@
                                         TextMode="MultiLine" placeholder="Descrição da imagem..." Width="100%" 
                                         Rows="4"></asp:TextBox>
                                         <br />
-                                    <asp:Button ID="btnEnviarImg" CssClass="btn btn-lg btn-primary" runat="server" 
+                                    <asp:Button ID="btnEnviarImg" CssClass="btn btn-sm btn-primary" runat="server" 
                                         Text="Adicionar imagem" Width="100%" onclick="btnEnviarImg_Click"/>
                                 </div>
                                 <div class="col-sm-5">
@@ -96,10 +96,15 @@
                                         DataKeyNames="deCaminho" onrowdeleting="gvImagens_RowDeleting">
                                         <AlternatingRowStyle CssClass="warning" />
                                         <Columns>
+                                            <asp:ImageField DataImageUrlField="blImagem" 
+                                                DataImageUrlFormatString="~/Imagens/Temp/{0}">
+                                                <ControlStyle Height="150px" Width="150px" />
+                                                <ItemStyle Height="150px" Width="150px" />
+                                            </asp:ImageField>
                                             <asp:BoundField DataField="deImagem" HeaderText="Descrição da imagem" />
                                             <asp:BoundField DataField="deCaminho" HeaderText="deCaminho" Visible="False" />
                                             <asp:CommandField DeleteText="Remover..." ShowDeleteButton="True" >
-                                                <ControlStyle CssClass="btn btn-lg btn-danger btn-block" />
+                                                <ControlStyle CssClass="btn btn-sm btn-danger btn-block" />
                                                 <ItemStyle Width="20%" />
                                             </asp:CommandField>
                                         </Columns>
@@ -110,12 +115,16 @@
                             <br />
                             <div class="row">
                                 <div class="col-sm-6" align="center">
-                                    <asp:Button ID="btnConfirmar" CssClass="btn btn-lg btn-success" runat="server" 
-                                        Text="Confirmar" Width="225px" onclick="btnConfirmar_Click"/>
+                                    <!--<asp:Button ID="btnConfirmar" CssClass="btn btn-lg btn-success" runat="server" 
+                                        Text="Confirmar" Width="225px" onclick="btnConfirmar_Click"/>-->
+                                    <asp:ImageButton ID="imgbConfirma" runat="server" 
+                                        ImageUrl="~/Icons/Confirma.png" Height="75px" Width="75px" onclick="btnConfirmar_Click" />
                                 </div>
                                 <div class="col-sm-6" align="center">
-                                    <asp:Button ID="btnCancelar" CssClass="btn btn-lg btn-danger" runat="server" 
-                                        Text="Cancelar" Width="225px" onclick="btnCancelar_Click"/>
+                                    <!--<asp:Button ID="btnCancelar" CssClass="btn btn-lg btn-danger" runat="server" 
+                                        Text="Cancelar" Width="225px" onclick="btnCancelar_Click"/>-->
+                                    <asp:ImageButton ID="imgbCancel" runat="server" 
+                                        ImageUrl="~/Icons/Cancelar.png" Height="75px" Width="75px" onclick="btnCancelar_Click" />
                                 </div>
                             </div>
                         </div>

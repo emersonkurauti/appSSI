@@ -48,12 +48,14 @@ namespace appSSI
         private void CarregaObjeto()
         {
             int cdModulo;
+            int cdSistema;
 
             objConModulos.objCoModulos.LimparAtributos();
 
             int.TryParse(txtCodigo.Text, out cdModulo);
             objConModulos.objCoModulos.cdModulo = cdModulo;
-            objConModulos.objCoModulos.cdSistema = Convert.ToInt32(ucSistemasCons.txtCodigo.Text);
+            int.TryParse(ucSistemasCons.txtCodigo.Text, out cdSistema);
+            objConModulos.objCoModulos.cdSistema = cdSistema;
             objConModulos.objCoModulos.nmModulo = txtDescricao.Text;
             objConModulos.objCoModulos.taskModulo = txtModuloTASK.Text;
         }

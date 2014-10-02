@@ -44,7 +44,7 @@ namespace appSSI
         {
             if (txtCodigo.Text != "")
             {
-                if (Convert.ToInt32(txtCodigo.Text) > 0)
+                if (Convert.ToInt32(txtCodigo.Text) >= 0)
                 {
                     objConTelas.objCoTelas.LimparAtributos();
                     objConTelas.objCoTelas.cdTela = Convert.ToInt32(txtCodigo.Text);

@@ -64,7 +64,7 @@ namespace appSSI
         {
             if (txtCodigo.Text != "")
             {
-                if (Convert.ToInt32(txtCodigo.Text) > 0)
+                if (Convert.ToInt32(txtCodigo.Text) >= 0)
                 {
                     if (_cdTela == 0)
                     {

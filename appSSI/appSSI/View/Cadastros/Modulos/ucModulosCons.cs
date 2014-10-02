@@ -44,11 +44,21 @@ namespace appSSI
         {
             if (txtCodigo.Text != "")
             {
-                if (Convert.ToInt32(txtCodigo.Text) > 0)
+                if (Convert.ToInt32(txtCodigo.Text) >= 0)
                 {
                     objConModulos.objCoModulos.LimparAtributos();
-                    objConModulos.objCoModulos.cdModulo = Convert.ToInt32(txtCodigo.Text);
-                    objConModulos.objCoModulos.cdSistema = _cdSistema;
+
+                    string strFiltro = RetornaFiltro();
+
+                    if (strFiltro != "")
+                    {
+                        objConModulos.objCoModulos.strFiltro = strFiltro;
+                    }
+                    else
+                    {
+                        objConModulos.objCoModulos.cdModulo = Convert.ToInt32(txtCodigo.Text);
+                        objConModulos.objCoModulos.cdSistema = _cdSistema;
+                    }
                     objConModulos.Select();
 
                     if (objConModulos.dtDados.Rows.Count > 0)
@@ -86,6 +96,21 @@ namespace appSSI
         {
             frmCadModulos frmCadModulos = new frmCadModulos();
             frmCadModulos.ShowDialog();
+        }
+
+        private string RetornaFiltro()
+        {
+            string _strCondicao = "";
+
+            if ((Convert.ToInt32(txtCodigo.Text.Trim()) == 0))
+            {
+                _strCondicao = " WHERE cdModulo = " + txtCodigo.Text.Trim();
+
+                if (_cdSistema != 0)
+                    _strCondicao += " AND cdSistema = " + _cdSistema;
+            }
+            
+            return _strCondicao;
         }
     }
 }

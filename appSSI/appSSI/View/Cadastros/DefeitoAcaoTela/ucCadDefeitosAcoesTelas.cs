@@ -119,28 +119,28 @@ namespace appSSI
         /// <param name="e"></param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
-                if (ucTelasCons.txtCodigo.Text != "" && ucAcoesCons.txtCodigo.Text !="")
+            if (ucTelasCons.txtCodigo.Text != "" && ucAcoesCons.txtCodigo.Text != "")
+            {
+                if (!VerificarSeJahExiste(Convert.ToInt32(ucTelasCons.txtCodigo.Text), Convert.ToInt32(ucAcoesCons.txtCodigo.Text)))
                 {
-                    if (!VerificarSeJahExiste(Convert.ToInt32(ucTelasCons.txtCodigo.Text), Convert.ToInt32(ucAcoesCons.txtCodigo.Text)))
-                    {
-                        DataRow dr = _dtDados.NewRow();
+                    DataRow dr = _dtDados.NewRow();
 
-                        dr[objCaDefeitoAcaoTela.cdTela] = Convert.ToInt32(ucTelasCons.txtCodigo.Text);
-                        dr[objCaDefeitoAcaoTela.cdAcao] = Convert.ToInt32(ucAcoesCons.txtCodigo.Text);
-                        dr[objCaDefeitoAcaoTela.cdDefeito] = _cdDefeito;
-                        dr[objCaDefeitoAcaoTela.CC_deAcao] = ucAcoesCons.txtDescricao.Text;
-                        dr[objCaDefeitoAcaoTela.CC_deTela] = ucTelasCons.txtDescricao.Text;
+                    dr[objCaDefeitoAcaoTela.cdTela] = Convert.ToInt32(ucTelasCons.txtCodigo.Text);
+                    dr[objCaDefeitoAcaoTela.cdAcao] = Convert.ToInt32(ucAcoesCons.txtCodigo.Text);
+                    dr[objCaDefeitoAcaoTela.cdDefeito] = _cdDefeito;
+                    dr[objCaDefeitoAcaoTela.CC_deAcao] = ucAcoesCons.txtDescricao.Text;
+                    dr[objCaDefeitoAcaoTela.CC_deTela] = ucTelasCons.txtDescricao.Text;
 
-                        _dtDados.Rows.Add(dr);
+                    _dtDados.Rows.Add(dr);
 
-                        dgvAcoesTelas.AutoGenerateColumns = false;
-                        dgvAcoesTelas.DataSource = _dtDados;
-                    }
-                    else
-                        MessageBox.Show(csMensagens.msgDefeitoJahReferenciadoAcaoTela);
+                    dgvAcoesTelas.AutoGenerateColumns = false;
+                    dgvAcoesTelas.DataSource = _dtDados;
                 }
                 else
-                    MessageBox.Show(csMensagens.msgSelecioneAcaoTela);
+                    MessageBox.Show(csMensagens.msgDefeitoJahReferenciadoAcaoTela);
+            }
+            else
+                MessageBox.Show(csMensagens.msgSelecioneAcaoTela);
         }
 
         /// <summary>

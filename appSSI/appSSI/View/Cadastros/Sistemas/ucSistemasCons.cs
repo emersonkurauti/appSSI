@@ -44,7 +44,7 @@ namespace appSSI
         {
             if (txtCodigo.Text != "")
             {
-                if (Convert.ToInt32(txtCodigo.Text) > 0)
+                if (Convert.ToInt32(txtCodigo.Text) >= 0)
                 {
                     
                     objConSistemas.objCoSistemas.LimparAtributos();
@@ -128,6 +128,9 @@ namespace appSSI
                     _strCondicao += _sListaSistemas;
                 }
             }
+
+            if ((_strCondicao == "") && (Convert.ToInt32(txtCodigo.Text.Trim()) == 0))
+                _strCondicao += " WHERE cdSistema = " + txtCodigo.Text.Trim();
 
             return _strCondicao;
         }

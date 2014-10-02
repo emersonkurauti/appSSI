@@ -77,6 +77,8 @@
     <Content Include="detalhesdefeito.aspx" />
     <Content Include="detalhessolucao.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Icons\Confirma.png" />
+    <Content Include="Icons\Cancelar.png" />
     <Content Include="Imagens\null.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />

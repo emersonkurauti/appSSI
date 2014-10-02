@@ -30,16 +30,16 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4" align="left">
-                            <asp:Button ID="imgbtnPrevious" CssClass="btn btn-lg btn-primary" 
+                            <asp:Button ID="imgbtnPrevious" CssClass="btn btn-sm btn-primary" 
                                 runat="server" Text="<< Defeito Anterior" onclick="imgbtnPrevious_Click" 
                                 Width="225px"/>
                         </div>
                         <div class="col-sm-4" align="center" style="vertical-align:middle">
-                            <asp:Button ID="btnVoltar" CssClass="btn btn-lg btn-primary" runat="server" 
+                            <asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
                                 Text="Voltar - lista de defeitos" onclick="btnVoltar_Click" Width="225px"/>
                         </div>
                         <div class="col-sm-4" align="right">
-                            <asp:Button ID="imgbtnNext" CssClass="btn btn-lg btn-primary" runat="server" 
+                            <asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
                                 Text="Próximo Defeito >>" onclick="imgbtnNext_Click" Width="225px"/>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                                     <asp:BoundField DataField="deSolucao" HeaderText="Descrição" />
                                     <asp:CommandField ButtonType="Button" SelectText="Detalhes..." 
                                         ShowSelectButton="True">
-                                        <ControlStyle CssClass="btn btn-lg btn-primary btn-block" />
+                                        <ControlStyle CssClass="btn btn-sm btn-primary btn-block" />
                                     <ItemStyle Width="20%" />
                                     </asp:CommandField>
                                 </Columns>

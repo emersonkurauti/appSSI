@@ -99,13 +99,14 @@ namespace appSSI
 
         private void CarregaObjeto()
         {
-            int cdTela;
+            int cdTela, cdModulo;
 
             objConTelas.objCoTelas.LimparAtributos();
 
             int.TryParse(txtCodigo.Text, out cdTela);
             objConTelas.objCoTelas.cdTela = cdTela;
-            objConTelas.objCoTelas.cdModulo = Convert.ToInt32(ucModulosCons.txtCodigo.Text);
+            int.TryParse(ucModulosCons.txtCodigo.Text, out cdModulo);
+            objConTelas.objCoTelas.cdModulo = cdModulo;
             objConTelas.objCoTelas.nmTela = txtDescicao.Text;
 
             objConTelas.objCoTelas.dtTelasAcoes = dtAcoes;

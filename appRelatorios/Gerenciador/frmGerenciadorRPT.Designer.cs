@@ -39,13 +39,14 @@
             // 
             // lbRPT
             // 
-            this.lbRPT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbRPT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.lbRPT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbRPT.FormattingEnabled = true;
             this.lbRPT.Location = new System.Drawing.Point(6, 19);
             this.lbRPT.Name = "lbRPT";
-            this.lbRPT.Size = new System.Drawing.Size(168, 353);
+            this.lbRPT.Size = new System.Drawing.Size(219, 353);
             this.lbRPT.TabIndex = 0;
             this.lbRPT.SelectedIndexChanged += new System.EventHandler(this.lbRPT_SelectedIndexChanged);
             // 
@@ -55,9 +56,9 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.gbParam.Controls.Add(this.flpParam);
-            this.gbParam.Location = new System.Drawing.Point(198, 12);
+            this.gbParam.Location = new System.Drawing.Point(246, 12);
             this.gbParam.Name = "gbParam";
-            this.gbParam.Size = new System.Drawing.Size(550, 358);
+            this.gbParam.Size = new System.Drawing.Size(723, 358);
             this.gbParam.TabIndex = 1;
             this.gbParam.TabStop = false;
             this.gbParam.Text = "Parâmetros";
@@ -68,7 +69,7 @@
             this.flpParam.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpParam.Location = new System.Drawing.Point(3, 16);
             this.flpParam.Name = "flpParam";
-            this.flpParam.Size = new System.Drawing.Size(544, 339);
+            this.flpParam.Size = new System.Drawing.Size(717, 339);
             this.flpParam.TabIndex = 0;
             // 
             // groupBox2
@@ -78,7 +79,7 @@
             this.groupBox2.Controls.Add(this.lbRPT);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(180, 384);
+            this.groupBox2.Size = new System.Drawing.Size(231, 384);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Relatórios";
@@ -87,9 +88,9 @@
             // 
             this.btnVisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVisualizar.Location = new System.Drawing.Point(201, 373);
+            this.btnVisualizar.Location = new System.Drawing.Point(249, 373);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(547, 23);
+            this.btnVisualizar.Size = new System.Drawing.Size(720, 23);
             this.btnVisualizar.TabIndex = 3;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
@@ -100,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(760, 406);
+            this.ClientSize = new System.Drawing.Size(981, 406);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbParam);

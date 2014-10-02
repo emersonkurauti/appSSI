@@ -10,7 +10,7 @@ namespace appSSI
     public static class csConstantes
     {
         //Grau mínimo de similaridade
-        public const double dblGrauSimilaridade = 0.7f;
+        public const double dblGrauSimilaridade = 0.55f;
 
         //Imagem Nulla
         public const string imgNull = "~/Imagens/null.png";

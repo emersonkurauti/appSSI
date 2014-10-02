@@ -38,7 +38,7 @@
                                     <asp:BoundField DataField="deDefeito" HeaderText="Descrição" />
                                     <asp:CommandField ButtonType="Button" SelectText="Detalhes..." 
                                         ShowSelectButton="True">
-                                        <ControlStyle CssClass="btn btn-lg btn-primary btn-block" />
+                                        <ControlStyle CssClass="btn btn-sm btn-primary btn-block" />
                                     <ItemStyle Width="20%" />
                                     </asp:CommandField>
                                 </Columns>

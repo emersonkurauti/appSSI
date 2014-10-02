@@ -418,17 +418,30 @@ namespace wappSSI
                     //    return;
                     //}
 
-                    if ((Convert.ToInt32(ddlModulo.SelectedValue.ToString()) == 0) ||
-                        (Convert.ToInt32(ddlTela.SelectedValue.ToString()) == 0) ||
-                        (Convert.ToInt32(ddlAcao.SelectedValue.ToString()) == 0))
+                    if ((Convert.ToInt32(ddlAcao.SelectedValue.ToString()) == 0) &&
+                       (Convert.ToInt32(ddlTela.SelectedValue.ToString()) != 0))
                     {
-                        EnviarNotificacao("Solicitação de cadastro", strOutros);
+                        Session["cdTela"] = 0;
+                        Session["OutraTela"] = ddlTela.SelectedItem.Text;
+
+                        strOutros += "\n\n" + "Atenção!" +
+                            "\n Alterar a tela para: " + ddlSistema.SelectedValue.ToString() + " - " + ddlTela.SelectedItem.Text;
                     }
 
                     if (!InserirDefeito())
                     {
                         MostraMensagem(csMensagens.msgPadrao, csMensagens.msgDefeito, "danger");
                         return;
+                    }
+
+                    if ((Convert.ToInt32(ddlModulo.SelectedValue.ToString()) == 0) ||
+                        (Convert.ToInt32(ddlTela.SelectedValue.ToString()) == 0) ||
+                        (Convert.ToInt32(ddlAcao.SelectedValue.ToString()) == 0))
+                    {
+                        strOutros = "Cadastrar os dados e vincular ao defeito de código " + Session["cdDefeito"].ToString() 
+                            + "\n\n"
+                            + strOutros;
+                        EnviarNotificacao("Solicitação de cadastro", strOutros);
                     }
 
                     //Inserir Indicador
@@ -532,6 +545,8 @@ namespace wappSSI
 
             if (!objConDefeito.Inserir())
                 return false;
+
+            Session["cdDefeito"] = objConDefeito.objCoDefeitos.cdDefeito;
 
             return true;
         }
