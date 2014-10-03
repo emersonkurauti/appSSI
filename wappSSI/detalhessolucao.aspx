@@ -30,21 +30,29 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-3" align="left">
-                            <asp:Button ID="imgbtnPrevious" CssClass="btn btn-sm btn-primary" 
+                            <!--<asp:Button ID="imgbtnPrevious" CssClass="btn btn-sm btn-primary" 
                                 runat="server" Text="<< Solução Anterior" onclick="imgbtnPrevious_Click" 
-                                Width="225px"/>
+                                Width="225px"/>-->
+                            <asp:ImageButton ID="imgbPrevious" runat="server" onclick="imgbtnPrevious_Click" 
+                                ImageUrl="~/Icons/previous.png" Height="75px" Width="75px" />
                         </div>
                         <div class="col-sm-3" align="right" style="vertical-align:middle">
-                            <asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
-                                Text="Voltar - lista de solção" onclick="btnVoltar_Click" Width="225px"/>
+                            <!--<asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
+                                Text="Voltar - lista de solção" onclick="btnVoltar_Click" Width="225px"/>-->
+                            <asp:ImageButton ID="imgbVoltar" runat="server" onclick="btnVoltar_Click" 
+                                ImageUrl="~/Icons/back.png" Height="75px" Width="75px" />
                         </div>
                         <div class="col-sm-3" align="left" style="vertical-align:middle">
-                            <asp:Button ID="Button1" CssClass="btn btn-sm btn-success" runat="server" 
-                                    Text="Defeito Solucionado" Width="225px" onclick="btnSolucionado_Click"/>
+                            <!--<asp:Button ID="Button1" CssClass="btn btn-sm btn-success" runat="server" 
+                                    Text="Defeito Solucionado" Width="225px" onclick="btnSolucionado_Click"/>-->
+                            <asp:ImageButton ID="imgbSolucionado" runat="server" onclick="btnSolucionado_Click" 
+                                ImageUrl="~/Icons/Confirma.png" Height="75px" Width="75px" />
                         </div>
                         <div class="col-sm-3" align="right">
-                            <asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
-                                Text="Próxima Solução >>" onclick="imgbtnNext_Click" Width="225px"/>
+                            <!--<asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
+                                Text="Próxima Solução >>" onclick="imgbtnNext_Click" Width="225px"/>-->
+                            <asp:ImageButton ID="imgbNext" runat="server" onclick="imgbtnNext_Click" 
+                                ImageUrl="~/Icons/next.png" Height="75px" Width="75px" />
                         </div>
                     </div>
                     <div class="page-header">

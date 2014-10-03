@@ -30,17 +30,23 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4" align="left">
-                            <asp:Button ID="imgbtnPrevious" CssClass="btn btn-sm btn-primary" 
+                            <!--<asp:Button ID="imgbtnPrevious" CssClass="btn btn-sm btn-primary" 
                                 runat="server" Text="<< Defeito Anterior" onclick="imgbtnPrevious_Click" 
-                                Width="225px"/>
+                                Width="225px"/>-->
+                            <asp:ImageButton ID="imgbPrevious" runat="server" onclick="imgbtnPrevious_Click" 
+                                ImageUrl="~/Icons/previous.png" Height="75px" Width="75px" />
                         </div>
                         <div class="col-sm-4" align="center" style="vertical-align:middle">
-                            <asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
-                                Text="Voltar - lista de defeitos" onclick="btnVoltar_Click" Width="225px"/>
+                            <!--<asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
+                                Text="Voltar - lista de defeitos" onclick="btnVoltar_Click" Width="225px"/>-->
+                            <asp:ImageButton ID="imgbVoltar" runat="server" onclick="btnVoltar_Click" 
+                                ImageUrl="~/Icons/back.png" Height="75px" Width="75px" />
                         </div>
                         <div class="col-sm-4" align="right">
-                            <asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
-                                Text="Próximo Defeito >>" onclick="imgbtnNext_Click" Width="225px"/>
+                            <!--<asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
+                                Text="Próximo Defeito >>" onclick="imgbtnNext_Click" Width="225px"/>-->
+                            <asp:ImageButton ID="imgbNext" runat="server" onclick="imgbtnNext_Click" 
+                                ImageUrl="~/Icons/next.png" Height="75px" Width="75px" />
                         </div>
                     </div>
                     <div class="page-header"><h3>Descrição do defeito</h3></div>     
