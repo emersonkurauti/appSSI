@@ -94,7 +94,8 @@
                             <asp:GridView ID="gvSolucoes" runat="server" 
                                 CssClass="table table-bordered table-hover" AllowPaging="True" 
                                 DataKeyNames="cdSolucao" 
-                                onselectedindexchanged="gvSolucoes_SelectedIndexChanged">
+                                onselectedindexchanged="gvSolucoes_SelectedIndexChanged" 
+                                onpageindexchanging="gvSolucoes_PageIndexChanging">
                                 <AlternatingRowStyle CssClass="warning" />
                                 <Columns>
                                     <asp:BoundField DataField="cdSolucao" Visible="False" />

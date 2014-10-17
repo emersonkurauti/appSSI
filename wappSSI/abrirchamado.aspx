@@ -93,7 +93,8 @@
                                     <br />
                                     <asp:GridView ID="gvImagens" runat="server"
                                         CssClass="table table-bordered table-hover" AllowPaging="True" 
-                                        DataKeyNames="deCaminho" onrowdeleting="gvImagens_RowDeleting">
+                                        DataKeyNames="deCaminho" onrowdeleting="gvImagens_RowDeleting" 
+                                        onpageindexchanging="gvImagens_PageIndexChanging">
                                         <AlternatingRowStyle CssClass="warning" />
                                         <Columns>
                                             <asp:ImageField DataImageUrlField="blImagem" 

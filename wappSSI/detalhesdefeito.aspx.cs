@@ -334,5 +334,13 @@ namespace wappSSI
             {
             }
         }
+
+        protected void gvSolucoes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvSolucoes.PageIndex = e.NewPageIndex;
+
+            gvSolucoes.DataSource = (DataTable)Session["dtSolucoes"];
+            gvSolucoes.DataBind();
+        }
     }
 }

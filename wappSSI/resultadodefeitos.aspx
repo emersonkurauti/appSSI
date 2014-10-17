@@ -31,7 +31,8 @@
                             <asp:GridView ID="gvDefeitos" runat="server" 
                                 CssClass="table table-bordered table-hover" AllowPaging="True" 
                                 onselectedindexchanged="gvDefeitos_SelectedIndexChanged" 
-                                DataKeyNames="cdDefeito">
+                                DataKeyNames="cdDefeito" 
+                                onpageindexchanging="gvDefeitos_PageIndexChanging">
                                 <AlternatingRowStyle CssClass="warning" />
                                 <Columns>
                                     <asp:BoundField DataField="cdDefeito" Visible="False" />

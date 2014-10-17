@@ -208,5 +208,13 @@ namespace wappSSI
 
             ltMensagem.Text = sbMsgSucesso.ToString();
         }
+
+        protected void gvDefeitos_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvDefeitos.PageIndex = e.NewPageIndex;
+
+            gvDefeitos.DataSource = (DataTable)Session["dtResultados"];
+            gvDefeitos.DataBind();
+        }
     }
 }

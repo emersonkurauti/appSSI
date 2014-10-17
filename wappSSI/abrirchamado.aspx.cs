@@ -677,5 +677,12 @@ namespace wappSSI
             {
             }
         }
+
+        protected void gvImagens_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvImagens.PageIndex = e.NewPageIndex;
+            gvImagens.DataSource = (DataTable)Session["_dtImagens"];
+            gvImagens.DataBind();
+        }
     }
 }

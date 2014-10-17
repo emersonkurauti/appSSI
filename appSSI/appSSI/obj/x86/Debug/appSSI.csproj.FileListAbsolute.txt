@@ -130,6 +130,8 @@ C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.Pr
 C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
 C:\Users\Emerson\Desktop\Recuperação\SSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appSSI.exe.config
+C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appSSI.exe.manifest
+C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appSSI.application
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appSSI.exe
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appSSI.pdb
 C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\appRelatorios.exe
@@ -141,7 +143,9 @@ C:\appSSI\appSSI\appSSI\appSSI\bin\Debug\LibrarySimetric.pdb
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csprojResolveAssemblyReference.cache
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucAreaTaskCons.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroConsSolNaoSol.resources
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucPeriodo.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroDefeitoSolucao.resources
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroDefSolConsSol.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroSistemaModuloAcaoTela.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmCadAcoes.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmConsAcoes.resources
@@ -175,7 +179,7 @@ C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.frmMenu.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.Properties.Resources.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.OpConsultarDefeitosSimilares.resources
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.csproj.GenerateResource.Cache
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe.manifest
+C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.application
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.exe
 C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.pdb
-C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucPeriodo.resources
-C:\appSSI\appSSI\appSSI\appSSI\obj\x86\Debug\appSSI.ucParametroDefSolConsSol.resources
