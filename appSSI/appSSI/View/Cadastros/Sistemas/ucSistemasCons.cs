@@ -129,7 +129,9 @@ namespace appSSI
                 }
             }
 
-            if ((_strCondicao == "") && (Convert.ToInt32(txtCodigo.Text.Trim()) == 0))
+            if ((_strCondicao == "") && 
+                ((txtCodigo.Text.Trim() != "") && 
+                 (Convert.ToInt32(txtCodigo.Text.Trim()) == 0)))
                 _strCondicao += " WHERE cdSistema = " + txtCodigo.Text.Trim();
 
             return _strCondicao;

@@ -149,10 +149,6 @@ namespace appSSI
         /// </summary>
         private csBancoTask()
         {
-            //string sStringConexao = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|Dados.mdf;Integrated Security=True;Connect Timeout=30";
-            //string connection = "Data 
-            //Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=dani)(PORT=1521)))
-            //(CONNECT_DATA=(SERVICE_NAME=xe))); User Id=system; Password=dani";
             if (_strStringConexao == "")
                 _strStringConexao = csConstantes.strStringConexaoTASK;
             _conexao = new OracleConnection(_strStringConexao);

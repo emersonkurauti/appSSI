@@ -32,7 +32,8 @@ namespace appSSI
         public const char cSolucao = 'S';
 
         //Caminho servidor
-        public const string sCaminhoServidor = "C:\\appSSI\\appSSI\\wappSSI";
+        //public const string sCaminhoServidor = "C:\\appSSI\\appSSI\\wappSSI";
+        public const string sCaminhoServidor = "C:\\inetpub\\wwwroot";
 
         //Caminho Imagems Defeito Servidor
         public const string sCaminhoImgDefeitoSvr = "../Imagens/Defeitos/";
