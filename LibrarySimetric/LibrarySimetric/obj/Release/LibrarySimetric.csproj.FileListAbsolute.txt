@@ -2,3 +2,7 @@ C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySim
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\bin\Release\LibrarySimetric.pdb
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.dll
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.pdb
+C:\appSSI\appSSI\LibrarySimetric\LibrarySimetric\bin\Release\LibrarySimetric.dll
+C:\appSSI\appSSI\LibrarySimetric\LibrarySimetric\bin\Release\LibrarySimetric.pdb
+C:\appSSI\appSSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.dll
+C:\appSSI\appSSI\LibrarySimetric\LibrarySimetric\obj\Release\LibrarySimetric.pdb

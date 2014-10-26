@@ -412,11 +412,11 @@ namespace wappSSI
                     objConIntegracaoTask.objCoIntegracaoTask.CC_descDefeito = strDefeito + strParamtros + strOutros;
                     objConIntegracaoTask.objCoIntegracaoTask.DS_TAREFA = txtTitulo.Text;
 
-                    //if (!objConIntegracaoTask.Inserir())
-                    //{
-                    //    MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
-                    //    return;
-                    //}
+                    if (!objConIntegracaoTask.Inserir())
+                    {
+                        MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
+                        return;
+                    }
 
                     if ((Convert.ToInt32(ddlAcao.SelectedValue.ToString()) == 0) &&
                        (Convert.ToInt32(ddlTela.SelectedValue.ToString()) != 0))

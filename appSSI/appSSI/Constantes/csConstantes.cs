@@ -24,7 +24,8 @@ namespace appSSI
         public const string strStringConexaoTASK = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.199.200)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=orcl))); User Id=taskdesenv; Password=taskdesenv";
 
         //String conexão SSI
-        public const string strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=xe))); User Id=SSI; Password=admin";
+        //public const string strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=xe))); User Id=SSI; Password=admin";
+        public const string strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS = (PROTOCOL = TCP)(HOST = 187.0.119.243)(PORT = 1521))) (CONNECT_DATA=(SERVER = DEDICATED)(SID = ORCL))); User Id=ssi; Password=admin";
 
         //Tipos de Imagens
         public const char cDefeito = 'D';

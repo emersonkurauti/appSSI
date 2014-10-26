@@ -18,12 +18,12 @@ namespace appSSI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             frmLogin frmLogin = new frmLogin();
-            //if (frmLogin.ShowDialog() == DialogResult.OK)
-            //{
-                //frmLogin.Close();
+            if (frmLogin.ShowDialog() == DialogResult.OK)
+            {
+                frmLogin.Close();
                 ExeDir = (new FileInfo(System.Reflection.Assembly.GetEntryAssembly().Location)).Directory.ToString();
                 Application.Run(new frmMenu(frmLogin.objUsuario));
-            //}
+            }
             frmLogin.Close();
         }
     }

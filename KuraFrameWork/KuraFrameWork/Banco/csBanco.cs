@@ -148,8 +148,8 @@ namespace Banco
             //string connection = "Data 
             //Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=dani)(PORT=1521)))
             //(CONNECT_DATA=(SERVICE_NAME=xe))); User Id=system; Password=dani";
-            if (_strStringConexao == "")
-                _strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=xe))); User Id=SSI; Password=admin";
+            //if (_strStringConexao == "")
+            _strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.199.200)(PORT = 1521))) (CONNECT_DATA=(SERVER = DEDICATED)(SID = ORCL))); User Id=ssi; Password=admin";
             _conexao = new OracleConnection(_strStringConexao);
             _comando = new OracleCommand();
             _comando.Connection = _conexao;

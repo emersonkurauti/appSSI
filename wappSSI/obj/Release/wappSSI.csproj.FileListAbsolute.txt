@@ -10,3 +10,17 @@ C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\bin\LibrarySimetri
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.csprojResolveAssemblyReference.cache
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.dll
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\wappSSI\obj\Release\wappSSI.pdb
+C:\appSSI\appSSI\wappSSI\bin\wappSSI.dll
+C:\appSSI\appSSI\wappSSI\bin\wappSSI.pdb
+C:\appSSI\appSSI\wappSSI\bin\appSSI.exe
+C:\appSSI\appSSI\wappSSI\bin\KuraFrameWork.dll
+C:\appSSI\appSSI\wappSSI\bin\Oracle.DataAccess.dll
+C:\appSSI\appSSI\wappSSI\bin\appRelatorios.exe
+C:\appSSI\appSSI\wappSSI\bin\LibrarySimetric.dll
+C:\appSSI\appSSI\wappSSI\bin\appSSI.pdb
+C:\appSSI\appSSI\wappSSI\bin\KuraFrameWork.pdb
+C:\appSSI\appSSI\wappSSI\bin\appRelatorios.pdb
+C:\appSSI\appSSI\wappSSI\bin\LibrarySimetric.pdb
+C:\appSSI\appSSI\wappSSI\obj\Release\wappSSI.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\wappSSI\obj\Release\wappSSI.dll
+C:\appSSI\appSSI\wappSSI\obj\Release\wappSSI.pdb
