@@ -295,7 +295,7 @@ namespace wappSSI
 
         protected void btnCarregar_Click(object sender, EventArgs e)
         {
-            String path = Server.MapPath("~/Imagens/Temp/");
+            String path = Server.MapPath("../Imagens/Temp/");
 
             if (fluImagem.HasFile)
             {
@@ -310,7 +310,7 @@ namespace wappSSI
                     path += fileName;
                     fluImagem.SaveAs(path);
 
-                    imgUp.ImageUrl = "~/Imagens/Temp/" + fileName;
+                    imgUp.ImageUrl = "../Imagens/Temp/" + fileName;
 
                 }
                 else

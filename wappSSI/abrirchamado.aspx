@@ -98,7 +98,7 @@
                                         <AlternatingRowStyle CssClass="warning" />
                                         <Columns>
                                             <asp:ImageField DataImageUrlField="blImagem" 
-                                                DataImageUrlFormatString="~/Imagens/Temp/{0}">
+                                                DataImageUrlFormatString="../Imagens/Temp/{0}">
                                                 <ControlStyle Height="150px" Width="150px" />
                                                 <ItemStyle Height="150px" Width="150px" />
                                             </asp:ImageField>
