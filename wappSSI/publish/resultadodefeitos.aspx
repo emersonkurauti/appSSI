@@ -16,14 +16,14 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4>
-                                <asp:Label ID="lblNenhumDefeito" class="label label-default" runat="server" Visible="True">
-                                    Caso não seja um dos defeitos listados,
+                            <div id="DivNenhumDefeito" class="well" runat="server">
+                                Caso não seja um dos defeitos listados,
+                                <strong>
                                     <asp:LinkButton ID="lnkNenhumDefeito" runat="server" 
-                                        onclick="lnkNenhumDefeito_Click">clique aqui</asp:LinkButton>
-                                        para abrir um chamado.
-                                </asp:Label>
-                            </h4>
+                                        onclick="lnkNenhumDefeito_Click">clique aqui </asp:LinkButton>
+                                </strong>
+                                para abrir um chamado.
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -45,14 +45,18 @@
                                 </Columns>
                                 <HeaderStyle CssClass="info" />
                             </asp:GridView>
-                            <h4>
-                                <asp:Label ID="lblAviso" class="label" runat="server" style="color:Black; font-style:normal; font-weight:normal"
-                                    Visible="True">Defeito não encontrado,
-                                    <asp:LinkButton ID="lnkAbrirChamado" runat="server" 
-                                        onclick="lnkAbrirChamado_Click">clique aqui</asp:LinkButton>
-                                    para abrir um chamado.
-                                </asp:Label>
-                            </h4>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="DivNenhumChamado" class="well" runat="server">
+                                        Defeito não encontrado,
+                                        <strong>
+                                            <asp:LinkButton ID="lnkAbrirChamado" runat="server" 
+                                                onclick="lnkAbrirChamado_Click">clique aqui </asp:LinkButton>
+                                        </strong>
+                                        para abrir um chamado.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

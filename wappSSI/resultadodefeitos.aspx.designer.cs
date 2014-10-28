@@ -22,13 +22,13 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.Literal ltMensagem;
         
         /// <summary>
-        /// lblNenhumDefeito control.
+        /// DivNenhumDefeito control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNenhumDefeito;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DivNenhumDefeito;
         
         /// <summary>
         /// lnkNenhumDefeito control.
@@ -49,13 +49,13 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.GridView gvDefeitos;
         
         /// <summary>
-        /// lblAviso control.
+        /// DivNenhumChamado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAviso;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DivNenhumChamado;
         
         /// <summary>
         /// lnkAbrirChamado control.

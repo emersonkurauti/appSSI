@@ -24,19 +24,13 @@ namespace wappSSI
 
                 if (dtResultados.Rows.Count > 0)
                 {
-                    lblAviso.Visible = false;
-                    lnkAbrirChamado.Visible = false;
-
-                    lblNenhumDefeito.Visible = true;
-                    lnkNenhumDefeito.Visible = true;
+                    DivNenhumChamado.Visible = false;
+                    DivNenhumDefeito.Visible = true;
                 }
                 else
                 {
-                    lblAviso.Visible = true;
-                    lnkAbrirChamado.Visible = true;
-
-                    lblNenhumDefeito.Visible = false;
-                    lnkNenhumDefeito.Visible = false;
+                    DivNenhumChamado.Visible = true;
+                    DivNenhumDefeito.Visible = false;
                 }
 
                 CarregarDefeitosSolucoes();
@@ -85,11 +79,11 @@ namespace wappSSI
             objConIntegracaoTask.objCoIntegracaoTask.CC_cdTela = Convert.ToInt32(Session["cdTela"].ToString());
             objConIntegracaoTask.objCoIntegracaoTask.CC_descDefeito = Session["descDefeito"].ToString();
 
-            //if (!objConIntegracaoTask.Inserir())
-            //{
-            //    MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
-            //    return;
-            //}
+            if (!objConIntegracaoTask.Inserir())
+            {
+                MostraMensagem(csMensagens.msgPadrao, objConIntegracaoTask.strMensagemErro, "danger");
+                return;
+            }
 
             if(!InserirDefeito())
             {

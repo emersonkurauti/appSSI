@@ -103,13 +103,13 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.Literal listImagem;
         
         /// <summary>
-        /// lblNenhumaSolucaoValida control.
+        /// DivNenhumaSolucaoValida control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNenhumaSolucaoValida;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DivNenhumaSolucaoValida;
         
         /// <summary>
         /// lnkNenhumaSolucaoEncontrada control.

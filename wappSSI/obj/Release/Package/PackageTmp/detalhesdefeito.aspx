@@ -79,14 +79,14 @@
                     <div class="page-header"><h3>Soluções para o defeito</h3></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4>
-                                <asp:Label ID="lblNenhumaSolucaoValida" class="label label-default" runat="server" Visible="True">
-                                    Caso seja este o defeito mas nenhuma solução foi válida ou não existe,
+                            <div id="DivNenhumaSolucaoValida" class="well" runat="server">
+                                Caso seja este o defeito mas nenhuma solução foi válida ou não existe,
+                                <strong>
                                     <asp:LinkButton ID="lnkNenhumaSolucaoEncontrada" runat="server" 
                                         onclick="lnkNenhumaSolucaoEncontrada_Click">clique aqui </asp:LinkButton>
-                                        para solicitar a priorização da solução para o defeito.
-                                </asp:Label>
-                            </h4>
+                                </strong>
+                                para solicitar a priorização da solução para o defeito.
+                            </div>
                         </div>
                     </div>
                     <div class="row">
