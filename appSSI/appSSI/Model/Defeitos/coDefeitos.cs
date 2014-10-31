@@ -90,8 +90,8 @@ namespace appSSI
 
             if (bAlterar)
                 objConImagens.Excluir();
-            
-            string sCaminho = csConstantes.sCaminhoImgDefeito;
+
+            string sCaminho = appSSI.Properties.Settings.Default.sCaminhoDefeitos;
             string sCaminhoImgAntes = "", sNomeAntes = "", sNomeFoto = "", sCaminhoImgDepois = "";
 
             for (int i = 0; i < _dtImgDefeitos.Rows.Count; i++)

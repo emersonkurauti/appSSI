@@ -22,5 +22,55 @@ namespace appSSI.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.199.2" +
+            "00)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=orcl))); User Id=taskdesenv; Passwo" +
+            "rd=taskdesenv")]
+        public string strConexaoBancoIntegracao {
+            get {
+                return ((string)(this["strConexaoBancoIntegracao"]));
+            }
+            set {
+                this["strConexaoBancoIntegracao"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI")]
+        public string sCaminhoServidor {
+            get {
+                return ((string)(this["sCaminhoServidor"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.55")]
+        public float grauSimilaridade {
+            get {
+                return ((float)(this["grauSimilaridade"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI\\\\Imagens\\\\Solucoes\\\\")]
+        public string sCaminhoSolucoes {
+            get {
+                return ((string)(this["sCaminhoSolucoes"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI\\\\Imagens\\\\Defeitos\\\\")]
+        public string sCaminhoDefeitos {
+            get {
+                return ((string)(this["sCaminhoDefeitos"]));
+            }
+        }
     }
 }

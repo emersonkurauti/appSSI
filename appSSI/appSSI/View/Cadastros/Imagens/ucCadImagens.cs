@@ -85,10 +85,10 @@ namespace appSSI
         
             for (int i = 0; i < _dtImagens.Rows.Count; i++)
                 if (flDefeito)
-                    AddImagem(Image.FromFile(csConstantes.sCaminhoImgDefeito + _dtImagens.Rows[i][objCaImagens.blImagem].ToString()),
+                    AddImagem(Image.FromFile(appSSI.Properties.Settings.Default.sCaminhoDefeitos + _dtImagens.Rows[i][objCaImagens.blImagem].ToString()),
                         _dtImagens.Rows[i][objCaImagens.deImagem].ToString());
                 else
-                    AddImagem(Image.FromFile(csConstantes.sCaminhoImgSolucoes + _dtImagens.Rows[i][objCaImagens.blImagem].ToString()),
+                    AddImagem(Image.FromFile(appSSI.Properties.Settings.Default.sCaminhoSolucoes + _dtImagens.Rows[i][objCaImagens.blImagem].ToString()),
                         _dtImagens.Rows[i][objCaImagens.deImagem].ToString());
         }
 

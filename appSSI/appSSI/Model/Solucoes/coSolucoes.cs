@@ -83,7 +83,7 @@ namespace appSSI
             if (bAlterar)
                 objConImagens.Excluir();
 
-            string sCaminho = csConstantes.sCaminhoImgSolucoes;
+            string sCaminho = appSSI.Properties.Settings.Default.sCaminhoSolucoes;
             string sCaminhoImgAntes = "", sNomeAntes = "", sNomeFoto = "", sCaminhoImgDepois = "";
 
             for (int i = 0; i < _dtImgSolucoes.Rows.Count; i++)

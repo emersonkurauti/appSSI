@@ -14,6 +14,7 @@ C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWor
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.csproj.GenerateResource.Cache
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.dll
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.pdb
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Release\KuraFrameWork.dll.config
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Release\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Release\KuraFrameWork.pdb
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Release\Oracle.DataAccess.dll

@@ -92,12 +92,6 @@
     <Content Include="Imagens\OK.png" />
     <Content Include="Imagens\previous.png" />
     <Content Include="default.aspx" />
-    <Content Include="Old\frmConsultarDefeito.aspx" />
-    <Content Include="Old\frmDetalhesDefeitos.aspx" />
-    <Content Include="Old\frmDetalhesSolucoes.aspx" />
-    <Content Include="Old\frmLogin.aspx" />
-    <Content Include="Old\frmMenu.aspx" />
-    <Content Include="Old\frmResultadoConsulta.aspx" />
     <Content Include="js\demo.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
@@ -154,54 +148,10 @@
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mensagens\csMensagens.cs" />
-    <Compile Include="Old\frmConsultarDefeito.aspx.cs">
-      <DependentUpon>frmConsultarDefeito.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmConsultarDefeito.aspx.designer.cs">
-      <DependentUpon>frmConsultarDefeito.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmDetalhesDefeitos.aspx.cs">
-      <DependentUpon>frmDetalhesDefeitos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmDetalhesDefeitos.aspx.designer.cs">
-      <DependentUpon>frmDetalhesDefeitos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmDetalhesSolucoes.aspx.cs">
-      <DependentUpon>frmDetalhesSolucoes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmDetalhesSolucoes.aspx.designer.cs">
-      <DependentUpon>frmDetalhesSolucoes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmLogin.aspx.cs">
-      <DependentUpon>frmLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmLogin.aspx.designer.cs">
-      <DependentUpon>frmLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmMenu.aspx.cs">
-      <DependentUpon>frmMenu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmMenu.aspx.designer.cs">
-      <DependentUpon>frmMenu.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmPrincipal.Master.cs">
-      <DependentUpon>frmPrincipal.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmPrincipal.Master.designer.cs">
-      <DependentUpon>frmPrincipal.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Old\frmResultadoConsulta.aspx.cs">
-      <DependentUpon>frmResultadoConsulta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Old\frmResultadoConsulta.aspx.designer.cs">
-      <DependentUpon>frmResultadoConsulta.aspx</DependentUpon>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="resultadodefeitos.aspx.cs">
       <DependentUpon>resultadodefeitos.aspx</DependentUpon>
@@ -211,9 +161,6 @@
       <DependentUpon>resultadodefeitos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Old\frmPrincipal.Master" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\appSSI\appSSI\appSSI.csproj">
@@ -233,6 +180,10 @@
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
     <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

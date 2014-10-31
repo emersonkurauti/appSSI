@@ -150,7 +150,7 @@ namespace appSSI
         private csBancoTask()
         {
             if (_strStringConexao == "")
-                _strStringConexao = csConstantes.strStringConexaoTASK;
+                _strStringConexao = appSSI.Properties.Settings.Default.strConexaoBancoIntegracao;
             _conexao = new OracleConnection(_strStringConexao);
             _comando = new OracleCommand();
             _comando.Connection = _conexao;

@@ -124,7 +124,7 @@ namespace appSSI
                 {
                     for (int i = 0; i < dtTemp.Rows.Count; i++)
                     {
-                        if (Convert.ToDouble(dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score].ToString()) < csConstantes.dblGrauSimilaridade)
+                        if (Convert.ToDouble(dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score].ToString()) < appSSI.Properties.Settings.Default.grauSimilaridade)
                         {
                             dtTemp.Rows.RemoveAt(i);
                             i--;

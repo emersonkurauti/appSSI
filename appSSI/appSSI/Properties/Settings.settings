@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="appSSI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="strConexaoBancoIntegracao" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.199.200)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=orcl))); User Id=taskdesenv; Password=taskdesenv</Value>
+    </Setting>
+    <Setting Name="sCaminhoServidor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\\appSSI\\appSSI\\wappSSI</Value>
+    </Setting>
+    <Setting Name="grauSimilaridade" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.55</Value>
+    </Setting>
+    <Setting Name="sCaminhoSolucoes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Solucoes\\</Value>
+    </Setting>
+    <Setting Name="sCaminhoDefeitos" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Defeitos\\</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

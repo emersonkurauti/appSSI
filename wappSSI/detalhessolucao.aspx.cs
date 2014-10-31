@@ -86,9 +86,9 @@ namespace wappSSI
                 sbImagens.AppendLine("</div>");
 
                 sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
-                        csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.blImagem].ToString() +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.blImagem].ToString() +
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
-                        csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.blImagem].ToString() +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.blImagem].ToString() +
                         "\" alt=\"" + objConImagens.dtDados.Rows[0][objCaImagensSolucoes.deImagem].ToString() + "\"/>");
                 sbImagens.AppendLine("</div>");
 
@@ -102,9 +102,9 @@ namespace wappSSI
                     sbImagens.AppendLine("</div>");
 
                     sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
-                        csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.blImagem].ToString() +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.blImagem].ToString() +
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
-                        csConstantes.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.blImagem].ToString() +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgSolucoesSvr + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.blImagem].ToString() +
                         "\" alt=\"" + objConImagens.dtDados.Rows[i][objCaImagensSolucoes.deImagem].ToString() + "\"/>");
                     sbImagens.AppendLine("</div>");
                 }

@@ -92,7 +92,7 @@ namespace wappSSI
                 imagem.Click += new ImageClickEventHandler(this.MaximizaImage);
                 imagem.Height = 120;
                 imagem.Width = 120;
-                imagem.ImageUrl = csConstantes.sCaminhoImgDefeitoSvr + dr[objCaImagensDefeitos.blImagem].ToString();
+                imagem.ImageUrl = wappSSI.Properties.Settings.Default.sCaminhoImgDefeitoSvr + dr[objCaImagensDefeitos.blImagem].ToString();
 
                 celula.Controls.Add(imagem);
                 linha.Cells.Add(celula);

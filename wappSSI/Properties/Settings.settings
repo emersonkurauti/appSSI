@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="wappSSI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="emailRemetente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">emerson.m.k@hotmail.com</Value>
+    </Setting>
+    <Setting Name="emailDestinatario" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">emerson.m.k@hotmail.com</Value>
+    </Setting>
+    <Setting Name="chaveRemetente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">asd93765520</Value>
+    </Setting>
+    <Setting Name="imgNULL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/Imagens/null.png</Value>
+    </Setting>
+    <Setting Name="sCaminhoImgDefeitoSvr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">../Imagens/Defeitos/</Value>
+    </Setting>
+    <Setting Name="sCaminhoImgSolucoesSvr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">../Imagens/Solucoes/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

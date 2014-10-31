@@ -91,9 +91,9 @@ namespace wappSSI
                 sbImagens.AppendLine("</div>");
 
                 sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
-                        csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +
-                        "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +   
-                        csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +                    
+                        wappSSI.Properties.Settings.Default.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +
+                        "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.blImagem].ToString() +                    
                         "\" alt=\"" + objConImagens.dtDados.Rows[0][objCaImagensDefeitos.deImagem].ToString() + "\"/>");
 
                 sbImagens.AppendLine("</div>");
@@ -108,10 +108,10 @@ namespace wappSSI
                     sbImagens.AppendLine(objConImagens.dtDados.Rows[i][objCaImagensDefeitos.deImagem].ToString());
                     sbImagens.AppendLine("</div>");
 
-                    sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" + 
-                        csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.blImagem].ToString() + 
+                    sbImagens.AppendLine("<input type=\"image\" name=\"ImageBtn\" ID=\"ImageBtn\" onclick=\"Visualizar('" +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.blImagem].ToString() + 
                         "', '700', '700')\" runat=\"server\" style=\"height:250px\" src=\"" +
-                        csConstantes.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.blImagem].ToString() +
+                        wappSSI.Properties.Settings.Default.sCaminhoImgDefeitoSvr + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.blImagem].ToString() +
                         "\" alt=\"" + objConImagens.dtDados.Rows[i][objCaImagensDefeitos.deImagem].ToString() + "\"/>");
                     sbImagens.AppendLine("</div>");
                 }
@@ -299,9 +299,9 @@ namespace wappSSI
         public void EnviarNotificacao(string strAssunto, string strCorpo)
         {
             MailMessage mail = new MailMessage();
-            mail.To.Add(csConstantes.emailDestinatario);
+            mail.To.Add(wappSSI.Properties.Settings.Default.emailDestinatario);
 
-            mail.From = new MailAddress(csConstantes.emailRemetente, "SSI Notificação", System.Text.Encoding.UTF8);
+            mail.From = new MailAddress(wappSSI.Properties.Settings.Default.emailRemetente, "SSI Notificação", System.Text.Encoding.UTF8);
 
             mail.Subject = strAssunto;
             mail.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -311,16 +311,16 @@ namespace wappSSI
             mail.Priority = MailPriority.High; //Prioridade do E-Mail 
 
             SmtpClient client = new SmtpClient();  //Adicionando as credenciais do seu e-mail e senha:
-            client.Credentials = new System.Net.NetworkCredential(csConstantes.emailRemetente, csConstantes.senhaEmailRemetente);
+            client.Credentials = new System.Net.NetworkCredential(wappSSI.Properties.Settings.Default.emailRemetente, wappSSI.Properties.Settings.Default.chaveRemetente);
             client.Port = 587; // Esta porta é a utilizada pelo Gmail para envio
 
-            if (csConstantes.emailRemetente.IndexOf("@hotmail.com") > 0)
+            if (wappSSI.Properties.Settings.Default.emailRemetente.IndexOf("@hotmail.com") > 0)
                 client.Host = "smtp.live.com"; //Definindo o provedor que irá disparar o e-mail
 
-            if (csConstantes.emailRemetente.IndexOf("@gmail.com") > 0)
+            if (wappSSI.Properties.Settings.Default.emailRemetente.IndexOf("@gmail.com") > 0)
                 client.Host = "smtp.gmail.com"; //Definindo o provedor que irá disparar o e-mail
 
-            if (csConstantes.emailRemetente.IndexOf("@db1.com.br") > 0)
+            if (wappSSI.Properties.Settings.Default.emailRemetente.IndexOf("@db1.com.br") > 0)
                 client.Host = "mail.db1.com.br"; //Definindo o provedor que irá disparar o e-mail
 
 
