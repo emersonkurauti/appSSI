@@ -113,6 +113,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Name = "ucConsulta";
             this.Size = new System.Drawing.Size(399, 36);
+            this.Load += new System.EventHandler(this.ucConsulta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

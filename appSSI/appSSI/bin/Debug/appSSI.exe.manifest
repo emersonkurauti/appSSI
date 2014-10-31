@@ -250,7 +250,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>S5topMHFzN4bwvq7VQNJZtCKS3o=</dsig:DigestValue>
+        <dsig:DigestValue>RR+LSrOqwfGis4PtsqJ2BeCCd+w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -262,19 +262,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9RPFNoC6Q5b8O/SpuKbbcgGeezg=</dsig:DigestValue>
+        <dsig:DigestValue>O+3Rg1wPrcZYoJafez4IiuBq0dI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KuraFrameWork.dll" size="253952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KuraFrameWork.dll" size="254464">
       <assemblyIdentity name="KuraFrameWork" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>eXX5ZVVDjlKKPazdUn0JDSFYjXs=</dsig:DigestValue>
+        <dsig:DigestValue>na1RrBRqVtYJMuQw2miwtsVDndw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

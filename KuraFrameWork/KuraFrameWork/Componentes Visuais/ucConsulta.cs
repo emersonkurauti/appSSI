@@ -125,5 +125,20 @@ namespace KuraFrameWork.Componentes_Visuais
         {
             btnConsultar_Click(null, null);
         }
+
+        private void ucConsulta_Load(object sender, EventArgs e)
+        {
+            ToolTip toolTip = new ToolTip();
+
+            // Set up the delays for the ToolTip.
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 1000;
+            toolTip.ReshowDelay = 500;
+            // Force the ToolTip text to be displayed whether or not the form is active.
+            toolTip.ShowAlways = true;
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            toolTip.SetToolTip(this.txtCodigo, "Dois cliques ou F5 para abrir a pesquisa");
+        }
     }
 }
