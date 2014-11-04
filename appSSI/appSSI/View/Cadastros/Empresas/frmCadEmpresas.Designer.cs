@@ -43,7 +43,6 @@
             this.lbCEP = new System.Windows.Forms.Label();
             this.lbTelefone = new System.Windows.Forms.Label();
             this.gbSisEmpresa = new System.Windows.Forms.GroupBox();
-            this.ucSistemasCons = new appSSI.ucSistemasCons();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtNome = new KuraFrameWork.Componentes_Visuais.ucTextBox();
@@ -55,6 +54,7 @@
             this.txtComplemento = new KuraFrameWork.Componentes_Visuais.ucTextBox();
             this.txtCEP = new KuraFrameWork.Componentes_Visuais.ucTextBoxMaxCEP();
             this.txtTelefone = new KuraFrameWork.Componentes_Visuais.ucTextBoxMaskTelefone();
+            this.ucSistemasCons = new appSSI.ucSistemasCons();
             this.pnFiltro.SuspendLayout();
             this.pnForm.SuspendLayout();
             this.pnBotoes.SuspendLayout();
@@ -280,19 +280,6 @@
             this.gbSisEmpresa.TabStop = false;
             this.gbSisEmpresa.Text = "Sistemas da Empresa";
             // 
-            // ucSistemasCons
-            // 
-            this.ucSistemasCons.bCadastrar = true;
-            this.ucSistemasCons.bMudouCodigo = false;
-            this.ucSistemasCons.CampoObrigatorio = false;
-            this.ucSistemasCons.Location = new System.Drawing.Point(6, 16);
-            this.ucSistemasCons.MensagemCampoObrigatorio = null;
-            this.ucSistemasCons.Name = "ucSistemasCons";
-            this.ucSistemasCons.Rotulo = "Sistema :";
-            this.ucSistemasCons.Size = new System.Drawing.Size(248, 36);
-            this.ucSistemasCons.TabIndex = 0;
-            this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";
-            // 
             // btnRemove
             // 
             this.btnRemove.Image = global::appSSI.Properties.Resources.del;
@@ -421,6 +408,20 @@
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(99, 20);
             this.txtTelefone.TabIndex = 12;
+            // 
+            // ucSistemasCons
+            // 
+            this.ucSistemasCons.bCadastrar = true;
+            this.ucSistemasCons.bMudouCodigo = false;
+            this.ucSistemasCons.CampoObrigatorio = false;
+            this.ucSistemasCons.cdEmpresa = 0;
+            this.ucSistemasCons.Location = new System.Drawing.Point(6, 16);
+            this.ucSistemasCons.MensagemCampoObrigatorio = null;
+            this.ucSistemasCons.Name = "ucSistemasCons";
+            this.ucSistemasCons.Rotulo = "Sistema :";
+            this.ucSistemasCons.Size = new System.Drawing.Size(248, 36);
+            this.ucSistemasCons.TabIndex = 0;
+            this.ucSistemasCons.TelaConsulta = "appSSI.frmConsSistemas";
             // 
             // frmCadEmpresas
             // 

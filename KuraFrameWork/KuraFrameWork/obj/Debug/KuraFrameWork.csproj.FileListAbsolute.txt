@@ -76,3 +76,4 @@ C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.Gene
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll.config
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
