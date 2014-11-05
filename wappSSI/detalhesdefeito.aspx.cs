@@ -127,6 +127,7 @@ namespace wappSSI
             caSolucoes objCaSolucoes = new caSolucoes();
 
             objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdDefeito = Convert.ToInt32(Session["cdDefeito"].ToString());
+            objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.flTpUsuario = Session["TpUsuario"].ToString()[0];
 
             if (!objConConsultaDefeitoTelaAcao.SelectSolucaoDefeito())
             {

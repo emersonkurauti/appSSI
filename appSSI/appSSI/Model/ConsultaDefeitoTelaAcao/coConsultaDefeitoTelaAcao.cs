@@ -164,7 +164,7 @@ namespace appSSI
                                  "              group by cdSolucao) SL on SL.cdSolucao = S.cdSolucao" +
                                  " Where SD.cdDefeito = " + _cdDefeito.ToString();
 
-            if (_flTpUsuario == 'C')
+            if (_flTpUsuario == csConstantes.cCliente)
                 strConsulta += " and flNivel = " + "'" + _flTpUsuario + "'";
 
             strConsulta += " order by  NVL(SL.qtd,0) desc ";
