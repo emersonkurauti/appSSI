@@ -108,6 +108,7 @@ namespace appSSI
         public const string msgUsuarioInativo = "Usuário inativo!";
         public const string msgInformarSenha = "Informe a senha!";
         public const string msgInformarUsuario = "Informe o usuário!";
+        public const string msgUsuarioSemPermissao = "Tipo de usuário não possui permissão.";
 
         //Consultas
         public const string msgErroConsultarDefeitos = "Erro ao consultar o defeito para a tela/ação informado.";

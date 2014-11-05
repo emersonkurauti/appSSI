@@ -30,10 +30,10 @@ namespace appSSI
         public frmMenu(coUsuarios objUsuario)
         {
             InitializeComponent();
-            _objUsuario = this.objUsuario;
+            _objUsuario = objUsuario;
 
             csBanco objBanco = csBanco.Instance;
-            //objBanco.cdUsuario = _objUsuario.cdUsuario;
+            objBanco.cdUsuario = _objUsuario.cdUsuario;
         }
 
         /// <summary>
@@ -77,20 +77,21 @@ namespace appSSI
             AddListTela("appSSI.frmCadSolucoes");
             AddListTela("appRelatorios.frmGerenciadorRPT,appRelatorios");
 
-            ToolStripMenuItem menuCadastros = RetornarItemMenuCriado(menuStrip, "&Cadastros", null, null, "btnCadastros");                
-                CriarSubItemMenu(menuCadastros, "&Empresas...", null, ItemMenu_onClick, "appSSI.frmCadEmpresas");
-                CriarSubItemMenu(menuCadastros, "&Usuários...", null, ItemMenu_onClick, "appSSI.frmCadUsuarios");
-                CriarSubItemMenu(menuCadastros, "&Sistemas...", null, ItemMenu_onClick, "appSSI.frmCadSistemas");
-                CriarSubItemMenu(menuCadastros, "&Modulos...", null, ItemMenu_onClick, "appSSI.frmCadModulos");
-                CriarSubItemMenu(menuCadastros, "&Telas...", null, ItemMenu_onClick, "appSSI.frmCadTelas");
-                CriarSubItemMenu(menuCadastros, "&Ações...", null, ItemMenu_onClick, "appSSI.frmCadAcoes");
-                CriarSubItemMenu(menuCadastros, "&Defeitos...", null, ItemMenu_onClick, "appSSI.frmCadDefeitos");
-                CriarSubItemMenu(menuCadastros, "&Soluções...", null, ItemMenu_onClick, "appSSI.frmCadSolucoes");
+            ToolStripMenuItem menuCadastros = RetornarItemMenuCriado(menuStrip, "&Cadastros", null, null, "btnCadastros");
+            CriarSubItemMenu(menuCadastros, "&Empresas...", null, ItemMenu_onClick, "appSSI.frmCadEmpresas");
+            CriarSubItemMenu(menuCadastros, "&Usuários...", null, ItemMenu_onClick, "appSSI.frmCadUsuarios");
+            CriarSubItemMenu(menuCadastros, "&Sistemas...", null, ItemMenu_onClick, "appSSI.frmCadSistemas");
+            CriarSubItemMenu(menuCadastros, "&Modulos...", null, ItemMenu_onClick, "appSSI.frmCadModulos");
+            CriarSubItemMenu(menuCadastros, "&Telas...", null, ItemMenu_onClick, "appSSI.frmCadTelas");
+            CriarSubItemMenu(menuCadastros, "&Ações...", null, ItemMenu_onClick, "appSSI.frmCadAcoes");
+            CriarSubItemMenu(menuCadastros, "&Defeitos...", null, ItemMenu_onClick, "appSSI.frmCadDefeitos");
+            CriarSubItemMenu(menuCadastros, "&Soluções...", null, ItemMenu_onClick, "appSSI.frmCadSolucoes");
 
-            ToolStripMenuItem menuRelatorios = RetornarItemMenuCriado(menuStrip, "&Gerenciador de Relatórios", null, ItemMenu_onClick, "appRelatorios.frmGerenciadorRPT,appRelatorios");
-            //ToolStripMenuItem menuOperacoes = RetornarItemMenuCriado(menuStrip, "&Operações", null, null, "btnOperacoes");
-            //CriarSubItemMenu(menuOperacoes, "&Consultar Defeitos Similares...", null, ItemMenu_onClick, "appSSI.OpConsultarDefeitosSimilares");
-            
+            if (_objUsuario.flTpUsuario == csConstantes.cGestor)
+            {
+                ToolStripMenuItem menuRelatorios = RetornarItemMenuCriado(menuStrip, "&Gerenciador de Relatórios", null, ItemMenu_onClick, "appRelatorios.frmGerenciadorRPT,appRelatorios");
+            }
+
             AddItemMenu(menuStrip, "&Sair", null, btnSair_onClick, "btnSair");
         }
 

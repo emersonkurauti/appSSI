@@ -106,8 +106,13 @@ namespace appSSI
                     if (_dtDados.Rows.Count == 0)
                         _strMensagemErro = csMensagens.msgUsuarioSenhaInvalido;
                     else
+                    {
                         if (_dtDados.Rows[0][objCaUsuarios.flAtivo].ToString() == "N")
                             _strMensagemErro = csMensagens.msgUsuarioInativo;
+
+                        _objCoUsuarios.flAtivo = _dtDados.Rows[0][objCaUsuarios.flAtivo].ToString()[0];
+                        _objCoUsuarios.flTpUsuario = _dtDados.Rows[0][objCaUsuarios.flTpUsuario].ToString()[0];
+                    }
                 }
                 else
                     _strMensagemErro = csMensagens.msgInformarSenha;

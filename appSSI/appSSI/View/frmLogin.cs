@@ -42,8 +42,20 @@ namespace appSSI
             }
             else
             {
-                _objUsuario = objConUsuario.RetornaObjUsuario(objConUsuario.dtDados);
-                this.DialogResult = DialogResult.OK;
+                if (objConUsuario.objCoUsuarios.flTpUsuario == csConstantes.cCliente)
+                {
+                    MessageBox.Show(csMensagens.msgUsuarioSemPermissao);
+
+                    txtUsuario.Clear();
+                    txtSenha.Clear();
+                    txtUsuario.Focus();
+                }
+                else
+                {
+                    _objUsuario = objConUsuario.RetornaObjUsuario(objConUsuario.dtDados);
+                    _objUsuario = objConUsuario.objCoUsuarios;
+                    this.DialogResult = DialogResult.OK;
+                }
             }
         }
 

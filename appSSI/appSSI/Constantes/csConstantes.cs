@@ -9,6 +9,12 @@ namespace appSSI
 {
     public class csConstantes
     {
+        //Tipos de Usuário
+        public const char cCliente       = 'C';
+        public const char cDesenvolvedor = 'D';
+        public const char cSuporte       = 'S';
+        public const char cGestor        = 'G';
+
         //Tipos de Imagens
         public const char cDefeito = 'D';
         public const char cSolucao = 'S';

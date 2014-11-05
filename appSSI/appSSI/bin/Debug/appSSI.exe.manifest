@@ -255,14 +255,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2314240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2314752">
       <assemblyIdentity name="appSSI" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>K1CD6IXmZ4sdLi/DlmFi0S2IHFg=</dsig:DigestValue>
+        <dsig:DigestValue>tSsGKAnfbK3Z6PzLmOGfAdM6gzQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

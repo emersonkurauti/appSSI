@@ -216,19 +216,19 @@ namespace appSSI
             DataRow dr;
             
             dr = dtTpUsuarios.NewRow();
-            dr["cdTpUsuario"] = 'C';
+            dr["cdTpUsuario"] = csConstantes.cCliente;
             dr["deTpUsuario"] = "Cliente";
             dtTpUsuarios.Rows.Add(dr);
             dr = dtTpUsuarios.NewRow();
-            dr["cdTpUsuario"] = 'S';
+            dr["cdTpUsuario"] = csConstantes.cSuporte;
             dr["deTpUsuario"] = "Suporte";
             dtTpUsuarios.Rows.Add(dr);
             dr = dtTpUsuarios.NewRow();
-            dr["cdTpUsuario"] = 'D';
+            dr["cdTpUsuario"] = csConstantes.cDesenvolvedor;
             dr["deTpUsuario"] = "Desenvolvedor";
             dtTpUsuarios.Rows.Add(dr);
             dr = dtTpUsuarios.NewRow();
-            dr["cdTpUsuario"] = 'G';
+            dr["cdTpUsuario"] = csConstantes.cGestor;
             dr["deTpUsuario"] = "Gestor";
             dtTpUsuarios.Rows.Add(dr);
 
