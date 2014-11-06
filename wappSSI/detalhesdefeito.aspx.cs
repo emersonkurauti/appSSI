@@ -277,6 +277,32 @@ namespace wappSSI
             strCorpo = strCorpo + "\n" + "Ação: "    + Session["cdAcao"].ToString()    + " - " + Session["deAcao"].ToString();
             strCorpo = strCorpo + "\n" + "Usuário: " + Session["nmUsuario"].ToString();
 
+            //Soluções de nível suporte
+            conConsultaDefeitoTelaAcao objConConsultaDefeitoTelaAcao = new conConsultaDefeitoTelaAcao();
+            caConsultaDefeitoTelaAcao objCaConsultaDefeitoTelaAcao = new caConsultaDefeitoTelaAcao();
+
+            if (Session["cdDefeito"] != null && Session["cdDefeito"].ToString() != "")
+            {
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdDefeito = Convert.ToInt32(Session["cdDefeito"].ToString());
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.bSomenteSuporte = true;
+
+                if (!objConConsultaDefeitoTelaAcao.SelectSolucaoDefeito())
+                {
+                    MostraMensagem(csMensagens.msgPadrao, objConConsultaDefeitoTelaAcao.strMensagemErro, "danger");
+                    return;
+                }
+
+                if (objConConsultaDefeitoTelaAcao.dtDados.Rows.Count > 0)
+                {
+                    strCorpo += "\n\n Soluções de nível suporte para o defeito:\n";
+
+                    foreach (DataRow dtr in objConConsultaDefeitoTelaAcao.dtDados.Rows)
+                    {
+                        strCorpo += "Código: " + dtr[objCaConsultaDefeitoTelaAcao.cdSolucao].ToString() + "\n";
+                    }
+                }
+            }
+
             EnviarNotificacao("Defeito sem solução", strCorpo);
 
             Session["bOpSucesso"] = true;

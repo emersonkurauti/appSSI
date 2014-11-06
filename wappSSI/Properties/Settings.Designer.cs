@@ -43,7 +43,7 @@ namespace wappSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("asd93765520")]
+        [global::System.Configuration.DefaultSettingValueAttribute("asd9376552023049")]
         public string chaveRemetente {
             get {
                 return ((string)(this["chaveRemetente"]));

@@ -60,6 +60,7 @@ C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug
 C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
 C:\Users\Emerson\Desktop\Recuperação\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
 C:\Users\Emerson\Documents\EstagioSupervisionadoI\SSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csprojResolveAssemblyReference.cache
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll.config
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.pdb
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes_Visuais.ucConsulta.resources
@@ -75,4 +76,3 @@ C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.Componentes
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.csproj.GenerateResource.Cache
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Debug\KuraFrameWork.pdb
-C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\bin\Debug\KuraFrameWork.dll.config

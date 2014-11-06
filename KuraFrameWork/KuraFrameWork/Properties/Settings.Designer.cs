@@ -23,16 +23,13 @@ namespace KuraFrameWork.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PO" +
             "RT=1521))) (CONNECT_DATA=(SERVICE_NAME=xe))); User Id=SSI; Password=admin")]
         public string strConexaoBanco {
             get {
                 return ((string)(this["strConexaoBanco"]));
-            }
-            set {
-                this["strConexaoBanco"] = value;
             }
         }
     }

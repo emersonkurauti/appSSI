@@ -74,6 +74,13 @@ namespace appSSI
             set { _flTpUsuario = value; }
         }
 
+        private bool _bSomenteSuporte = false;
+        public bool bSomenteSuporte
+        {
+            get { return _bSomenteSuporte; }
+            set { _bSomenteSuporte = value; }
+        }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -164,6 +171,11 @@ namespace appSSI
                                  "              group by cdSolucao) SL on SL.cdSolucao = S.cdSolucao" +
                                  " Where SD.cdDefeito = " + _cdDefeito.ToString();
 
+            if (_bSomenteSuporte)
+            {
+                strConsulta += " and flNivel <> " + "'" + csConstantes.cCliente + "'";
+            }
+            else
             if (_flTpUsuario == csConstantes.cCliente)
                 strConsulta += " and flNivel = " + "'" + _flTpUsuario + "'";
 

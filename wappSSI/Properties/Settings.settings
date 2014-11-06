@@ -9,7 +9,7 @@
       <Value Profile="(Default)">emerson.m.k@hotmail.com</Value>
     </Setting>
     <Setting Name="chaveRemetente" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">asd93765520</Value>
+      <Value Profile="(Default)">asd9376552023049</Value>
     </Setting>
     <Setting Name="imgNULL" Type="System.String" Scope="Application">
       <Value Profile="(Default)">~/Imagens/null.png</Value>

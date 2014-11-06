@@ -39,7 +39,7 @@ namespace appSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\appSSI\\appSSI\\wappSSI")]
         public string sCaminhoServidor {
             get {
                 return ((string)(this["sCaminhoServidor"]));
@@ -57,7 +57,7 @@ namespace appSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI\\\\Imagens\\\\Solucoes\\\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Solucoes\\")]
         public string sCaminhoSolucoes {
             get {
                 return ((string)(this["sCaminhoSolucoes"]));
@@ -66,7 +66,7 @@ namespace appSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\appSSI\\\\appSSI\\\\wappSSI\\\\Imagens\\\\Defeitos\\\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Defeitos\\")]
         public string sCaminhoDefeitos {
             get {
                 return ((string)(this["sCaminhoDefeitos"]));
