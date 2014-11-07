@@ -130,6 +130,7 @@
             this.bImprimeRelCompleto = false;
             this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(684, 367);
+            this.KeyPreview = true;
             this.Name = "frmCadAcoes";
             this.Text = "Cadastro de Ações";
             this.TpCorrente = this.tpFormulario;

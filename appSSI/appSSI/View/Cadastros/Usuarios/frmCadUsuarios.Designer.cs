@@ -436,6 +436,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(684, 376);
+            this.KeyPreview = true;
             this.Name = "frmCadUsuarios";
             this.Text = "Cadastro de Usuários";
             this.TpCorrente = this.tpFormulario;

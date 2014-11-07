@@ -264,5 +264,13 @@ namespace KuraFrameWork.Formularios
         {
             dtDados = SortDataTable(dtDados, dgvDados.Columns[e.ColumnIndex].DataPropertyName);
         }
+
+        private void ucCadastroBasicoNormal_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                System.Diagnostics.Process.Start(Application.StartupPath + "\\Help\\HELP - " + this.Text + ".pdf");
+            }
+        }
     }
 }

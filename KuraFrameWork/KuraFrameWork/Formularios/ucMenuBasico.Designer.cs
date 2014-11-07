@@ -123,12 +123,14 @@
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "ucMenuBasico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ucMenuBasico";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ucMenuBasico_KeyUp);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.pnNavegacao.ResumeLayout(false);

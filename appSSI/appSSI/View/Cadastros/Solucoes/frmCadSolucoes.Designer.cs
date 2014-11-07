@@ -276,6 +276,7 @@
             this.bImprimeRelCompleto = false;
             this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(754, 506);
+            this.KeyPreview = true;
             this.Name = "frmCadSolucoes";
             this.Text = "Cadastro de Soluções";
             this.TpCorrente = this.tpFormulario;

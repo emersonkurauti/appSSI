@@ -96,5 +96,14 @@ namespace KuraFrameWork.Formularios
         {
             Close();
         }
+
+        private void ucMenuBasico_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                if (this.ActiveMdiChild == null || this.ActiveMdiChild.WindowState == FormWindowState.Minimized)
+                    System.Diagnostics.Process.Start(Application.StartupPath + "\\Help\\Manual usuário.pdf");
+            }
+        }
     }
 }

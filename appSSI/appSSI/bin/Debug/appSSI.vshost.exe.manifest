@@ -250,7 +250,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rie6B/CKgI8ZIhaIIOhk5z9rxAA=</dsig:DigestValue>
+        <dsig:DigestValue>8nwr+RpE/bDGXEiSOs43ANYwhDU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -262,19 +262,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+VLI7qsZ6GVEYio31kHITOIqvrA=</dsig:DigestValue>
+        <dsig:DigestValue>l7B8+Io+sXfppIK9T482k7KOh0k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KuraFrameWork.dll" size="254976">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KuraFrameWork.dll" size="255488">
       <assemblyIdentity name="KuraFrameWork" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>IMZiXC60ZeomzbZIGPZ82rxELA0=</dsig:DigestValue>
+        <dsig:DigestValue>V8oGNg3DVLKr7p6WLry02BWyEjo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -286,7 +286,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>u1guqid+kmfCLeS4l2E0QssHesk=</dsig:DigestValue>
+        <dsig:DigestValue>6SHxtGlQeNZtKOP9Az4qtqTYcWc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

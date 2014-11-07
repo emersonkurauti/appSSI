@@ -313,9 +313,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(684, 367);
             this.Controls.Add(this.tcCadastro);
+            this.HelpButton = true;
             this.MinimumSize = new System.Drawing.Size(700, 405);
             this.Name = "ucCadastroBasicoNormal";
             this.Text = "ucCadastroBasicoNormal";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ucCadastroBasicoNormal_KeyUp);
             this.Controls.SetChildIndex(this.tcCadastro, 0);
             this.tcCadastro.ResumeLayout(false);
             this.tpConsulta.ResumeLayout(false);

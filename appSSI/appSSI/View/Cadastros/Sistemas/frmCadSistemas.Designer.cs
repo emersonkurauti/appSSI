@@ -201,6 +201,7 @@
             this.bImprimeRelCompleto = false;
             this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(684, 367);
+            this.KeyPreview = true;
             this.Name = "frmCadSistemas";
             this.Text = "Cadastro de Sistemas";
             this.TpCorrente = this.tpFormulario;

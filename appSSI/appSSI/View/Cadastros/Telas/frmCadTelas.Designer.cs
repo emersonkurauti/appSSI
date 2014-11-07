@@ -230,6 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(684, 367);
+            this.KeyPreview = true;
             this.Name = "frmCadTelas";
             this.Text = "Cadastro de Telas";
             this.TpCorrente = this.tpFormulario;

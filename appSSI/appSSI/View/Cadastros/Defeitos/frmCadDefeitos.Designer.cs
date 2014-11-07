@@ -304,6 +304,7 @@
             this.bImprimeRelCompleto = false;
             this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(765, 516);
+            this.KeyPreview = true;
             this.Name = "frmCadDefeitos";
             this.Text = "Cadastro de Defeitos";
             this.TpCorrente = this.tpFormulario;

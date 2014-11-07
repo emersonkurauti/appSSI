@@ -429,6 +429,8 @@
             this.bImprimeRelCompleto = false;
             this.bImprimeRelSimples = false;
             this.ClientSize = new System.Drawing.Size(684, 367);
+            this.HelpButton = false;
+            this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(700, 300);
             this.Name = "frmCadEmpresas";
             this.Text = "Cadastro de Empresas";

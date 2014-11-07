@@ -655,6 +655,24 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="appSSI_TemporaryKey.pfx" />
+    <None Include="Help\HELP - Cadastro de Ações.docx" />
+    <None Include="Help\HELP - Cadastro de Ações.pdf" />
+    <None Include="Help\HELP - Cadastro de Defeitos.docx" />
+    <None Include="Help\HELP - Cadastro de Defeitos.pdf" />
+    <None Include="Help\HELP - Cadastro de Empresas.docx" />
+    <None Include="Help\HELP - Cadastro de Empresas.pdf" />
+    <None Include="Help\HELP - Cadastro de Módulos.docx" />
+    <None Include="Help\HELP - Cadastro de Módulos.pdf" />
+    <None Include="Help\HELP - Cadastro de Sistemas.docx" />
+    <None Include="Help\HELP - Cadastro de Sistemas.pdf" />
+    <None Include="Help\HELP - Cadastro de Soluções.docx" />
+    <None Include="Help\HELP - Cadastro de Soluções.pdf" />
+    <None Include="Help\HELP - Cadastro de Telas.docx" />
+    <None Include="Help\HELP - Cadastro de Telas.pdf" />
+    <None Include="Help\HELP - Cadastro de Usuários.docx" />
+    <None Include="Help\HELP - Cadastro de Usuários.pdf" />
+    <None Include="Help\Manual usuário.docx" />
+    <None Include="Help\Manual usuário.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

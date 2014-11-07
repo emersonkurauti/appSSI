@@ -250,19 +250,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>IH2qiYQ/Ojqlz+ocfGRzbevEsHI=</dsig:DigestValue>
+        <dsig:DigestValue>JCikK2qkkXkwMpwz+0dYGCdo/6g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2289152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2290176">
       <assemblyIdentity name="appSSI" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iUeAqTbbWwMDqgLW/PrnNtV5d9Y=</dsig:DigestValue>
+        <dsig:DigestValue>aaRjZ8oHvghL9s922QthnwkMZDY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -274,7 +274,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pvh57z/AJRJckSd1k6yxmNu9MtA=</dsig:DigestValue>
+        <dsig:DigestValue>texqDC6P0CPwmvx0is5hAONDjiQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -286,17 +286,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Y0Oz9CwqnYtpVaK88V8f5vxgNS0=</dsig:DigestValue>
+        <dsig:DigestValue>XvJs9TmQG2wDCKN4GBg1mvEc3es=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="appSSI.exe.config" size="2563">
+  <file name="appSSI.exe.config" size="2548">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>XtpWXXIgAEZGBAtE3CC0fBMqBU4=</dsig:DigestValue>
+      <dsig:DigestValue>/BxrSdFwSWLAVEepeYGbcr38N9s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icon.ico" size="155094">

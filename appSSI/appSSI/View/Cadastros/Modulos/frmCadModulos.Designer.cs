@@ -161,6 +161,7 @@
             this.ucSistemasCons.bCadastrar = true;
             this.ucSistemasCons.bMudouCodigo = false;
             this.ucSistemasCons.CampoObrigatorio = true;
+            this.ucSistemasCons.cdEmpresa = 0;
             this.ucSistemasCons.Location = new System.Drawing.Point(316, 57);
             this.ucSistemasCons.MensagemCampoObrigatorio = "Selecione o sistema.";
             this.ucSistemasCons.Name = "ucSistemasCons";
@@ -173,6 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(684, 367);
+            this.KeyPreview = true;
             this.Name = "frmCadModulos";
             this.Text = "Cadastro de Módulos";
             this.TpCorrente = this.tpFormulario;
