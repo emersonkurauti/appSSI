@@ -32,6 +32,11 @@ namespace appSSI
             get { return "flNivel"; }
         }
 
+        public string dtCadastro
+        {
+            get { return "dtCadastro"; }
+        }
+
         /// <summary>
         /// Retorna fields para montar DataGridView
         /// </summary>
@@ -40,11 +45,11 @@ namespace appSSI
         /// <param name="strNome"></param>
         public void RetornarFields(out string strFields, out string strVisivel, out string strNome)
         {
-            strFields = cdSolucao + "," + deSolucao + "," + flNivel;
+            strFields = cdSolucao + "," + deSolucao + "," + flNivel + "," + dtCadastro;
 
-            strNome = "Código, Solução, Nível";
+            strNome = "Código, Solução, Nível, Dt. Cadastro";
 
-            strVisivel = "0,1,1";
+            strVisivel = "0,1,1,1";
         }
     }
 }

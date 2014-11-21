@@ -4,17 +4,18 @@ drop type t_type_sol_cons_temp_cad;
 /
 create or replace type type_sol_cons_temp_cad as object
 	(
-      cdSistema NUMBER, 
-      nmSistema VARCHAR2(45), 
-      cdModulo  NUMBER,
-      nmModulo  VARCHAR2(60), 
-      cdTela    NUMBER, 
-      nmTela    VARCHAR2(30), 
-      cdAcao    NUMBER, 
-      deAcao    VARCHAR2(30), 
-      deSolucao VARCHAR2(4000), 
-      flNivel   VARCHAR2(1), 
-      qtd       NUMBER,
+      cdSistema  NUMBER, 
+      nmSistema  VARCHAR2(45), 
+      cdModulo   NUMBER,
+      nmModulo   VARCHAR2(60), 
+      cdTela     NUMBER, 
+      nmTela     VARCHAR2(30), 
+      cdAcao     NUMBER, 
+      deAcao     VARCHAR2(30), 
+      deSolucao  VARCHAR2(4000), 
+      flNivel    VARCHAR2(1), 
+      qtd        NUMBER,
+      dtCadastro DATE,
       pcdSistema VARCHAR2(200),
       pcdModulo  VARCHAR2(200),
       pcdTela    VARCHAR2(200),
@@ -45,6 +46,7 @@ begin
            so.deSolucao,
            so.flNivel,
            nvl(ind.qtd, 0) qtd,
+           so.dtCadastro,
            CASE WHEN pcdSistema = 0 THEN
              'Todos'
            ELSE
@@ -99,17 +101,18 @@ create or replace function popula_sol_cons_temp_cad(
   v_pcdTela    VARCHAR2(200); 
   v_pcdAcao    VARCHAR2(200); 
 
-  v_cdSistema sistemas.cdSistema%TYPE;
-  v_nmSistema sistemas.nmSistema%TYPE; 
-  v_cdModulo  modulos.cdModulo%TYPE; 
-  v_nmModulo  modulos.nmModulo%TYPE; 
-  v_cdTela    telas.cdTela%TYPE; 
-  v_nmTela    telas.nmTela%TYPE; 
-  v_cdAcao    acoes.cdAcao%TYPE; 
-  v_deAcao    acoes.deAcao%TYPE;
-  v_deSolucao solucoes.deSolucao%TYPE;
-  v_flNivel   solucoes.flNivel%TYPE;
-  v_qtd       NUMBER;
+  v_cdSistema  sistemas.cdSistema%TYPE;
+  v_nmSistema  sistemas.nmSistema%TYPE; 
+  v_cdModulo   modulos.cdModulo%TYPE; 
+  v_nmModulo   modulos.nmModulo%TYPE; 
+  v_cdTela     telas.cdTela%TYPE; 
+  v_nmTela     telas.nmTela%TYPE; 
+  v_cdAcao     acoes.cdAcao%TYPE; 
+  v_deAcao     acoes.deAcao%TYPE;
+  v_deSolucao  solucoes.deSolucao%TYPE;
+  v_flNivel    solucoes.flNivel%TYPE;
+  v_qtd        NUMBER;
+  v_dtCadastro DATE;
   begin
     v_rc := get_sol_cons_temp_cad(pcdSistema, pcdModulo, pcdTela, pcdAcao);
 	
@@ -126,6 +129,7 @@ create or replace function popula_sol_cons_temp_cad(
         v_deSolucao, 
         v_flNivel, 
         v_qtd,
+        v_dtCadastro,
         v_pcdSistema,
         v_pcdModulo,
         v_pcdTela,
@@ -145,6 +149,7 @@ create or replace function popula_sol_cons_temp_cad(
                                                  v_deSolucao, 
                                                  v_flNivel, 
                                                  v_qtd,
+                                                 v_dtCadastro,
                                                  v_pcdSistema,
                                                  v_pcdModulo,
                                                  v_pcdTela,

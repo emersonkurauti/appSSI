@@ -359,7 +359,7 @@ namespace Banco
                                         else
                                             if (temp is DateTime)
                                             {
-                                                if (Convert.ToDateTime(temp.ToString()) != null)
+                                                if (Convert.ToDateTime(temp.ToString()).Year != 1)
                                                     strParametros += name.ToString() + "='" + temp.ToString().Substring(0, 2) +
                                                                                                 "-" + temp.ToString().Substring(3, 2) +
                                                                                                 "-" + temp.ToString().Substring(6, 4) + "' AND ";

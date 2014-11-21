@@ -112,6 +112,13 @@ namespace appSSI
             get { return _pcdAcao; }
             set { _pcdAcao = value; }
         }
+        private DateTime _dtCadastro;
+
+        public DateTime dtCadastro
+        {
+            get { return _dtCadastro; }
+            set { _dtCadastro = value; }
+        }
 
         /// <summary>
         /// Construtor

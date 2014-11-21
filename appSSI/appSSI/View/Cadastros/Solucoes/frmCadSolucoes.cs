@@ -53,6 +53,7 @@ namespace appSSI
 
             int.TryParse(txtCodigo.Text, out cdSolucao);
             objConSolucoes.objCoSolucoes.cdSolucao = cdSolucao;
+            objConSolucoes.objCoSolucoes.dtCadastro = Convert.ToDateTime(txtDtCadastro.Text);
             objConSolucoes.objCoSolucoes.deSolucao = txtDescricao.Text;
 
             if (rbCliente.Checked)
@@ -71,6 +72,7 @@ namespace appSSI
             base.CarregaDados(drSolucao);
 
             txtCodigo.Text = drSolucao[objCaSolucoes.cdSolucao].ToString();
+            txtDtCadastro.Text = drSolucao[objCaSolucoes.dtCadastro].ToString().Substring(0,10);
             txtDescricao.Text = drSolucao[objCaSolucoes.deSolucao].ToString();
 
             if (Convert.ToChar(drSolucao[objCaSolucoes.flNivel].ToString()) == 'C')
@@ -97,6 +99,7 @@ namespace appSSI
             ucCadSolucoesDefeitos.LimparSolucoesDefeitos();
             rbCliente.Checked = true;
             base.tsbNovo_Click(sender, e);
+            txtDtCadastro.Text = DateTime.Now.ToString().Substring(0, 10);
         }
 
         public override void tsbSalvar_Click(object sender, EventArgs e)

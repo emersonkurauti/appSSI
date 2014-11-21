@@ -42,6 +42,8 @@
             this.ucCadImagens = new appSSI.ucCadImagens();
             this.tpDefeitos = new System.Windows.Forms.TabPage();
             this.ucCadSolucoesDefeitos = new appSSI.ucCadSolucoesDefeitos();
+            this.txtDtCadastro = new KuraFrameWork.Componentes_Visuais.ucTextBox();
+            this.lblDtCadastro = new System.Windows.Forms.Label();
             this.pnFiltro.SuspendLayout();
             this.pnForm.SuspendLayout();
             this.pnBotoes.SuspendLayout();
@@ -59,6 +61,8 @@
             // 
             // pnForm
             // 
+            this.pnForm.Controls.Add(this.lblDtCadastro);
+            this.pnForm.Controls.Add(this.txtDtCadastro);
             this.pnForm.Controls.Add(this.gbNivel);
             this.pnForm.Controls.Add(this.txtDescricao);
             this.pnForm.Controls.Add(this.lblDescricao);
@@ -77,6 +81,8 @@
             this.pnForm.Controls.SetChildIndex(this.lblDescricao, 0);
             this.pnForm.Controls.SetChildIndex(this.txtDescricao, 0);
             this.pnForm.Controls.SetChildIndex(this.gbNivel, 0);
+            this.pnForm.Controls.SetChildIndex(this.txtDtCadastro, 0);
+            this.pnForm.Controls.SetChildIndex(this.lblDtCadastro, 0);
             // 
             // pnBotoes
             // 
@@ -124,9 +130,9 @@
             this.gbNivel.Controls.Add(this.rbDesenvolvedor);
             this.gbNivel.Controls.Add(this.rbSuporte);
             this.gbNivel.Controls.Add(this.rbCliente);
-            this.gbNivel.Location = new System.Drawing.Point(495, 34);
+            this.gbNivel.Location = new System.Drawing.Point(419, 34);
             this.gbNivel.Name = "gbNivel";
-            this.gbNivel.Size = new System.Drawing.Size(238, 36);
+            this.gbNivel.Size = new System.Drawing.Size(312, 36);
             this.gbNivel.TabIndex = 4;
             this.gbNivel.TabStop = false;
             this.gbNivel.Text = "Nível";
@@ -134,9 +140,11 @@
             // rbDesenvolvedor
             // 
             this.rbDesenvolvedor.AutoSize = true;
-            this.rbDesenvolvedor.Location = new System.Drawing.Point(137, 13);
+            this.rbDesenvolvedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDesenvolvedor.ForeColor = System.Drawing.Color.Brown;
+            this.rbDesenvolvedor.Location = new System.Drawing.Point(178, 9);
             this.rbDesenvolvedor.Name = "rbDesenvolvedor";
-            this.rbDesenvolvedor.Size = new System.Drawing.Size(97, 17);
+            this.rbDesenvolvedor.Size = new System.Drawing.Size(134, 21);
             this.rbDesenvolvedor.TabIndex = 2;
             this.rbDesenvolvedor.TabStop = true;
             this.rbDesenvolvedor.Text = "Desenvolvedor";
@@ -145,9 +153,11 @@
             // rbSuporte
             // 
             this.rbSuporte.AutoSize = true;
-            this.rbSuporte.Location = new System.Drawing.Point(69, 13);
+            this.rbSuporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSuporte.ForeColor = System.Drawing.Color.ForestGreen;
+            this.rbSuporte.Location = new System.Drawing.Point(89, 9);
             this.rbSuporte.Name = "rbSuporte";
-            this.rbSuporte.Size = new System.Drawing.Size(62, 17);
+            this.rbSuporte.Size = new System.Drawing.Size(83, 21);
             this.rbSuporte.TabIndex = 1;
             this.rbSuporte.TabStop = true;
             this.rbSuporte.Text = "Suporte";
@@ -156,9 +166,11 @@
             // rbCliente
             // 
             this.rbCliente.AutoSize = true;
-            this.rbCliente.Location = new System.Drawing.Point(6, 13);
+            this.rbCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCliente.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.rbCliente.Location = new System.Drawing.Point(7, 9);
             this.rbCliente.Name = "rbCliente";
-            this.rbCliente.Size = new System.Drawing.Size(57, 17);
+            this.rbCliente.Size = new System.Drawing.Size(76, 21);
             this.rbCliente.TabIndex = 0;
             this.rbCliente.TabStop = true;
             this.rbCliente.Text = "Cliente";
@@ -176,7 +188,7 @@
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescricao.Size = new System.Drawing.Size(730, 138);
+            this.txtDescricao.Size = new System.Drawing.Size(730, 123);
             this.txtDescricao.TabIndex = 5;
             // 
             // lblDescricao
@@ -214,10 +226,10 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.tcImagemSolucao.Controls.Add(this.tpImagens);
             this.tcImagemSolucao.Controls.Add(this.tpDefeitos);
-            this.tcImagemSolucao.Location = new System.Drawing.Point(3, 217);
+            this.tcImagemSolucao.Location = new System.Drawing.Point(3, 202);
             this.tcImagemSolucao.Name = "tcImagemSolucao";
             this.tcImagemSolucao.SelectedIndex = 0;
-            this.tcImagemSolucao.Size = new System.Drawing.Size(735, 205);
+            this.tcImagemSolucao.Size = new System.Drawing.Size(735, 220);
             this.tcImagemSolucao.TabIndex = 6;
             // 
             // tpImagens
@@ -226,7 +238,7 @@
             this.tpImagens.Location = new System.Drawing.Point(4, 22);
             this.tpImagens.Name = "tpImagens";
             this.tpImagens.Padding = new System.Windows.Forms.Padding(3);
-            this.tpImagens.Size = new System.Drawing.Size(727, 179);
+            this.tpImagens.Size = new System.Drawing.Size(727, 194);
             this.tpImagens.TabIndex = 0;
             this.tpImagens.Text = "Imagens";
             this.tpImagens.UseVisualStyleBackColor = true;
@@ -239,7 +251,7 @@
             this.ucCadImagens.flDefeito = false;
             this.ucCadImagens.Location = new System.Drawing.Point(3, 3);
             this.ucCadImagens.Name = "ucCadImagens";
-            this.ucCadImagens.Size = new System.Drawing.Size(721, 173);
+            this.ucCadImagens.Size = new System.Drawing.Size(721, 188);
             this.ucCadImagens.TabIndex = 0;
             // 
             // tpDefeitos
@@ -269,6 +281,26 @@
             this.ucCadSolucoesDefeitos.order = "";
             this.ucCadSolucoesDefeitos.Size = new System.Drawing.Size(721, 173);
             this.ucCadSolucoesDefeitos.TabIndex = 0;
+            // 
+            // txtDtCadastro
+            // 
+            this.txtDtCadastro.AceitaEspaco = true;
+            this.txtDtCadastro.CampoObrigatorio = false;
+            this.txtDtCadastro.Location = new System.Drawing.Point(109, 34);
+            this.txtDtCadastro.MensagemCampoObrigatorio = null;
+            this.txtDtCadastro.Name = "txtDtCadastro";
+            this.txtDtCadastro.ReadOnly = true;
+            this.txtDtCadastro.Size = new System.Drawing.Size(75, 20);
+            this.txtDtCadastro.TabIndex = 10;
+            // 
+            // lblDtCadastro
+            // 
+            this.lblDtCadastro.AutoSize = true;
+            this.lblDtCadastro.Location = new System.Drawing.Point(106, 18);
+            this.lblDtCadastro.Name = "lblDtCadastro";
+            this.lblDtCadastro.Size = new System.Drawing.Size(72, 13);
+            this.lblDtCadastro.TabIndex = 11;
+            this.lblDtCadastro.Text = "Dt. Cadastro :";
             // 
             // frmCadSolucoes
             // 
@@ -312,6 +344,8 @@
         private ucCadImagens ucCadImagens;
         private System.Windows.Forms.TabPage tpDefeitos;
         private ucCadSolucoesDefeitos ucCadSolucoesDefeitos;
+        private System.Windows.Forms.Label lblDtCadastro;
+        private KuraFrameWork.Componentes_Visuais.ucTextBox txtDtCadastro;
 
     }
 }

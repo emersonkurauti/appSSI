@@ -250,19 +250,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8nwr+RpE/bDGXEiSOs43ANYwhDU=</dsig:DigestValue>
+        <dsig:DigestValue>mVM0aMo1eyC8sCUV18QUL5zj61k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2315264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appSSI.exe" size="2316800">
       <assemblyIdentity name="appSSI" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>l7B8+Io+sXfppIK9T482k7KOh0k=</dsig:DigestValue>
+        <dsig:DigestValue>lWKk9M8epAI9xFf7GGQ4AH5HtRw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -274,7 +274,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V8oGNg3DVLKr7p6WLry02BWyEjo=</dsig:DigestValue>
+        <dsig:DigestValue>o+RtMtf3ThKiwhefwmN3Su59q+k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -286,7 +286,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6SHxtGlQeNZtKOP9Az4qtqTYcWc=</dsig:DigestValue>
+        <dsig:DigestValue>jpYAw/ZmOFCKYff8UDMnAfZbaH8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

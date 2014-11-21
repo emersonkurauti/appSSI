@@ -48,6 +48,13 @@ namespace appSSI
             set { _flNivel = value; }
         }
 
+        private DateTime _dtCadastro = DateTime.Now;
+        public DateTime dtCadastro
+        {
+            get { return _dtCadastro; }
+            set { _dtCadastro = value; }
+        }
+
         /// <summary>
         /// Construtor
         /// </summary>
