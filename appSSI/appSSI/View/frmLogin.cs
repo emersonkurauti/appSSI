@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Banco;
 
 namespace appSSI
 {
@@ -23,6 +24,9 @@ namespace appSSI
         {
             InitializeComponent();
             objConUsuario = new conUsuarios();
+
+            csBanco objBanco = csBanco.Instance;
+            objBanco.bBaseProducao = appSSI.Properties.Settings.Default.bBaseProducao;
         }
 
         public override void btnConfirmar_Click(object sender, EventArgs e)

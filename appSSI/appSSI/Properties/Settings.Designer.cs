@@ -72,5 +72,14 @@ namespace appSSI.Properties {
                 return ((string)(this["sCaminhoDefeitos"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool bBaseProducao {
+            get {
+                return ((bool)(this["bBaseProducao"]));
+            }
+        }
     }
 }

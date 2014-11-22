@@ -698,6 +698,7 @@
     <Content Include="Icon.ico" />
     <Content Include="Relatorios\Header\Hearder.png" />
     <Content Include="Relatorios\Header\LogoDB1.png" />
+    <None Include="Resources\skype.png" />
     <None Include="Resources\Limpar1.png" />
     <None Include="Resources\Buscar.png" />
     <None Include="Resources\del.png" />

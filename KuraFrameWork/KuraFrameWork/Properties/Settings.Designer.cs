@@ -32,5 +32,16 @@ namespace KuraFrameWork.Properties {
                 return ((string)(this["strConexaoBanco"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL = TCP)(HOST = 192.168.1" +
+            "99.200)(PORT = 1521))) (CONNECT_DATA=(SID=orcl)(SERVER=DEDICATED))); User Id=SSI" +
+            "; Password=admin")]
+        public string strBaseProducao {
+            get {
+                return ((string)(this["strBaseProducao"]));
+            }
+        }
     }
 }

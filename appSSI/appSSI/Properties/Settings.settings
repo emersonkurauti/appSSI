@@ -17,5 +17,8 @@
     <Setting Name="sCaminhoDefeitos" Type="System.String" Scope="Application">
       <Value Profile="(Default)">C:\appSSI\appSSI\wappSSI\Imagens\Defeitos\</Value>
     </Setting>
+    <Setting Name="bBaseProducao" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

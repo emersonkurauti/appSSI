@@ -277,6 +277,27 @@
   <ItemGroup>
     <None Include="Imagem\add.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finaliza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autenticação.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordQ256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password256.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

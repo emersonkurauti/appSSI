@@ -118,9 +118,28 @@ namespace Banco
             set { _strChaveEstrangeira = value; }
         }
 
+        /// <summary>
+        /// Variável que altera entre base de produção de base de desenvolvimento
+        /// </summary>
+        private bool _bBaseProducao = false;
+        public bool bBaseProducao
+        {
+            get { return _bBaseProducao; }
+            set {   
+                    _bBaseProducao = value;
+
+                    if (!_bBaseProducao)
+                    {
+                        _strStringConexao = KuraFrameWork.Properties.Settings.Default.strConexaoBanco;
+                        _conexao = new OracleConnection(_strStringConexao);
+                        _comando.Connection = _conexao;
+                    }
+ 
+                }
+        }
 
         /// <summary>
-        /// Variável de conexão com o SGDB
+        /// Variável de conexão com o SGBD
         /// </summary>
         private OracleConnection _conexao;
 
@@ -144,7 +163,7 @@ namespace Banco
         /// </summary>
         private csBanco()
         {
-            _strStringConexao = KuraFrameWork.Properties.Settings.Default.strConexaoBanco; 
+            _strStringConexao = KuraFrameWork.Properties.Settings.Default.strBaseProducao;
 
             //"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.199.200)(PORT = 1521))) (CONNECT_DATA=(SERVER = DEDICATED)(SID = ORCL))); User Id=ssi; Password=admin";
             //"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=xe))); User Id=SSI; Password=admin";
