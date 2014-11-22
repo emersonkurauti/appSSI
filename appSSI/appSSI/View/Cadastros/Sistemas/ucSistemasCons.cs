@@ -77,6 +77,10 @@ namespace appSSI
 
                 base.txtCodigo_Leave(sender, e);
             }
+            else
+            {
+                LimparCampos();
+            }
         }
 
         public void Carregar()
@@ -88,6 +92,16 @@ namespace appSSI
         {
             frmCadSistemas frmCadSistemas = new frmCadSistemas();
             frmCadSistemas.ShowDialog();
+
+            int codigo;
+
+            int.TryParse(frmCadSistemas.txtCodigo.Text, out codigo);
+
+            if (codigo > 0)
+            {
+                txtCodigo.Text = codigo.ToString();
+                txtCodigo_Leave(null, null);
+            }
         }
 
         private string RetornaFiltroListaSistemas()

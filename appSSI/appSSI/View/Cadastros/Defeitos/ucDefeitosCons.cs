@@ -61,6 +61,10 @@ namespace appSSI
 
                 base.txtCodigo_Leave(sender, e);
             }
+            else
+            {
+                LimparCampos();
+            }
         }
 
         public void Carregar()
@@ -72,6 +76,16 @@ namespace appSSI
         {
             frmCadDefeitos frmCadDefeitos = new frmCadDefeitos();
             frmCadDefeitos.ShowDialog();
+
+            int codigo;
+
+            int.TryParse(frmCadDefeitos.txtCodigo.Text, out codigo);
+
+            if (codigo > 0)
+            {
+                txtCodigo.Text = codigo.ToString();
+                txtCodigo_Leave(null, null);
+            }
         }
     }
 }

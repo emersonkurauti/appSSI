@@ -328,7 +328,6 @@
 
         #endregion
 
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescricao;
         private System.Windows.Forms.Label lblDescricao;
@@ -343,6 +342,7 @@
         private ucCadSolucoesDefeitos ucCadSolucoesDefeitos;
         private System.Windows.Forms.TabPage tpAcoesTelas;
         private ucCadDefeitosAcoesTelas ucCadDefeitosAcoesTelas;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
 
 
 

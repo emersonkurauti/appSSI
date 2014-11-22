@@ -260,7 +260,7 @@
             this.tpDefeitos.Location = new System.Drawing.Point(4, 22);
             this.tpDefeitos.Name = "tpDefeitos";
             this.tpDefeitos.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDefeitos.Size = new System.Drawing.Size(727, 179);
+            this.tpDefeitos.Size = new System.Drawing.Size(727, 194);
             this.tpDefeitos.TabIndex = 1;
             this.tpDefeitos.Text = "Defeitos";
             this.tpDefeitos.UseVisualStyleBackColor = true;
@@ -279,7 +279,7 @@
             this.ucCadSolucoesDefeitos.Location = new System.Drawing.Point(3, 3);
             this.ucCadSolucoesDefeitos.Name = "ucCadSolucoesDefeitos";
             this.ucCadSolucoesDefeitos.order = "";
-            this.ucCadSolucoesDefeitos.Size = new System.Drawing.Size(721, 173);
+            this.ucCadSolucoesDefeitos.Size = new System.Drawing.Size(721, 188);
             this.ucCadSolucoesDefeitos.TabIndex = 0;
             // 
             // txtDtCadastro
@@ -337,7 +337,6 @@
         private System.Windows.Forms.RadioButton rbCliente;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescricao;
         private System.Windows.Forms.Label lblDescricao;
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TabControl tcImagemSolucao;
         private System.Windows.Forms.TabPage tpImagens;
@@ -346,6 +345,7 @@
         private ucCadSolucoesDefeitos ucCadSolucoesDefeitos;
         private System.Windows.Forms.Label lblDtCadastro;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDtCadastro;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
 
     }
 }

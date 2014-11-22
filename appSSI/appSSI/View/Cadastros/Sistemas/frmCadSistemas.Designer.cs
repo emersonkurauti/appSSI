@@ -221,7 +221,6 @@
 
         #endregion
 
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblDescricao;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescricao;
@@ -231,5 +230,6 @@
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtProjetoTask;
         private System.Windows.Forms.Label lblProjetoTask;
         public ucAreaTaskCons ucAreaTaskCons;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
     }
 }

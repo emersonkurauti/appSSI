@@ -70,6 +70,10 @@ namespace appSSI
 
                 base.txtCodigo_Leave(sender, e);
             }
+            else
+            {
+                LimparCampos();
+            }
         }
 
         public void Carregar()
@@ -81,6 +85,16 @@ namespace appSSI
         {
             frmCadTelas frmCadTelas = new frmCadTelas();
             frmCadTelas.ShowDialog();
+
+            int codigo;
+
+            int.TryParse(frmCadTelas.txtCodigo.Text, out codigo);
+
+            if (codigo > 0)
+            {
+                txtCodigo.Text = codigo.ToString();
+                txtCodigo_Leave(null, null);
+            }
         }
     }
 }

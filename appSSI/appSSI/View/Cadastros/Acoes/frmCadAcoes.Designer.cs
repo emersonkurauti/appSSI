@@ -149,8 +149,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblCodigo;
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private System.Windows.Forms.Label lblDescricao;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescricao;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
     }
 }

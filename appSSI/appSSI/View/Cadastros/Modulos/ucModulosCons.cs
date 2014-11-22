@@ -82,8 +82,7 @@ namespace appSSI
             }
             else
             {
-                txtCodigo.Text = "";
-                txtDescricao.Text = "";
+                LimparCampos();
             }
         }
 
@@ -96,6 +95,16 @@ namespace appSSI
         {
             frmCadModulos frmCadModulos = new frmCadModulos();
             frmCadModulos.ShowDialog();
+
+            int codigo;
+
+            int.TryParse(frmCadModulos.txtCodigo.Text, out codigo);
+
+            if (codigo > 0)
+            {
+                txtCodigo.Text = codigo.ToString();
+                txtCodigo_Leave(null, null);
+            }
         }
 
         private string RetornaFiltro()

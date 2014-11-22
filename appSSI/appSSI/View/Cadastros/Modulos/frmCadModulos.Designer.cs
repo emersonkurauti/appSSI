@@ -195,12 +195,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblCodigo;
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private ucSistemasCons ucSistemasCons;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescricao;
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.GroupBox gbIntegracao;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtModuloTASK;
         private System.Windows.Forms.Label lblModuloTASK;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
     }
 }

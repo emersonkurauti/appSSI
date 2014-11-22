@@ -250,7 +250,6 @@
 
         #endregion
 
-        private KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private ucModulosCons ucModulosCons;
         private KuraFrameWork.Componentes_Visuais.ucTextBox txtDescicao;
@@ -262,5 +261,6 @@
         private System.Windows.Forms.DataGridView dgvAcao;
         private System.Windows.Forms.DataGridViewTextBoxColumn cdAcao;
         private System.Windows.Forms.DataGridViewTextBoxColumn deAcao;
+        public KuraFrameWork.Componentes_Visuais.ucTextBox txtCodigo;
     }
 }
