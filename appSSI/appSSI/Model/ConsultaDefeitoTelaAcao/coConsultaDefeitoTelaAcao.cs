@@ -81,6 +81,13 @@ namespace appSSI
             set { _bSomenteSuporte = value; }
         }
 
+        private double _dGrauSimilaridade = 0.0f;
+        public double dGrauSimilaridade
+        {
+            get { return _dGrauSimilaridade; }
+            set { _dGrauSimilaridade = value; }
+        }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -131,7 +138,7 @@ namespace appSSI
                 {
                     for (int i = 0; i < dtTemp.Rows.Count; i++)
                     {
-                        if (Convert.ToDouble(dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score].ToString()) < appSSI.Properties.Settings.Default.grauSimilaridade)
+                        if (Convert.ToDouble(dtTemp.Rows[i][objCaConsultaDefeitoTelaAcao.score].ToString()) < _dGrauSimilaridade)
                         {
                             dtTemp.Rows.RemoveAt(i);
                             i--;

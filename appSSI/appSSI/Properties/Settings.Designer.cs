@@ -48,15 +48,6 @@ namespace appSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.55")]
-        public float grauSimilaridade {
-            get {
-                return ((float)(this["grauSimilaridade"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Solucoes\\")]
         public string sCaminhoSolucoes {
             get {
@@ -73,12 +64,15 @@ namespace appSSI.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool bBaseProducao {
             get {
                 return ((bool)(this["bBaseProducao"]));
+            }
+            set {
+                this["bBaseProducao"] = value;
             }
         }
     }

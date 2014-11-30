@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using appSSI;
 using System.Text;
+using Banco;
 
 namespace wappSSI
 {
@@ -21,6 +22,9 @@ namespace wappSSI
             Session["TpUsuario"] = null;
             Session["cdEmpresa"] = null;
             Session["nmUsuario"] = null;
+
+            objConUsuarios.objCoUsuarios.objBanco = csBanco.Instance;
+            objConUsuarios.objCoUsuarios.objBanco.bBaseProducao = wappSSI.Properties.Settings.Default.bBaseProducao;
         }
 
         /// <summary>

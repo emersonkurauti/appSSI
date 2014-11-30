@@ -341,6 +341,7 @@ namespace wappSSI
                 objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.cdAcao      = Convert.ToInt32(ddlAcao.SelectedValue.ToString());
                 objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.flTpUsuario = Convert.ToChar(Session["TpUsuario"].ToString());
                 objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.deDesricao  = txtDescDefeito.Text;
+                objConConsultaDefeitoTelaAcao.objCoConsultaDefeitoTelaAcao.dGrauSimilaridade = wappSSI.Properties.Settings.Default.grauSimilaridade;
 
                 if (!objConConsultaDefeitoTelaAcao.Select())
                 {

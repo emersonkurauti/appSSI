@@ -20,5 +20,11 @@
     <Setting Name="sCaminhoImgSolucoesSvr" Type="System.String" Scope="Application">
       <Value Profile="(Default)">../Imagens/Solucoes/</Value>
     </Setting>
+    <Setting Name="bBaseProducao" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="grauSimilaridade" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.55</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

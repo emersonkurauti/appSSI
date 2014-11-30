@@ -250,7 +250,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vcEJg1zseSpP4vzgRoSBli85TXM=</dsig:DigestValue>
+        <dsig:DigestValue>4G99lGj8g1Cxoue2eWNdyJgI+uw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -262,7 +262,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rA1t7Od7SENhdziHX6WUazOGJnQ=</dsig:DigestValue>
+        <dsig:DigestValue>QMQzOheMj5Fnc2V6ro6GJbs9Hl8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -274,7 +274,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>NkSy45zNnl2EdgHbxsF3zpHk6WI=</dsig:DigestValue>
+        <dsig:DigestValue>Bb8qhrDGyuHW9pyU0PE1h/tPXZo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -286,17 +286,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JEicXpM8X9Wm05J2qWqlkKX0d9s=</dsig:DigestValue>
+        <dsig:DigestValue>ZSFsxLkgEa5Ul4qd6p9cHgXRAPI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="appSSI.exe.config" size="2675">
+  <file name="appSSI.exe.config" size="2546">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DPrIJOx0t5kIxn0mxIhFJJpSj3M=</dsig:DigestValue>
+      <dsig:DigestValue>FlQiWOsufyPUeeSJAh9hnfUufAQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icon.ico" size="155094">

@@ -167,6 +167,10 @@
       <Project>{53EB22E9-D9A3-496F-A8B3-BCD6D1450EB0}</Project>
       <Name>appSSI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\KuraFrameWork\KuraFrameWork\KuraFrameWork.csproj">
+      <Project>{944A4514-EAFB-429B-A896-80B714179115}</Project>
+      <Name>KuraFrameWork</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagens\Defeitos\" />

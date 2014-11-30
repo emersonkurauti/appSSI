@@ -76,5 +76,23 @@ namespace wappSSI.Properties {
                 return ((string)(this["sCaminhoImgSolucoesSvr"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool bBaseProducao {
+            get {
+                return ((bool)(this["bBaseProducao"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.55")]
+        public double grauSimilaridade {
+            get {
+                return ((double)(this["grauSimilaridade"]));
+            }
+        }
     }
 }
