@@ -73,7 +73,7 @@ namespace appSSI
                     dc.ColumnName = property.Name;
 
                     if (property.Name.Substring(0, 3).Equals("CC_"))
-                        dc.MaxLength = 1000;
+                        dc.MaxLength = 100000;
 
                     dt.Columns.Add(dc);
                 }

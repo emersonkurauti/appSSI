@@ -81,13 +81,13 @@ namespace appSSI
             if (base.Select(out dtDados))
             {
                 dtDados.Columns[objCaDefeitoAcaoTela.CC_deTela].ReadOnly = false;
-                dtDados.Columns[objCaDefeitoAcaoTela.CC_deTela].MaxLength = 100;
+                dtDados.Columns[objCaDefeitoAcaoTela.CC_deTela].MaxLength = 10000;
 
                 dtDados.Columns[objCaDefeitoAcaoTela.CC_deAcao].ReadOnly = false;
-                dtDados.Columns[objCaDefeitoAcaoTela.CC_deAcao].MaxLength = 100;
+                dtDados.Columns[objCaDefeitoAcaoTela.CC_deAcao].MaxLength = 10000;
 
                 dtDados.Columns[objCaDefeitoAcaoTela.CC_deDefeito].ReadOnly = false;
-                dtDados.Columns[objCaDefeitoAcaoTela.CC_deDefeito].MaxLength = 100;
+                dtDados.Columns[objCaDefeitoAcaoTela.CC_deDefeito].MaxLength = 10000;
 
                 foreach (DataRow dr in dtDados.Rows)
                 {

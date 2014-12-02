@@ -250,7 +250,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4G99lGj8g1Cxoue2eWNdyJgI+uw=</dsig:DigestValue>
+        <dsig:DigestValue>IjgNynISF/8Bt46swT0ZGPonGw8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -262,7 +262,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>egvX3b/XQKhW+uhakCOV7xhsil4=</dsig:DigestValue>
+        <dsig:DigestValue>tYcbABGpKv/gHg7CVtCyOueR8Xo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -290,13 +290,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="appSSI.exe.config" size="2675">
+  <file name="appSSI.exe.config" size="2546">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ASO2fBwvr9EgFb8Ir/ISdWqVLbk=</dsig:DigestValue>
+      <dsig:DigestValue>FlQiWOsufyPUeeSJAh9hnfUufAQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icon.ico" size="155094">
