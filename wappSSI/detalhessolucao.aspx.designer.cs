@@ -40,22 +40,22 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.ImageButton imgbPrevious;
         
         /// <summary>
-        /// btnVoltar control.
+        /// imgbtnNext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVoltar;
+        protected global::System.Web.UI.WebControls.Button imgbtnNext;
         
         /// <summary>
-        /// imgbVoltar control.
+        /// imgbNext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton imgbVoltar;
+        protected global::System.Web.UI.WebControls.ImageButton imgbNext;
         
         /// <summary>
         /// Button1 control.
@@ -76,22 +76,22 @@ namespace wappSSI {
         protected global::System.Web.UI.WebControls.ImageButton imgbSolucionado;
         
         /// <summary>
-        /// imgbtnNext control.
+        /// btnVoltar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button imgbtnNext;
+        protected global::System.Web.UI.WebControls.Button btnVoltar;
         
         /// <summary>
-        /// imgbNext control.
+        /// imgbVoltar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton imgbNext;
+        protected global::System.Web.UI.WebControls.ImageButton imgbVoltar;
         
         /// <summary>
         /// lblDescSolucao control.
