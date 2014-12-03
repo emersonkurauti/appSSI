@@ -54,7 +54,7 @@
                             <!--<asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
                                 Text="Voltar - lista de solção" onclick="btnVoltar_Click" Width="225px"/>-->
                             <asp:ImageButton ID="imgbVoltar" runat="server" onclick="btnVoltar_Click" 
-                                ImageUrl="~/Icons/back.png" Height="45px" Width="45px" />
+                                ImageUrl="~/Icons/back.png" Height="55px" Width="55px" />
                         </div>                        
                     </div>
                     <div class="page-header">

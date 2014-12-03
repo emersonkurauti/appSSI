@@ -34,19 +34,19 @@
                                 runat="server" Text="<< Defeito Anterior" onclick="imgbtnPrevious_Click" 
                                 Width="225px"/>-->
                             <asp:ImageButton ID="imgbPrevious" runat="server" onclick="imgbtnPrevious_Click" 
-                                ImageUrl="~/Icons/previous.png" Height="55px" Width="55px" />
+                                ImageUrl="~/Icons/previous.png" Height="54px" Width="54px" />
                         </div>
                         <div class="col-sm-4" align="center" style="vertical-align:middle; float: left">
                             <!--<asp:Button ID="btnVoltar" CssClass="btn btn-sm btn-primary" runat="server" 
                                 Text="Voltar - lista de defeitos" onclick="btnVoltar_Click" Width="225px"/>-->
                             <asp:ImageButton ID="imgbVoltar" runat="server" onclick="btnVoltar_Click" 
-                                ImageUrl="~/Icons/back.png" Height="50px" Width="50px" />
+                                ImageUrl="~/Icons/back.png" Height="54px" Width="54px" />
                         </div>
                         <div class="col-sm-4" align="right" style="float: right">
                             <!--<asp:Button ID="imgbtnNext" CssClass="btn btn-sm btn-primary" runat="server" 
                                 Text="Próximo Defeito >>" onclick="imgbtnNext_Click" Width="225px"/>-->
                             <asp:ImageButton ID="imgbNext" runat="server" onclick="imgbtnNext_Click" 
-                                ImageUrl="~/Icons/next.png" Height="55px" Width="55px" />
+                                ImageUrl="~/Icons/next.png" Height="54px" Width="54px" />
                         </div>
                     </div>
                     <div class="page-header"><h3>Descrição do defeito</h3></div>     

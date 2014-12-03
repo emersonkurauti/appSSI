@@ -115,17 +115,19 @@
                             </div>
                             <br />
                             <div class="row">
-                                <div class="col-sm-6" align="center">
+                                <div class="col-sm-6" align="center" style="float: left">
                                     <!--<asp:Button ID="btnConfirmar" CssClass="btn btn-lg btn-success" runat="server" 
                                         Text="Confirmar" Width="225px" onclick="btnConfirmar_Click"/>-->
                                     <asp:ImageButton ID="imgbConfirma" runat="server" 
-                                        ImageUrl="~/Icons/Confirma.png" Height="75px" Width="75px" onclick="btnConfirmar_Click" />
+                                        ImageUrl="~/Icons/Confirma.png" Height="75px" Width="75px"
+                                        onclick="btnConfirmar_Click" />
                                 </div>
-                                <div class="col-sm-6" align="center">
+                                <div class="col-sm-6" align="center" style="float: right">
                                     <!--<asp:Button ID="btnCancelar" CssClass="btn btn-lg btn-danger" runat="server" 
                                         Text="Cancelar" Width="225px" onclick="btnCancelar_Click"/>-->
                                     <asp:ImageButton ID="imgbCancel" runat="server" 
-                                        ImageUrl="~/Icons/Cancelar.png" Height="75px" Width="75px" onclick="btnCancelar_Click" />
+                                        ImageUrl="~/Icons/Cancelar.png" Height="75px" Width="75px"
+                                        onclick="btnCancelar_Click" />
                                 </div>
                             </div>
                         </div>
