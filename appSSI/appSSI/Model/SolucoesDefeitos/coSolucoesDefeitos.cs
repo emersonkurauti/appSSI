@@ -73,7 +73,7 @@ namespace appSSI
                 if (_cdSolucao != 0) //Caso seja uma solução, pesquisar por defeitos
                 {
                     dtDados.Columns[objCaSolucoesDefeitos.CC_deDefeito].ReadOnly = false;
-                    dtDados.Columns[objCaSolucoesDefeitos.CC_deDefeito].MaxLength = 100;
+                    dtDados.Columns[objCaSolucoesDefeitos.CC_deDefeito].MaxLength = 10000;
 
                     foreach (DataRow dr in dtDados.Rows)
                     {
@@ -87,7 +87,7 @@ namespace appSSI
                 else
                 {
                     dtDados.Columns[objCaSolucoesDefeitos.CC_deSolucao].ReadOnly = false;
-                    dtDados.Columns[objCaSolucoesDefeitos.CC_deSolucao].MaxLength = 100;
+                    dtDados.Columns[objCaSolucoesDefeitos.CC_deSolucao].MaxLength = 10000;
 
                     foreach (DataRow dr in dtDados.Rows)
                     {

@@ -227,6 +227,9 @@ namespace appSSI
                 {
                     if (!VerificarSeJahExiste(Convert.ToInt32(ucDefeitosCons.txtCodigo.Text)))
                     {
+
+                        _dtDados.Columns[objCaSolucoesDefeitos.CC_deDefeito].MaxLength = 10000;
+
                         DataRow dr = _dtDados.NewRow();
 
                         dr[objCaSolucoesDefeitos.cdDefeito] = ucDefeitosCons.txtCodigo.Text;
@@ -256,6 +259,8 @@ namespace appSSI
                 {
                     if (!VerificarSeJahExiste(Convert.ToInt32(ucSolucoesCons.txtCodigo.Text)))
                     {
+                        _dtDados.Columns[objCaSolucoesDefeitos.CC_deSolucao].MaxLength = 10000;
+
                         DataRow dr = _dtDados.NewRow();
 
                         dr[objCaSolucoesDefeitos.cdSolucao] = ucSolucoesCons.txtCodigo.Text;
