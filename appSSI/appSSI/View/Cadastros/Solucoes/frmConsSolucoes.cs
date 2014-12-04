@@ -30,6 +30,8 @@ namespace appSSI
         public frmConsSolucoes()
         {
             InitializeComponent();
+            this.ControleFiltro(null, null);
+
             objConSolucoes = new conSolucoes();
             objCaSolucoes = new caSolucoes();
         }

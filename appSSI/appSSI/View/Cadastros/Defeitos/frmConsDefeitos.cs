@@ -30,6 +30,8 @@ namespace appSSI
         public frmConsDefeitos()
         {
             InitializeComponent();
+            this.ControleFiltro(null, null);
+
             objConDefeitos = new conDefeitos();
             objCaDefeitos = new caDefeitos();
         }
