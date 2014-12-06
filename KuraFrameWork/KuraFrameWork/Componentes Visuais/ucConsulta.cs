@@ -90,7 +90,6 @@ namespace KuraFrameWork.Componentes_Visuais
             txtDescricao.Text = "";
             cdAnterior = 0;
             bMudouCodigo = false;
-            txtCodigo.Focus();
         }
 
         private void txtCodigo_KeyDown(object sender, KeyEventArgs e)

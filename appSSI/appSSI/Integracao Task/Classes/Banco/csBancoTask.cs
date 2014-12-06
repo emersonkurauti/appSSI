@@ -150,7 +150,7 @@ namespace appSSI
         private csBancoTask()
         {
             if (_strStringConexao == "")
-                _strStringConexao = appSSI.Properties.Settings.Default.strConexaoBancoIntegracao;
+                _strStringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.199.200)(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=orcl))); User Id=taskdesenv; Password=taskdesenv";
             _conexao = new OracleConnection(_strStringConexao);
             _comando = new OracleCommand();
             _comando.Connection = _conexao;

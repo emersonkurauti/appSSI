@@ -31,3 +31,4 @@ C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.Component
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.csproj.GenerateResource.Cache
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.dll
 C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.pdb
+C:\appSSI\appSSI\KuraFrameWork\KuraFrameWork\obj\Release\KuraFrameWork.csprojResolveAssemblyReference.cache

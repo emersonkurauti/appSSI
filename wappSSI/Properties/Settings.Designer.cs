@@ -94,5 +94,14 @@ namespace wappSSI.Properties {
                 return ((double)(this["grauSimilaridade"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("/Imagens/Temp/")]
+        public string sCaminhoImgTemp {
+            get {
+                return ((string)(this["sCaminhoImgTemp"]));
+            }
+        }
     }
 }

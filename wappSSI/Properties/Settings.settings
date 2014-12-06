@@ -26,5 +26,8 @@
     <Setting Name="grauSimilaridade" Type="System.Double" Scope="Application">
       <Value Profile="(Default)">0.55</Value>
     </Setting>
+    <Setting Name="sCaminhoImgTemp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Imagens/Temp/</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
