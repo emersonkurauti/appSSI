@@ -295,7 +295,7 @@ namespace wappSSI
 
         protected void btnCarregar_Click(object sender, EventArgs e)
         {
-            string path = Server.MapPath("~" + wappSSI.Properties.Settings.Default.sCaminhoImgTemp.ToString());
+            string path = Request.PhysicalApplicationPath + wappSSI.Properties.Settings.Default.sCaminhoImgTemp.ToString();
 
             if (fluImagem.HasFile)
             {
@@ -304,13 +304,17 @@ namespace wappSSI
 
                 if ((extension == ".jpeg") || (extension == ".png") || (extension == ".jpg") || (extension == ".gif"))
                 {
+                    System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(path);
+
+                    fileName = dir.GetFiles().Length.ToString() + extension;
+
                     Session["CaminhoImg"] = path;
                     Session["FileName"] = fileName;
 
                     path += fileName;
                     fluImagem.SaveAs(path);
 
-                    imgUp.ImageUrl = ".."+wappSSI.Properties.Settings.Default.sCaminhoImgTemp.ToString() + fileName;
+                    imgUp.ImageUrl = wappSSI.Properties.Settings.Default.sCaminhoImgTemp.ToString().Replace('\\','/') + fileName;
 
                 }
                 else
@@ -542,6 +546,7 @@ namespace wappSSI
             objConDefeito.objCoDefeitos.flEstagio = 'I';
             objConDefeito.objCoDefeitos.dtImgDefeitos = _dtImagens;
             objConDefeito.objCoDefeitos.dtSolucoesDefeitos = objConSolucoesDefeitos.objCoSolucoesDefeitos.RetornaEstruturaDT();
+            objConDefeito.sCaminho = wappSSI.Properties.Settings.Default.sCaminhoImgDefeitos;
 
             if (!objConDefeito.Inserir())
                 return false;

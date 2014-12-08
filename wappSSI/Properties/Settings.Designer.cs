@@ -97,10 +97,19 @@ namespace wappSSI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("/Imagens/Temp/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Imagens\\Temp\\")]
         public string sCaminhoImgTemp {
             get {
                 return ((string)(this["sCaminhoImgTemp"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\appSSI\\appSSI\\wappSSI\\Imagens\\Defeitos\\")]
+        public string sCaminhoImgDefeitos {
+            get {
+                return ((string)(this["sCaminhoImgDefeitos"]));
             }
         }
     }

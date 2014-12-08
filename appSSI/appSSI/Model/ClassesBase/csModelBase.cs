@@ -121,6 +121,23 @@ namespace appSSI
         }
 
         /// <summary>
+        /// Inserir (overload)
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool Inserir(string sCaminho = "")
+        {
+            try
+            {
+                AtualizaObj();
+                return objBanco.Inserir();
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
         /// Alterar
         /// </summary>
         /// <returns></returns>

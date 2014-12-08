@@ -14,6 +14,13 @@ namespace appSSI
             set { _objCoDefeitos = value; }
         }
 
+        private string _sCaminho = "";
+        public string sCaminho
+        {
+            get { return _sCaminho; }
+            set { _sCaminho = value; }
+        }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -45,7 +52,7 @@ namespace appSSI
         /// <returns></returns>
         public bool Inserir()
         {
-            if (!_objCoDefeitos.Inserir())
+            if (!_objCoDefeitos.Inserir(_sCaminho))
             {
                 _strMensagemErro = csMensagens.msgErroInserirDefeitos;
                 return false;

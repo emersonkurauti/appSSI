@@ -81,7 +81,7 @@ namespace appSSI
         /// Método para inserir imagens
         /// </summary>
         /// <returns></returns>
-        public bool InserirImagem(bool bAlterar)
+        public bool InserirImagem(bool bAlterar, string sCaminho = "")
         {
             caImagensDefeitos objCaImagensDefeitos = new caImagensDefeitos();
             conImagens objConImagens = new conImagens(csConstantes.cDefeito);
@@ -91,7 +91,9 @@ namespace appSSI
             if (bAlterar)
                 objConImagens.Excluir();
 
-            string sCaminho = appSSI.Properties.Settings.Default.sCaminhoDefeitos;
+            if (sCaminho == "")
+                sCaminho = appSSI.Properties.Settings.Default.sCaminhoDefeitos;
+
             string sCaminhoImgAntes = "", sNomeAntes = "", sNomeFoto = "", sCaminhoImgDepois = "";
 
             for (int i = 0; i < _dtImgDefeitos.Rows.Count; i++)
@@ -182,7 +184,7 @@ namespace appSSI
         /// Método de inserir sobrescrito para utilizar transação
         /// </summary>
         /// <returns></returns>
-        public override bool Inserir()
+        public override bool Inserir(string sCaminho = "")
         {
             try
             {
@@ -193,7 +195,7 @@ namespace appSSI
                 {
                     _cdDefeito = objBanco.cdChave;
 
-                    if (!InserirImagem(false))
+                    if (!InserirImagem(false, sCaminho))
                     {
                         objBanco.RollbackTransaction();
                         return false;
